@@ -78,7 +78,7 @@
 		<div class="container">
 			<div class="header-content-wrapper">
 				<div class="logo">
-					<a href="index.html" class="full-block-link"></a>
+					<a href="/" class="full-block-link"></a>
 					<img loading="lazy" src="assets/img/logo.png" width="250" alt="La Souveraine logo">
 				</div>
 				<nav id="primary-menu" class="primary-menu fixed">
@@ -93,44 +93,44 @@
 					</a>
 					<ul class="primary-menu-menu">
 						<li class="menu-item-has-children">
-							<a href="index.html">Accueil</a>
+							<a href="/">Accueil</a>
 						</li>
 						<li class="">
-							<a href="offers.html">Offres</a>
+							<a href="/offers">Offres</a>
 							<ul class="dropdown">
 								<li class="hover-ver2">
-									<a href="marketing-strategy.html"><i class="seoicon-pin-map"></i>
+									<a href="/"><i class="seoicon-pin-map"></i>
 										Stratégie Marketing
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="study.html"><i class="seoicon-mail-send"></i>
+									<a href="/"><i class="seoicon-mail-send"></i>
 										Etudes
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="commercial-rep.html"><i class="seoicon-chat-comment"></i>
+									<a href="/"><i class="seoicon-chat-comment"></i>
 										Représentation commerciale
 									</a>
 								</li>
 								<li class="menu-item-has-children hover-ver2">
-									<a href="training.html">
+									<a href="/">
 										<i class="seoicon-search"></i>
 										Formations
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="performance-tracking.html"><i class="seoicon-button"></i>
+									<a href="/"><i class="seoicon-button"></i>
 										Tracking de performance
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="">
-							<a href="portfolio.html">Portefeuille</a>
+							<a href="/portfolio">Portefeuille</a>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="about.html">A propos</a>
+							<a href="/about">A propos</a>
 						</li>
 					</ul>
 				</nav>
