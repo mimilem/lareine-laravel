@@ -53,10 +53,6 @@ Route::get('sales-representation', function () {
     return view('offers.sales-rep');
 });
 
-Route::get('sales-representation', function () {
-    return view('offers.sales-rep');
-});
-
 Route::get('performance-tracking', function () {
     return view('offers.performance-tracking');
 });

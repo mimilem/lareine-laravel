@@ -209,7 +209,7 @@
                                         </p>
                                     </div>
 
-                                    <a href="contact.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                    <a href="/contact" class="btn btn-medium btn--dark btn-hover-shadow">
                                         <span class="text">Entrons en contact</span>
                                     </a>
                                 </div>

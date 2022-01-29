@@ -16,12 +16,12 @@
                                         dans la conquête de leur clientèle.
                                     </h6>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="contact.html"
+                                        <a href="/contact"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="offers.html" class="btn btn-small btn--primary"
+                                        <a href="/offers" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -50,12 +50,12 @@
                                         business, maintain your social presence and engage with the audience.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="05_service_details_localseo.html"
+                                        <a href="/contact"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="05_service_details_localseo.html" class="btn btn-small btn--primary"
+                                        <a href="/offers" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -86,12 +86,12 @@
                                         major search engines.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="05_service_details_localseo.html"
+                                        <a href="/contact"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="05_service_details_localseo.html" class="btn btn-small btn--primary"
+                                        <a href="/offers" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -146,7 +146,7 @@
                                 </p>
                             </div>
         
-                            <a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                            <a href="/contact" class="btn btn-medium btn--dark btn-hover-shadow">
                                 <span class="text">Contactez-nous</span>
                                 <span class="semicircle"></span>
                             </a>
@@ -163,7 +163,7 @@
                                     sed diam nonummy nibh.
                                 </p>
                             </div>
-                            <a href="04_service_detail_seo.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                            <a href="/marketing-strategy" class="read-more"><i class="seoicon-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                             qui sequitur mutationem consuetudium lectorum quam nunc putamus.
                         </p>
                     </div>
-                    <a href="05_service_details_localseo.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="/study" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -198,7 +198,7 @@
                             me lius quod ii legunt saepius.
                         </p>
                     </div>
-                    <a href="06_service_detail.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="/courses" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -212,7 +212,7 @@
                             option congue nihil imperdiet doming id quod mazim placerat assum.
                         </p>
                     </div>
-                    <a href="07_service_email_marketing.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="/performance-tracking" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
         </div>
@@ -228,7 +228,7 @@
                             fiant sollemnes in futurum.
                         </p>
                     </div>
-                    <a href="08_service_ppc_management.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="/sales-representation" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
         </div>
