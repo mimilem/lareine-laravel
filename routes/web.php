@@ -33,6 +33,10 @@ Route::get('study', function () {
     return view('offers.study');
 });
 
+Route::get('sales-representation', function () {
+    return view('offers.sales-rep');
+});
+
 Route::get('portfolio', function () {
     return view('portfolio');
 });

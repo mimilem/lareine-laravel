@@ -109,14 +109,8 @@
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/"><i class="seoicon-chat-comment"></i>
+									<a href="/sales-representation"><i class="seoicon-chat-comment"></i>
 										Représentation commerciale
-									</a>
-								</li>
-								<li class="menu-item-has-children hover-ver2">
-									<a href="/">
-										<i class="seoicon-search"></i>
-										Formations
 									</a>
 								</li>
 								<li class="hover-ver2">
