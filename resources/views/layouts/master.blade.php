@@ -126,6 +126,9 @@
 								</li>
 							</ul>
 						</li>
+						<li class="menu-item-has-children">
+							<a href="/courses">Formations</a>
+						</li>
 						<li class="">
 							<a href="/portfolio">Portefeuille</a>
 						</li>

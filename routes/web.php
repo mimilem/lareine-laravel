@@ -28,3 +28,7 @@ Route::get('offers', function () {
 Route::get('portfolio', function () {
     return view('portfolio');
 });
+
+Route::get('courses', function () {
+    return view('courses.courses');
+});
