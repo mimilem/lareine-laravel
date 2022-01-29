@@ -29,6 +29,10 @@ Route::get('marketing-strategy', function () {
     return view('offers.marketing');
 });
 
+Route::get('study', function () {
+    return view('offers.study');
+});
+
 Route::get('portfolio', function () {
     return view('portfolio');
 });

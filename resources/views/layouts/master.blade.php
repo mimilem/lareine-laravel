@@ -104,7 +104,7 @@
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/"><i class="seoicon-mail-send"></i>
+									<a href="/study"><i class="seoicon-mail-send"></i>
 										Etudes
 									</a>
 								</li>
