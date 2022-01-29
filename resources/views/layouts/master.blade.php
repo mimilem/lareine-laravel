@@ -99,7 +99,7 @@
 							<a href="/offers">Offres</a>
 							<ul class="dropdown">
 								<li class="hover-ver2">
-									<a href="/"><i class="seoicon-pin-map"></i>
+									<a href="/marketing-strategy"><i class="seoicon-pin-map"></i>
 										Stratégie Marketing
 									</a>
 								</li>
