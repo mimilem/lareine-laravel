@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>La Souveraine</title>
 
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/crumina-fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
