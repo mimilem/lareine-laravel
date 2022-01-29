@@ -31,6 +31,10 @@ Route::get('courses', function () {
     return view('courses.courses');
 });
 
+Route::get('contact', function () {
+    return view('contact');
+});
+
 // Offers routes
 
 Route::get('offers', function () {
