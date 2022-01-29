@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CoursesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,8 @@ Route::get('performance-tracking', function () {
 });
 
 // Courses routes
+
+Route::get('courses', [CoursesController::class, 'index']);
 
 Route::get('courses-details', function () {
     return view('courses.courses-details');
