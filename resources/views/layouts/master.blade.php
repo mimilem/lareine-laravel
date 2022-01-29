@@ -114,7 +114,7 @@
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/"><i class="seoicon-button"></i>
+									<a href="/performance-tracking"><i class="seoicon-button"></i>
 										Tracking de performance
 									</a>
 								</li>

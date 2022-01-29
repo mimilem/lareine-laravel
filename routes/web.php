@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Main Navigation
+
 Route::get('/', function () {
     return view('home');
 });
@@ -20,6 +22,16 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('about');
 });
+
+Route::get('portfolio', function () {
+    return view('portfolio');
+});
+
+Route::get('courses', function () {
+    return view('courses.courses');
+});
+
+// Offers routes
 
 Route::get('offers', function () {
     return view('offers.offers');
@@ -37,10 +49,10 @@ Route::get('sales-representation', function () {
     return view('offers.sales-rep');
 });
 
-Route::get('portfolio', function () {
-    return view('portfolio');
+Route::get('sales-representation', function () {
+    return view('offers.sales-rep');
 });
 
-Route::get('courses', function () {
-    return view('courses.courses');
+Route::get('performance-tracking', function () {
+    return view('offers.performance-tracking');
 });
