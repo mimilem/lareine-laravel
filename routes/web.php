@@ -27,9 +27,7 @@ Route::get('portfolio', function () {
     return view('portfolio');
 });
 
-Route::get('courses', function () {
-    return view('courses.courses');
-});
+
 
 Route::get('contact', function () {
     return view('contact');
@@ -55,4 +53,10 @@ Route::get('sales-representation', function () {
 
 Route::get('performance-tracking', function () {
     return view('offers.performance-tracking');
+});
+
+// Courses routes
+
+Route::get('courses-details', function () {
+    return view('courses.courses-details');
 });

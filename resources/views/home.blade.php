@@ -280,7 +280,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="#" class="btn btn-medium btn--dark">
+                                <a href="/courses-details" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -314,7 +314,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="#" class="btn btn-medium btn--dark">
+                                <a href="/courses-details" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -348,7 +348,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="#" class="btn btn-medium btn--dark">
+                                <a href="/courses-details" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
