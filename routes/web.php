@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,4 +65,8 @@ Route::get('courses', [CoursesController::class, 'index']);
 Route::post('verify', [CoursesController::class, 'verify']);
 Route::get('courses-details', [CoursesController::class, 'course_details']);
 
-// posts request
+/**
+ * Mail Routes
+ */
+
+ Route::get('send-email', [MailController::class, 'index']);
