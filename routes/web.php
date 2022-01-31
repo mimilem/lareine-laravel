@@ -56,11 +56,12 @@ Route::get('performance-tracking', function () {
     return view('offers.performance-tracking');
 });
 
-// Courses routes
+/**
+ * Courses routes
+ */
 
 Route::get('courses', [CoursesController::class, 'index']);
-Route::get('verify', [CoursesController::class, 'verify']);
+Route::post('verify', [CoursesController::class, 'verify']);
+Route::get('courses-details', [CoursesController::class, 'course_details']);
 
-Route::get('courses-details', function () {
-    return view('courses.courses-details');
-});
+// posts request
