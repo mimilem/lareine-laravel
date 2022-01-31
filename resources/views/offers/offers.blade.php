@@ -28,9 +28,7 @@
                             sed diam nonummy nibh.
                         </p>
                     </div>
-
-                    <a href="#" class="read-more"><i class="seoicon-right-arrow"></i></a>
-
+                    <a href="/marketing-strategy" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
 
@@ -45,9 +43,7 @@
                             qui sequitur mutationem consuetudium lectorum quam nunc putamus.
                         </p>
                     </div>
-
-                    <a href="#" class="read-more"><i class="seoicon-right-arrow"></i></a>
-
+                    <a href="/study" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
 
@@ -62,9 +58,7 @@
                             fiant sollemnes in futurum.
                         </p>
                     </div>
-
-                    <a href="#" class="read-more"><i class="seoicon-right-arrow"></i></a>
-
+                    <a href="/courses" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
         </div>
@@ -81,9 +75,7 @@
                             me lius quod ii legunt saepius.
                         </p>
                     </div>
-
-                    <a href="#" class="read-more"><i class="seoicon-right-arrow"></i></a>
-
+                    <a href="/performance-tracking" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
 
@@ -98,9 +90,7 @@
                             option congue nihil imperdiet doming id quod mazim placerat assum.
                         </p>
                     </div>
-
-                    <a href="#" class="read-more"><i class="seoicon-right-arrow"></i></a>
-
+                    <a href="/sales-representation" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
         </div>
