@@ -59,6 +59,7 @@ Route::get('performance-tracking', function () {
 // Courses routes
 
 Route::get('courses', [CoursesController::class, 'index']);
+Route::get('verify', [CoursesController::class, 'verify']);
 
 Route::get('courses-details', function () {
     return view('courses.courses-details');
