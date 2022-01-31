@@ -1,4 +1,57 @@
 @extends('layouts.master')
+
+@section('extra')
+    <div class="window-popup">
+        <a href="#" class="popup-close js-popup-close cd-nav-trigger">
+            <i class="seosight-icon seoicon-delete"></i>
+        </a>
+        <div class="sign-in-popup">
+            <h5 class="title">Je m'inscris</h5>
+            <form class="form-validate contact-form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Prénom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Nom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Post-nom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <select>
+                            <option value="H">Homme</option>
+                            <option value="F">Femme</option>
+                        </select>
+                    </div> 
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Téléphone" type="text">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Adresse mail" type="email">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Profession" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="VIlle" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Province" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" placeholder="Pays" type="text">
+                    </div>
+                    <a class="btn btn-small btn--primary" href="#" style="margin-bottom: 20px; margin-left: 0;">
+                        <span class="text">Vérifier</span>
+                        <i class="seoicon-right-arrow"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+@endsection
+
 @section('content')
     <div class="container">
         <div class="row medium-padding120">
@@ -32,7 +85,7 @@
                         </p>
                         
                         <div class="product-details-add-info">
-                            <div class="author">Audiance Ciblée :
+                            <div class="author">Audience Ciblée :
                                 <span href="#" class="author-name">Directeurs marketing</span>
                             </div>
                             <div class="author">Facilitateur :
@@ -58,7 +111,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn-medium btn--primary">
+                        <a href="#" class="btn btn-medium btn--primary js-window-popup">
                             <span class="text">Souscrire</span>
                             <span class="semicircle"></span>
                         </a>
