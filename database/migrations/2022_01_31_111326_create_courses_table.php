@@ -15,6 +15,22 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('facilitator_id')->nullable();
+            $table->string('title');
+            $table->string('subtitle')->unique();
+            $table->string('picture')->nullable();
+            $table->string('target_audience')->nullable();
+            $table->string('prerequisites');
+            $table->string('place');
+            $table->string('country');
+            $table->string('province');
+            $table->string('city');
+            $table->string('token')->unique();
+            $table->dateTime('date');
+            $table->string('description');
+            $table->time('start_time');
+            $table->time('end_time');
+            $table->double('amount');
             $table->timestamps();
         });
     }
