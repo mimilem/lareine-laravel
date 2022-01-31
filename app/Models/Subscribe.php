@@ -9,6 +9,4 @@ class Subscribe extends Model
 {
     use HasFactory;
 
-    protected $pimaryKey = 'sub_id';
-    
 }
