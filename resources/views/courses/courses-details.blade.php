@@ -7,16 +7,17 @@
         </a>
         <div class="sign-in-popup">
             <h5 class="title">Je m'inscris</h5>
-            <form class="form-validate contact-form">
+            <form action="verify" method="POST">
+                @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <input class="input-standard-grey" name="firstname" placeholder="Prénom" type="text">
+                        <input class="input-standard-grey" name="first_name" placeholder="Prénom" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <input class="input-standard-grey" name="lastname" placeholder="Nom" type="text">
+                        <input class="input-standard-grey" name="last_name" placeholder="Nom" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <input class="input-standard-grey" name="postname" placeholder="Post-nom" type="text">
+                        <input class="input-standard-grey" name="post_name" placeholder="Post-nom" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <select name="gender">
@@ -28,24 +29,24 @@
                         <input class="input-standard-grey" name="phone" placeholder="Téléphone" type="text">
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <input class="input-standard-grey" name="mail" placeholder="Adresse mail" type="email">
+                        <input class="input-standard-grey" name="email" placeholder="Adresse mail" type="email">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <input class="input-standard-grey" name="profession" placeholder="Profession" type="text">
+                        <input class="input-standard-grey" name="work" placeholder="Profession" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <input class="input-standard-grey" name="city" placeholder="Ville" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <input class="input-standard-grey" name="state" placeholder="Province" type="text">
+                        <input class="input-standard-grey" name="province" placeholder="Province" type="text">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <input class="input-standard-grey" name="country" placeholder="Pays" type="text">
                     </div>
-                    <a class="btn btn-small btn--primary" href="verify" style="margin-bottom: 20px; margin-left: 0;">
+                    <button type="submit" class="btn btn-small btn--primary" style="margin-bottom: 20px; margin-left: 0;">
                         <span class="text">Vérifier</span>
                         <i class="seoicon-right-arrow"></i>
-                    </a>
+                    </button>
                 </div>
             </form>
         </div>
