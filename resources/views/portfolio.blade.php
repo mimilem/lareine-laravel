@@ -1,21 +1,5 @@
 @extends('layouts.master')
 @section('content')
-<div class="stunning-header stunning-header-bg-lightblue">
-    <div class="stunning-header-content">
-        <h1 class="stunning-header-title">Notre portefeuille</h1>
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-                <a href="index.html">Portefeuille</a>
-                <i class="seoicon-right-arrow"></i>
-            </li>
-            <li class="breadcrumbs-item active">
-                <span>A propos</span>
-                <i class="seoicon-right-arrow"></i>
-            </li>
-        </ul>
-    </div>
-</div>
-
 <div class="container">
     <div class="row medium-padding120">
         <div class="col-lg-12">
