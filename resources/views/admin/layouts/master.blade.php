@@ -157,49 +157,18 @@
                     <div id="navigation">
                         <ul class="navigation-menu">
                             <li class="has-submenu">
-                                <a href="index.html"><i class="dripicons-meter"></i> Dashboard</a>
+                                <a href="dashboard"><i class="dripicons-meter"></i> Dashboard</a>
                             </li>
                             <li class="has-submenu">
-                                <a href="#"><i class="dripicons-view-thumb"></i> Components</a>
+                                <a href="#"><i class="dripicons-bookmark"></i> Formations</a>
                                 <ul class="submenu">
                                     <li class="has-submenu">
-                                        <a href="#">Email</a>
-                                    </li>
-
-                                    <li class="has-submenu">
-                                        <a href="#">Icons</a>
-                                        <ul class="submenu">
-                                            <li><a href="icons-material.html">Material Design</a></li>
-                                        </ul>
+                                        <a href="#">Toutes les formations</a>
                                     </li>
                                     <li>
-                                        <a href="calendar.html">Calendar </a>
+                                        <a href="calendar.html">Ajouter une formation </a>
                                     </li>
-                                    <li class="has-submenu">
-                                        <a href="#">Forms</a>
-                                    </li>
-                                    <li class="has-submenu">
-                                        <a href="#">Tables </a>
-                                        <ul class="submenu">
-                                            <li><a href="tables-basic.html">Basic Tables</a></li>
-                                            <li><a href="tables-datatable.html">Data Table</a></li>
-                                            <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                            <li><a href="tables-editable.html">Editable Table</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="has-submenu">
-                                        <a href="#">Maps</a>
-                                        <ul class="submenu">
-                                            <li><a href="maps-google.html"> Google Map</a></li>
-                                            <li><a href="maps-vector.html"> Vector Map</a></li>
-                                        </ul>
-                                    </li>
-
                                 </ul>
-                            </li>
-                            <li class="has-submenu">
-                                <a href="#"><i class="dripicons-graph-bar"></i>Charts </a>
                             </li>
                         </ul>
                     </div>
@@ -233,6 +202,8 @@
     <script src="admin/plugins/raphael/raphael.min.js"></script>
 
     <script src="admin/assets/pages/dashboard.init.js"></script>
+    <script src="admin/plugins/chartjs/chart.min.js"></script>
+    <script src="admin/assets/pages/chartjs.init.js"></script>
 
     <!-- App js -->
     <script src="admin/assets/js/app.js"></script>
