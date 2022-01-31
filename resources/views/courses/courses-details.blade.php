@@ -42,7 +42,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <input class="input-standard-grey" name="country" placeholder="Pays" type="text">
                     </div>
-                    <a class="btn btn-small btn--primary" href="verify/" style="margin-bottom: 20px; margin-left: 0;">
+                    <a class="btn btn-small btn--primary" href="verify" style="margin-bottom: 20px; margin-left: 0;">
                         <span class="text">Vérifier</span>
                         <i class="seoicon-right-arrow"></i>
                     </a>
