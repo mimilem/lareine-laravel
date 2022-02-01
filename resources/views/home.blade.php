@@ -16,12 +16,12 @@
                                         dans la conquête de leur clientèle.
                                     </h6>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="/contact"
+                                        <a href="{{ route('contact') }}"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="/offers" class="btn btn-small btn--primary"
+                                        <a href="{{ route('offers') }}" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-lg-7 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="assets/img/slider2.png" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/slider2.png') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,12 @@
                                         business, maintain your social presence and engage with the audience.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="/contact"
+                                        <a href="{{ route('contact') }}"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="/offers" class="btn btn-small btn--primary"
+                                        <a href="{{ route('offers') }}" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="assets/img/slider3.png" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/slider3.png') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -86,12 +86,12 @@
                                         major search engines.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a href="/contact"
+                                        <a href="{{ route('contact') }}"
                                         class="btn btn-medium btn--dark btn-hover-shadow">
                                             <span class="text">CONTACTEZ-NOUS</span>
                                             <span class="semicircle"></span>
                                         </a>
-                                        <a href="/offers" class="btn btn-small btn--primary"
+                                        <a href="{{ route('offers') }}" class="btn btn-small btn--primary"
                                         data-swiper-parallax="-300">
                                             <span class="text">NOS OFFRES</span>
                                             <i class="seoicon-right-arrow"></i>
@@ -101,7 +101,7 @@
                             </div>
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="assets/img/slider5.png" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/slider5.png') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                         <div class="video-thumb">
                             <div class="overlay"></div>
                             <a href="https://www.youtube.com/watch?v=0O2aH4XLbto" class="video-control js-popup-iframe">
-                                <img loading="lazy" src="assets/svg/video-control.svg" alt="go">
+                                <img loading="lazy" src="{{ asset('assets/svg/video-control.svg') }}" alt="go">
                             </a>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                                 </p>
                             </div>
         
-                            <a href="/contact" class="btn btn-medium btn--dark btn-hover-shadow">
+                            <a href="{{ route('contact') }}" class="btn btn-medium btn--dark btn-hover-shadow">
                                 <span class="text">Contactez-nous</span>
                                 <span class="semicircle"></span>
                             </a>
@@ -155,7 +155,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="servises-item bg-violet-color">
                             <div class="servises-item__thumb">
-                                <img loading="lazy" src="assets/img/info-box1.png" alt="image">
+                                <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
                             </div>
                             <div class="servises-item__content">
                                 <h4 class="servises-title">Missions en stratégie Marketing</h4>
@@ -163,7 +163,7 @@
                                     sed diam nonummy nibh.
                                 </p>
                             </div>
-                            <a href="/marketing-strategy" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                            <a href="{{ route('marketing_strategy') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="servises-item bg-primary-color">
                     <div class="servises-item__thumb">
-                        <img loading="lazy" src="assets/img/info-box2.png" alt="service">
+                        <img loading="lazy" src="{{ asset('assets/img/info-box2.png') }}" alt="service">
                     </div>
                     <div class="servises-item__content">
                         <h4 class="servises-title">Etudes</h4>
@@ -184,27 +184,13 @@
                             qui sequitur mutationem consuetudium lectorum quam nunc putamus.
                         </p>
                     </div>
-                    <a href="/study" class="read-more"><i class="seoicon-right-arrow"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="servises-item bg-secondary-color">
-                    <div class="servises-item__thumb">
-                        <img loading="lazy" src="assets/img/info-box3.png" alt="service">
-                    </div>
-                    <div class="servises-item__content">
-                        <h4 class="servises-title">Formations</h4>
-                        <p class="servises-text">Investigationes demonstraverunt legere
-                            me lius quod ii legunt saepius.
-                        </p>
-                    </div>
-                    <a href="/courses" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="{{ route('study') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="servises-item bg-orange-color">
                     <div class="servises-item__thumb">
-                        <img loading="lazy" src="assets/img/info-box4.png" alt="service">
+                        <img loading="lazy" src="{{ asset('assets/img/info-box4.png') }}" alt="service">
                     </div>
                     <div class="servises-item__content">
                         <h4 class="servises-title">Tracking de performance</h4>
@@ -212,15 +198,13 @@
                             option congue nihil imperdiet doming id quod mazim placerat assum.
                         </p>
                     </div>
-                    <a href="/performance-tracking" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="{{ route('performance_tracking') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="row pb120">
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="servises-item bg-green-color">
                     <div class="servises-item__thumb">
-                        <img loading="lazy" src="assets/img/info-box5.png" alt="service">
+                        <img loading="lazy" src="{{ asset('assets/img/info-box5.png') }}" alt="service">
                     </div>
                     <div class="servises-item__content">
                         <h4 class="servises-title">Représentation commerciale</h4>
@@ -228,7 +212,7 @@
                             fiant sollemnes in futurum.
                         </p>
                     </div>
-                    <a href="/sales-representation" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                    <a href="{{ route('sales_representation') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
         </div>
@@ -280,7 +264,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="/courses-details" class="btn btn-medium btn--dark">
+                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -314,7 +298,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="/courses-details" class="btn btn-medium btn--dark">
+                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -348,7 +332,7 @@
                                     </li>
                                 </ul>
                                 <h4 class="rate">$49.99</h4>
-                                <a href="/courses-details" class="btn btn-medium btn--dark">
+                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
                                     <span class="text">Je souscris !</span>
                                     <span class="semicircle"></span>
                                 </a>
@@ -384,25 +368,25 @@
 
                             <div class="swiper-slide client-item">
                                 <a href="09_our_clients.html" class="client-image">
-                                    <img loading="lazy" src="assets/img/client1-hover.png" alt="logo" class="hover">
+                                    <img loading="lazy" src="{{ asset('assets/img/client1-hover.png') }}" alt="logo" class="hover">
                                 </a>
                             </div>
 
                             <div class="swiper-slide client-item">
                                 <a href="09_our_clients.html" class="client-image">
-                                    <img loading="lazy" src="assets/img/client2-hover.png" alt="logo" class="hover">
+                                    <img loading="lazy" src="{{ asset('assets/img/client2-hover.png') }}" alt="logo" class="hover">
                                 </a>
                             </div>
 
                             <div class="swiper-slide client-item">
                                 <a href="09_our_clients.html" class="client-image">
-                                    <img loading="lazy" src="assets/img/client3-hover.png" alt="logo" class="hover">
+                                    <img loading="lazy" src="{{ asset('assets/img/client3-hover.png') }}" alt="logo" class="hover">
                                 </a>
                             </div>
 
                             <div class="swiper-slide client-item">
                                 <a href="09_our_clients.html" class="client-image">
-                                    <img loading="lazy" src="assets/img/client4-hover.png" alt="logo" class="hover">
+                                    <img loading="lazy" src="{{ asset('assets/img/client4-hover.png') }}" alt="logo" class="hover">
                                 </a>
                             </div>
 

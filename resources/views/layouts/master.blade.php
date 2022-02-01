@@ -6,22 +6,22 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
 	<title>La Souveraine</title>
 
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/crumina-fonts.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/blocks.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/layouts.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/modules.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/widgets-styles.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/ion.rangeSlider.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/primary-menu.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/fonts.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/crumina-fonts.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/normalize.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/grid.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/base.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/blocks.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/layouts.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/modules.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/widgets-styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/ion.rangeSlider.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.mCustomScrollbar.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/swiper.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/primary-menu.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/magnific-popup.css') }}">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -48,20 +48,20 @@
 				<span>Suivez-nous :</span>
 				<div class="socials">
 					<a href="#" class="social__item">
-						<img loading="lazy" src="assets/svg/circle-facebook.svg" alt="facebook">
+						<img loading="lazy" src="{{ asset('assets/svg/circle-facebook.svg') }}" alt="facebook">
 					</a>
 					<a href="#" class="social__item">
-						<img loading="lazy" src="assets/svg/twitter.svg" alt="twitter">
+						<img loading="lazy" src="{{ asset('assets/svg/twitter.svg') }}" alt="twitter">
 					</a>
 					<a href="#" class="social__item">
-						<img loading="lazy" src="assets/svg/google.svg" alt="google">
+						<img loading="lazy" src="{{ asset('assets/svg/google.svg') }}" alt="google">
 					</a>
 					<a href="#" class="social__item">
-						<img loading="lazy" src="assets/svg/youtube.svg" alt="youtube">
+						<img loading="lazy" src="{{ asset('assets/svg/youtube.svg') }}" alt="youtube">
 					</a>
 				</div>
 				<div class="contact-item">
-					<img loading="lazy" src="assets/img/language.png" class="flags" alt="flag">
+					<img loading="lazy" src="{{ asset('assets/img/language.png') }}" class="flags" alt="flag">
 					<select>
 						<option value="1">Français</option>
 						<option value="2">Anglais</option>
@@ -81,8 +81,8 @@
 		<div class="container">
 			<div class="header-content-wrapper">
 				<div class="logo">
-					<a href="/" class="full-block-link"></a>
-					<img loading="lazy" src="assets/img/logo.png" width="250" alt="La Souveraine logo">
+					<a href="{{ route('home') }}" class="full-block-link"></a>
+					<img loading="lazy" src="{{ asset('assets/img/logo.png') }}" width="250" alt="La Souveraine logo">
 				</div>
 				<nav id="primary-menu" class="primary-menu fixed">
 					<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
@@ -96,41 +96,41 @@
 					</a>
 					<ul class="primary-menu-menu">
 						<li class="menu-item-has-children">
-							<a href="/">Accueil</a>
+							<a href="{{ route('home') }}">Accueil</a>
 						</li>
 						<li class="">
 							<a href="/offers">Offres</a>
 							<ul class="dropdown">
 								<li class="hover-ver2">
-									<a href="/marketing-strategy"><i class="seoicon-pin-map"></i>
+									<a href="{{ route('marketing_strategy') }}"><i class="seoicon-pin-map"></i>
 										Stratégie Marketing
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/study"><i class="seoicon-mail-send"></i>
+									<a href="{{ route('study') }}"><i class="seoicon-mail-send"></i>
 										Etudes
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/sales-representation"><i class="seoicon-chat-comment"></i>
+									<a href="{{ route('sales_representation') }}"><i class="seoicon-chat-comment"></i>
 										Représentation commerciale
 									</a>
 								</li>
 								<li class="hover-ver2">
-									<a href="/performance-tracking"><i class="seoicon-button"></i>
+									<a href="{{ route('performance_tracking') }}"><i class="seoicon-button"></i>
 										Tracking de performance
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="/courses">Formations</a>
+							<a href="{{ route('courses')}}">Formations</a>
 						</li>
 						<li class="">
-							<a href="/portfolio">Portefeuille</a>
+							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>
 						<li class="menu-item-has-children">
-							<a href="/about">A propos</a>
+							<a href="{{ route('about') }}">A propos</a>
 						</li>
 					</ul>
 				</nav>
@@ -148,7 +148,7 @@
 				<div class="info">
 					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 						<div class="heading">
-							<img src="assets/img/logo-white.png" alt="" srcset="">
+							<img src="{{ asset('assets/img/logo-white.png') }}" alt="" srcset="">
 							<div class="heading-line">
 								<span class="short-line"></span>
 								<span class="long-line"></span>
@@ -164,16 +164,16 @@
 						</div>
 						<div class="socials">
 							<a href="#" class="social__item">
-								<img loading="lazy" src="assets/svg/circle-facebook.svg" alt="facebook">
+								<img loading="lazy" src="{{ asset('assets/svg/circle-facebook.svg') }}" alt="facebook">
 							</a>
 							<a href="#" class="social__item">
-								<img loading="lazy" src="assets/svg/twitter.svg" alt="twitter">
+								<img loading="lazy" src="{{ asset('assets/svg/twitter.svg') }}" alt="twitter">
 							</a>
 							<a href="#" class="social__item">
-								<img loading="lazy" src="assets/svg/google.svg" alt="google">
+								<img loading="lazy" src="{{ asset('assets/svg/google.svg') }}" alt="google">
 							</a>
 							<a href="#" class="social__item">
-								<img loading="lazy" src="assets/svg/youtube.svg" alt="youtube">
+								<img loading="lazy" src="{{ asset('assets/svg/youtube.svg') }}" alt="youtube">
 							</a>
 						</div>
 					</div>
@@ -190,26 +190,26 @@
 							<ul class="list list--primary">
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Missions en stratégie Marketing</a>
+									<a href="{{ route('marketing_strategy') }}">Missions en stratégie Marketing</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Etudes</a>
+									<a href="{{ route('study') }}">Etudes</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Représentation commerciale</a>
+									<a href="{{ route('sales_representation') }}">Représentation commerciale</a>
 								</li>
 							</ul>
 
 							<ul class="list list--primary">
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Formations</a>
+									<a href="{{ route('courses') }}">Formations</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Tracking de performance</a>
+									<a href="{{ route('performance_tracking') }}">Tracking de performance</a>
 								</li>
 							</ul>
 						</div>
@@ -312,36 +312,36 @@
 
 	</svg>
 	
-	<script src="assets/js/jquery-3.4.1.js"></script>
-	<script src="assets/js/js-plugins/crum-mega-menu.js"></script>
-	<script src="assets/js/js-plugins/swiper.jquery.min.js"></script>
-	<script src="assets/js/js-plugins/waypoints.js"></script>
-	<script src="assets/js/js-plugins/jquery.drawsvg.js"></script>
-	<script src="assets/js/js-plugins/jquery-countTo.js"></script>
-	<script src="assets/js/js-plugins/jquery.mousewheel.js"></script>
-	<script src="assets/js/js-plugins/jquery.mCustomScrollbar.js"></script>
-	<script src="assets/js/js-plugins/imagesLoaded.js"></script>
-	<script src="assets/js/js-plugins/jquery.magnific-popup.js"></script>
-	<script src="assets/js/js-plugins/jquery.matchHeight.js"></script>
-	<script src="assets/js/js-plugins/segment.js"></script>
-	<script src="assets/js/js-plugins/bootstrap.js"></script>
-	<script src="assets/js/js-plugins/jquery-circle-progress.js"></script>
-	<script src="assets/js/js-plugins/Headroom.js"></script>
-	<script src="assets/js/js-plugins/smooth-scroll.js"></script>
-	<script src="assets/js/js-plugins/jquery.nice-select.js"></script>
-	<script src="assets/js/js-plugins/fastClick.js"></script>
-	<script src="assets/js/js-plugins/form-actions.js"></script>
-	<script src="assets/js/js-plugins/velocity.js"></script>
-	<script src="assets/js/js-plugins/time-line.js"></script>
-	<script src="assets/js/js-plugins/ScrollMagic.min.js"></script>
-	<script src="assets/js/js-plugins/animation.velocity.min.js"></script>
-	<script src="assets/js/js-plugins/ajax-pagination.js"></script>
-	<script src="assets/js/js-plugins/donut-chart.js"></script>
-	<script src="assets/js/js-plugins/isotope.pkgd.min.js"></script>
-	<script src="assets/js/js-plugins/photo-gallery.js"></script>
-	<script src="assets/js/js-plugins/ion.rangeSlider.js"></script>
-	<script src="assets/js/js-plugins/leaflet.js"></script>
-	<script src="assets/js/js-plugins/MarkerClusterGroup.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="{{ asset('assets/js/jquery-3.4.1.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/crum-mega-menu.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/swiper.jquery.min.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/waypoints.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.drawsvg.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery-countTo.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.mousewheel.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.mCustomScrollbar.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/imagesLoaded.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.magnific-popup.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.matchHeight.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/segment.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/bootstrap.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery-circle-progress.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/Headroom.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/smooth-scroll.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/jquery.nice-select.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/fastClick.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/form-actions.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/velocity.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/time-line.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/ScrollMagic.min.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/animation.velocity.min.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/ajax-pagination.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/donut-chart.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/isotope.pkgd.min.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/photo-gallery.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/ion.rangeSlider.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/leaflet.js') }}"></script>
+	<script src="{{ asset('assets/js/js-plugins/MarkerClusterGroup.js') }}"></script>
+	<script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>

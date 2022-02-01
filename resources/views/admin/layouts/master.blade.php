@@ -9,16 +9,16 @@
     <meta content="Dashboard La souveraine" name="description" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <link href="admin/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="{{ asset('admin/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 
     <!-- Plugins -->
-    <link rel="stylesheet" href="admin/plugins/morris/morris.css">
-    <link href="admin/plugins/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('admin/plugins/morris/morris.css') }}">
+    <link href="{{ asset('admin/plugins/dropzone/dist/dropzone.css') }}" rel="stylesheet" type="text/css">
 
-    <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
-    <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="admin/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin/assets/css/metismenu.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin/assets/css/icons.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -29,8 +29,8 @@
             <div class="topbar-main">
                 <div class="container-fluid">
                     <div>
-                        <a href="dashboard" class="logo">
-                            <img src="assets/img/logo-white.png" class="logo-lg" alt="" height="22">
+                        <a href="{{ route('dashboard') }}" class="logo">
+                            <img src="{{ asset('assets/img/logo-white.png') }}" class="logo-lg" alt="" height="22">
                         </a>
                     </div>
                     <div class="menu-extras topbar-custom navbar p-0">
@@ -45,10 +45,10 @@
                         <ul class="navbar-right ml-auto list-inline float-right mb-0">
                             <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="admin/assets/images/flags/us_flag.jpg" class="mr-2" height="12" alt="" /> English <span class="mdi mdi-chevron-down"></span>
+                                    <img src="{{ asset('admin/assets/images/flags/us_flag.jpg') }}" class="mr-2" height="12" alt="" /> English <span class="mdi mdi-chevron-down"></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated language-switch">
-                                    <a class="dropdown-item" href="#"><img src="admin/assets/images/flags/french_flag.jpg" alt="" height="16" /><span> French </span></a>
+                                    <a class="dropdown-item" href="#"><img src="{{ asset('admin/assets/images/flags/french_flag.jpg') }}" alt="" height="16" /><span> French </span></a>
                                 </div>
                             </li>
                             <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
@@ -96,7 +96,7 @@
                             <li class="dropdown notification-list list-inline-item">
                                 <div class="dropdown notification-list nav-pro-img">
                                     <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                        <img src="admin/assets/images/users/user-1.jpg" alt="user" class="rounded-circle">
+                                        <img src="{{ asset('admin/assets/images/users/user-1.jpg') }}" alt="user" class="rounded-circle">
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
                                         <!-- item-->
@@ -158,16 +158,16 @@
                     <div id="navigation">
                         <ul class="navigation-menu">
                             <li class="has-submenu">
-                                <a href="dashboard"><i class="dripicons-meter"></i> Dashboard</a>
+                                <a href="{{ route('dashboard') }}"><i class="dripicons-meter"></i> Dashboard</a>
                             </li>
                             <li class="has-submenu">
                                 <a href="#"><i class="dripicons-bookmark"></i> Formations</a>
                                 <ul class="submenu">
-                                    <li class="has-submenu">
-                                        <a href="#">Toutes les formations</a>
+                                    <li>
+                                        <a href="{{ route('all_courses') }}">Toutes les formations</a>
                                     </li>
                                     <li>
-                                        <a href="calendar.html">Ajouter une formation </a>
+                                        <a href="{{ route('add_course') }}">Ajouter une formation </a>
                                     </li>
                                 </ul>
                             </li>
@@ -189,30 +189,31 @@
     <!-- End Footer -->
 
     <!-- jQuery  -->
-    <script src="admin/assets/js/jquery.min.js"></script>
-    <script src="admin/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="admin/assets/js/jquery.slimscroll.js"></script>
-    <script src="admin/assets/js/waves.min.js"></script>
+    <script src="{{ asset('admin/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('admin/assets/js/jquery.slimscroll.js') }}"></script>
+    <script src="{{ asset('admin/assets/js/waves.min.js') }}"></script>
 
     <!-- Plugins js -->
-    <script src="admin/plugins/apexchart/apexcharts.min.js"></script>
-    <script src="admin/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="{{ asset('admin/plugins/apexchart/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
 
     <!--Morris Chart-->
-    <script src="admin/plugins/morris/morris.min.js"></script>
-    <script src="admin/plugins/raphael/raphael.min.js"></script>
+    <script src="{{ asset('admin/plugins/morris/morris.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/raphael/raphael.min.js') }}"></script>
 
-    <script src="admin/assets/pages/dashboard.init.js"></script>
-    <script src="admin/plugins/chartjs/chart.min.js"></script>
-    <script src="admin/assets/pages/chartjs.init.js"></script>
+    <script src="{{ asset('admin/assets/pages/dashboard.init.js') }}"></script>
+    <script src="{{ asset('admin/plugins/chartjs/chart.min.js') }}"></script>
+    <script src="{{ asset('admin/assets/pages/chartjs.init.js') }}"></script>
 
-    <script src="admin/plugins/dropzone/dist/dropzone.js"></script>
-    <script src="admin/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="{{ asset('admin/plugins/dropzone/dist/dropzone.js') }}"></script>
+    <script src="{{ asset('admin/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js') }}"></script>
+    
+    @yield('scripts')
 
     <!-- App js -->
-    <script src="admin/assets/js/app.js"></script>
+    <script src="{{ asset('admin/assets/js/app.js') }}"></script>
 
-    @yield('scripts')
 
 </body>
 
