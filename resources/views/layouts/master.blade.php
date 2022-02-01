@@ -190,26 +190,26 @@
 							<ul class="list list--primary">
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Missions en stratégie Marketing</a>
+									<a href="{{ route('marketing_strategy') }}">Missions en stratégie Marketing</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Etudes</a>
+									<a href="{{ route('study') }}">Etudes</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Représentation commerciale</a>
+									<a href="{{ route('sales_representation') }}">Représentation commerciale</a>
 								</li>
 							</ul>
 
 							<ul class="list list--primary">
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Formations</a>
+									<a href="{{ route('courses') }}">Formations</a>
 								</li>
 								<li>
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									<a href="#">Tracking de performance</a>
+									<a href="{{ route('performance_tracking') }}">Tracking de performance</a>
 								</li>
 							</ul>
 						</div>
