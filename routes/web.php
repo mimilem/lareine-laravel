@@ -76,6 +76,6 @@ Route::get('courses-details', [CoursesController::class, 'course_details']);
  /**
   * Admin Routes
   */
-  Route::get('dashboard', [AdminController::class, 'index']);
-  Route::get('all-courses', [AdminCourseController::class, 'index']);
-  Route::get('add-course', [AdminCourseController::class, 'add_course']);
+  Route::get('dashboard/add-course', [AdminCourseController::class, 'add_course'])->name('add_course');
+  Route::get('dashboard/all-courses', [AdminCourseController::class, 'index'])->name('all_courses');
+  Route::get('dashboard', [AdminController::class, 'index'])->name('dashboard');
