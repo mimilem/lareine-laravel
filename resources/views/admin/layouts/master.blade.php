@@ -11,8 +11,9 @@
 
     <link href="admin/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
-    <!--Morris Chart CSS -->
+    <!-- Plugins -->
     <link rel="stylesheet" href="admin/plugins/morris/morris.css">
+    <link href="admin/plugins/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css">
 
     <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
@@ -205,8 +206,13 @@
     <script src="admin/plugins/chartjs/chart.min.js"></script>
     <script src="admin/assets/pages/chartjs.init.js"></script>
 
+    <script src="admin/plugins/dropzone/dist/dropzone.js"></script>
+    <script src="admin/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+
     <!-- App js -->
     <script src="admin/assets/js/app.js"></script>
+
+    @yield('scripts')
 
 </body>
 
