@@ -7,7 +7,7 @@
         </a>
         <div class="sign-in-popup">
             <h5 class="title">Je m'inscris</h5>
-            <form action="verify" method="POST">
+            <form action="{{ route('verify_subscription') }}" method="POST">
                 @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -62,13 +62,13 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img loading="lazy" src="assets/img/product-details.png" alt="product">
+                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img loading="lazy" src="assets/img/product-details.png" alt="product">
+                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img loading="lazy" src="assets/img/product-details.png" alt="product">
+                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>

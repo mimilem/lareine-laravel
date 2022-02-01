@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                        <img loading="lazy" src="assets/img/social-photo.png" alt="social">
+                        <img loading="lazy" src="{{ asset('assets/img/social-photo.png') }}" alt="social">
                     </div>
                 </div>
             </div>
