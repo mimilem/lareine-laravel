@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\AdminCourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -76,3 +77,4 @@ Route::get('courses-details', [CoursesController::class, 'course_details']);
   * Admin Routes
   */
   Route::get('dashboard', [AdminController::class, 'index']);
+  Route::get('add-course', [AdminCourseController::class, 'add_course']);
