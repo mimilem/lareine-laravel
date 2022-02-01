@@ -6,11 +6,11 @@
                 <div class="card card-pages shadow-none mt-4">
                     <div class="card-body">
                         <div class="text-center mt-0 mb-3">
-                            <a href="index.html" class="logo logo-admin">
+                            <a href="{{ route('home') }}" class="logo logo-admin">
                                 <img src="{{ asset('assets/img/logo-white.png') }}" class="mt-3" alt="" height="26"></a>
                             <p class="text-muted w-75 mx-auto mb-4 mt-4">Entrez votre mot de passe pour accéder au dashboard.</p>
                         </div>
-                        <form class="form-horizontal mt-4" action="index.html">
+                        <form class="form-horizontal mt-4" action="#">
                             <div class="form-group">
                                 <div class="col-12">
                                     <label for="username">Adresse mail</label>

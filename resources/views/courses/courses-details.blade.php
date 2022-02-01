@@ -6,6 +6,7 @@
             <i class="seosight-icon seoicon-delete"></i>
         </a>
         <div class="sign-in-popup">
+            <img loading="lazy" src="{{ asset('assets/img/logo.png') }}" width="250" alt="La Souveraine logo">
             <h5 class="title">Je m'inscris</h5>
             <form action="{{ route('verify_subscription') }}" method="POST">
                 @csrf
