@@ -28,7 +28,7 @@
             <div class="topbar-main">
                 <div class="container-fluid">
                     <div>
-                        <a href="index.html" class="logo">
+                        <a href="dashboard" class="logo">
                             <img src="assets/img/logo-white.png" class="logo-lg" alt="" height="22">
                         </a>
                     </div>
