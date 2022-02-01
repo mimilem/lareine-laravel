@@ -163,11 +163,11 @@
                             <li class="has-submenu">
                                 <a href="#"><i class="dripicons-bookmark"></i> Formations</a>
                                 <ul class="submenu">
-                                    <li class="has-submenu">
-                                        <a href="#">Toutes les formations</a>
+                                    <li>
+                                        <a href="all-courses">Toutes les formations</a>
                                     </li>
                                     <li>
-                                        <a href="calendar.html">Ajouter une formation </a>
+                                        <a href="add-course">Ajouter une formation </a>
                                     </li>
                                 </ul>
                             </li>
@@ -208,11 +208,12 @@
 
     <script src="admin/plugins/dropzone/dist/dropzone.js"></script>
     <script src="admin/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
-
+    
+    @yield('scripts')
+    
     <!-- App js -->
     <script src="admin/assets/js/app.js"></script>
 
-    @yield('scripts')
 
 </body>
 
