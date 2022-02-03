@@ -25,7 +25,7 @@ class CreateCoursesTable extends Migration
             $table->string('country');
             $table->string('province');
             $table->string('city');
-            $table->string('token')->unique();
+            $table->string('token')->unique()->nullable();
             $table->dateTime('date');
             $table->string('description');
             $table->time('start_time');

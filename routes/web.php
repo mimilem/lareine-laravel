@@ -76,7 +76,10 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
   * Admin Routes
   */
 
+  // Courses
+
   Route::get('dashboard/add-course', [AdminCourseController::class, 'add_course'])->name('add_course');
+  Route::post('dashboard/add-course', [AdminCourseController::class, 'register_course'])->name('add_course');
   Route::get('dashboard/all-courses', [AdminCourseController::class, 'index'])->name('all_courses');
   Route::get('dashboard/auth/login', [AdminAuthController::class, 'login'])->name('admin_login');
   Route::get('dashboard', [AdminController::class, 'index'])->name('dashboard');

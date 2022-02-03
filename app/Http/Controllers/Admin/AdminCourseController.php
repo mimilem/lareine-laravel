@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\admin\CoursePostRequest;
+use App\Models\Course;
 
 class AdminCourseController extends Controller
 {
@@ -17,8 +19,13 @@ class AdminCourseController extends Controller
         return view('admin.courses.add');
     }
 
-    public function register_course()
+    public function register_course(CoursePostRequest $request)
     {
-        # code...
+        if ($request->method() == 'POST') {
+
+            $data = $request->validated();
+            Course::create($data);
+        }
+        return redirect()->route('add_course');
     }
 }
