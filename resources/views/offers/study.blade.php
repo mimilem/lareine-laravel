@@ -12,36 +12,39 @@
                                 <span class="long-line"></span>
                             </div>
 
-                            <h5 class="heading-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Impedit, ipsa? Incidunt dolorum quibusdam temporibus inventore quo deserunt sit, 
-                                excepturi maiores quae qui impedit, aspernatur quis assumenda, deleniti molestiae ea ullam?
-                            </h5>
+                            <p class="heading-subtitle">
+                                Toujours en accords avec notre dessein prioritaire d’aider et de maintenir 
+                                la loyauté clientèle, nous intervenons aussi dans le domaine d’étude de marché 
+                                afin de réduire les incertitudes dans un environnement très changeant 
+                                et surtout très concurrentiel. C’est une démarche de recherche et d’analyse qui 
+                                fait appel à des procédés précis. 
+                            </p>
 
                         </div>
 
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Etudes Qualitatives
-                                </span>
+                                <a href="#">Etudes Qualitatives
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Etudes Quantitatives
-                                </span>
+                                <a href="#">Etudes Quantitatives
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Trade Census
-                                </span>
+                                <a href="#">Trade Census
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Sondage
-                                </span>
+                                <a href="{{ route('surveys') }}">Sondage
+                                </a>
                             </li>
                         </ul>
 
