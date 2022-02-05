@@ -29,17 +29,16 @@
             </div>
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px;">
-        <div class="widget w-request bg-boxed-red">
-                    <div class="w-request-content">
-                        <h4 class="w-request-content-title">Parlez-nous de votre projet</h4>
-                        <p class="w-request-content-text">Nous sommes impatient de vous aider
-                        </p>
-
-                        <a href="{{ route('contact') }}" class="btn btn-small btn--dark btn-hover-shadow">
-                            <span class="text">Contactez-nous</span>
-                        </a>
-                    </div>
-        
+            <div class="widget w-request bg-boxed-red">
+                <div class="w-request-content">
+                    <h4 class="w-request-content-title">Parlez-nous de votre projet</h4>
+                    <p class="w-request-content-text">Nous sommes impatient de vous aider</p>
+                    <a href="{{ route('contact') }}" class="btn btn-small btn--dark btn-hover-shadow">
+                        <span class="text">Contactez-nous</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
