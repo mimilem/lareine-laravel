@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\admin\AdminAuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,7 @@ Route::get('portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
 
-Route::get('contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('contact', [MessageController::class, 'index'])->name('contact');
 
 // Offers routes
 
