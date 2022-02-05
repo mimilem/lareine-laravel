@@ -144,6 +144,9 @@
 								</li>
 							</ul>
 						</li>
+						<li class="">
+							<a href="{{ route('contact') }}">Nous contacter</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
