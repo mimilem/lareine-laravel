@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CoursesController extends Controller
 {
@@ -11,9 +12,13 @@ class CoursesController extends Controller
         return view("courses.courses");
     }
 
-    public function course_details()
+    public function course_details($token)
     {
-        return view("courses.courses-details");
+        $data = DB::table('courses')->where('token', '=', $token)->get()->toArray();
+
+        return view("courses.courses-details", [
+            'course' => $data[0]
+        ]);
     }
 
     public function verify(Request $request)

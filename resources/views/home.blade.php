@@ -311,15 +311,13 @@
                                         </li> --}}
                                     </ul>
                                     <h4 class="rate">$ {{ $course['amount'] }}</h4>
-                                    <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
+                                    <a href="{{ route('course_details', ['token' => $course['token']]) }}" class="btn btn-medium btn--dark">
                                         <span class="text">Je souscris !</span>
                                         <span class="semicircle"></span>
                                     </a>
                                 </div>
                             </div>
                         @endforeach
-                        
-                       
                     </div>
                 </div>
             </div>

@@ -84,7 +84,7 @@ Route::get('offers', function () {
  * Courses routes
  */
 
-Route::get('courses/details', [CoursesController::class, 'course_details'])->name('course_details');
+Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
 Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscription');
 
