@@ -116,7 +116,7 @@
             <svg class="btn-prev btn-prev-black">
                 <use xlink:href="#arrow-left"></use>
             </svg>
-            <div class="slider-slides">
+            <div class="slider-slides-anchor">
 				<a href="{{ route('marketing_strategy') }}" class="slides-item bg-border-color main-slider-bg-light">
 					<div class="content">
 						<div class="text-wrap">
