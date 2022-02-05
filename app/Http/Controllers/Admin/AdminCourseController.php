@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\admin\CoursePostRequest;
 use App\Models\Course;
+use Illuminate\Support\Str;
 
 class AdminCourseController extends Controller
 {
@@ -24,6 +25,7 @@ class AdminCourseController extends Controller
         if ($request->method() == 'POST') {
 
             $data = $request->validated();
+            $data['token'] = Str::uuid();
             Course::create($data);
         }
         return redirect()->route('add_course');

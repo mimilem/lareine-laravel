@@ -116,7 +116,7 @@
             <svg class="btn-prev btn-prev-black">
                 <use xlink:href="#arrow-left"></use>
             </svg>
-            <div class="slider-slides">
+            <div class="slider-slides-anchor">
 				<a href="{{ route('marketing_strategy') }}" class="slides-item bg-border-color main-slider-bg-light">
 					<div class="content">
 						<div class="text-wrap">
@@ -282,108 +282,42 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="pricing-tables-item" style="background-color: white;">
-                                <div class="pricing-tables-icon">
-                                    <img loading="lazy" src="assets/img/pricing1.png" alt="personal">
+                        @foreach ($courses as $course)
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="pricing-tables-item" style="background-color: white;">
+                                    <div class="pricing-tables-icon">
+                                        <img loading="lazy" src="{{ asset('assets/img/pricing1.png') }}" alt="personal">
+                                    </div>
+                                    <a href="#" class="pricing-title">{{ $course['title'] }}</a>
+                                    <ul class="pricing-tables-position">
+                                        <li class="position-item">
+                                            <span class="count">Lieu</span>
+                                            {{ $course['place'] }}
+                                        </li>
+                                        <li class="position-item">
+                                            <span class="count">Date</span>
+                                            {{ date('d-m-Y', strtotime($course['date'])) }}
+                                        </li>
+                                        <li class="position-item">
+                                            <span class="count">Heure</span>
+                                            {{ $course['start_time'] }}
+                                        </li>
+                                        <li class="position-item">
+                                            -
+                                        </li>
+                                        {{-- <li class="position-item">
+                                            <span class="count">15</span>
+                                            Social Accounts
+                                        </li> --}}
+                                    </ul>
+                                    <h4 class="rate">$ {{ $course['amount'] }}</h4>
+                                    <a href="{{ route('course_details', ['token' => $course['token']]) }}" class="btn btn-medium btn--dark">
+                                        <span class="text">Je souscris !</span>
+                                        <span class="semicircle"></span>
+                                    </a>
                                 </div>
-                                <a href="#" class="pricing-title">Personal</a>
-                                <ul class="pricing-tables-position">
-                                    <li class="position-item">
-                                        <span class="count">5</span>
-                                        Analytics Campaigns
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">300</span>
-                                        Keywords
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">250,000</span>
-                                        Crawled Pages
-                                    </li>
-                                    <li class="position-item">
-                                        -
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">15</span>
-                                        Social Accounts
-                                    </li>
-                                </ul>
-                                <h4 class="rate">$49.99</h4>
-                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
-                                    <span class="text">Je souscris !</span>
-                                    <span class="semicircle"></span>
-                                </a>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="pricing-tables-item" style="background-color: white;">
-                                <div class="pricing-tables-icon">
-                                    <img loading="lazy" src="assets/img/pricing3.png" alt="personal">
-                                </div>
-                                <a href="#" class="pricing-title">Personal</a>
-                                <ul class="pricing-tables-position">
-                                    <li class="position-item">
-                                        <span class="count">5</span>
-                                        Analytics Campaigns
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">300</span>
-                                        Keywords
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">250,000</span>
-                                        Crawled Pages
-                                    </li>
-                                    <li class="position-item">
-                                        -
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">15</span>
-                                        Social Accounts
-                                    </li>
-                                </ul>
-                                <h4 class="rate">$49.99</h4>
-                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
-                                    <span class="text">Je souscris !</span>
-                                    <span class="semicircle"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="pricing-tables-item" style="background-color: white;">
-                                <div class="pricing-tables-icon">
-                                    <img loading="lazy" src="assets/img/pricing2.png" alt="personal">
-                                </div>
-                                <a href="#" class="pricing-title">Personal</a>
-                                <ul class="pricing-tables-position">
-                                    <li class="position-item">
-                                        <span class="count">5</span>
-                                        Analytics Campaigns
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">300</span>
-                                        Keywords
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">250,000</span>
-                                        Crawled Pages
-                                    </li>
-                                    <li class="position-item">
-                                        -
-                                    </li>
-                                    <li class="position-item">
-                                        <span class="count">15</span>
-                                        Social Accounts
-                                    </li>
-                                </ul>
-                                <h4 class="rate">$49.99</h4>
-                                <a href="{{ route('course_details') }}" class="btn btn-medium btn--dark">
-                                    <span class="text">Je souscris !</span>
-                                    <span class="semicircle"></span>
-                                </a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

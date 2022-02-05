@@ -6,6 +6,7 @@ use App\Http\Controllers\MailController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\admin\AdminAuthController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,7 @@ use App\Http\Controllers\admin\AdminAuthController;
 
 // Main Navigation
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('about', function () {
     return view('about');
@@ -85,7 +84,7 @@ Route::get('offers', function () {
  * Courses routes
  */
 
-Route::get('courses/details', [CoursesController::class, 'course_details'])->name('course_details');
+Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
 Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscription');
 
