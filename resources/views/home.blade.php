@@ -116,6 +116,52 @@
             <svg class="btn-prev btn-prev-black">
                 <use xlink:href="#arrow-left"></use>
             </svg>
+            <div class="slider-slides">
+				<a href="{{ route('marketing_strategy') }}" class="slides-item bg-border-color main-slider-bg-light">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Missions en Stratégie Marketing</h4>
+						</div>
+						<div class="slides-number">01</div>
+					</div>
+				</a>
+
+				<a href="{{ route('study') }}" class="slides-item bg-primary-color">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Etudes</h4>
+						</div>
+						<div class="slides-number">02</div>
+					</div>
+				</a>
+
+				<a href="{{ route('sales_representation') }}" class="slides-item bg-secondary-color">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Représentation commerciale</h4>
+						</div>
+						<div class="slides-number">03</div>
+					</div>
+				</a>
+
+				<a href="{{ route('performance_tracking') }}" class="slides-item bg-orange-color">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Tracking de performance</h4>
+						</div>
+						<div class="slides-number">04</div>
+					</div>
+				</a>
+
+				<a href="{{ route('courses') }} " class="slides-item bg-green-color">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Formations</h4>
+						</div>
+						<div class="slides-number">05</div>
+					</div>
+				</a>
+			</div>
         </div>
     </div>
 
