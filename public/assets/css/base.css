@@ -947,6 +947,9 @@ h6, .h6 {
 .list--secondary a:hover, .list--secondary li:hover {
   color: #34B34C; }
 
+  .list--secondary li > a {
+    color: #f15b26;
+  }
 
 .list--secondary i {
   color: #f15b26; }

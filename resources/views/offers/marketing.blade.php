@@ -21,26 +21,26 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Expérience client
-                                </span>
+                                <a href="{{ route('customer_experience') }}">Expérience client
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Branding
-                                </span>
+                                <a href="{{ route('branding') }}">Branding
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Gestion de produit
-                                </span>
+                                <a href="#">Gestion de produit
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Marketing digital
-                                </span>
+                                <a href="{{ route('digital_marketing') }}">Marketing digital
+                                </a>
                             </li>
                         </ul>
 
