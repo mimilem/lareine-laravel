@@ -38,6 +38,16 @@ Route::get('contact', function () {
 
 // Offers routes
 
+
+/*****************************************
+ * Missions Routes
+ */
+
+ 
+Route::get('offers/marketing-strategy/customer', function () {
+    return view('offers.missions.customer');
+})->name('customer_experience');
+
 Route::get('offers/marketing-strategy', function () {
     return view('offers.marketing');
 })->name('marketing_strategy');
@@ -57,6 +67,8 @@ Route::get('offers/study', function () {
 Route::get('offers', function () {
     return view('offers.offers');
 })->name('offers');
+
+
 
 /**
  * Courses routes

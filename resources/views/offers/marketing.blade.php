@@ -21,7 +21,7 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Expérience client
+                                <span href="{{ route('customer_experience') }}">Expérience client
                                 </span>
                             </li>
 
