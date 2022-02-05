@@ -43,7 +43,13 @@ Route::get('contact', function () {
  * Missions Routes
  */
 
+Route::get('offers/marketing-strategy/surveys', function () {
+    return view('offers.missions.surveys');
+})->name('surveys'); 
 
+Route::get('offers/marketing-strategy/branding', function () {
+    return view('offers.missions.branding');
+})->name('branding');
 
 Route::get('offers/marketing-strategy/digital-marketing', function () {
     return view('offers.missions.digital-marketing');

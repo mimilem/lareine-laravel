@@ -27,7 +27,7 @@
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="#">Branding
+                                <a href="{{ route('branding') }}">Branding
                                 </a>
                             </li>
 
