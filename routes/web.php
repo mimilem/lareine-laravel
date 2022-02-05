@@ -43,7 +43,7 @@ Route::get('contact', function () {
  * Missions Routes
  */
 
-Route::get('offers/marketing-strategy/surveys', function () {
+Route::get('offers/study/surveys', function () {
     return view('offers.missions.surveys');
 })->name('surveys'); 
 
