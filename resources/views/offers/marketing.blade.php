@@ -6,22 +6,18 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos missions en Stratégie Marketing</h4>
+                            <h4 class="h3 heading-title">Nos Missions en Stratégie Marketing</h4>
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-
-                            <h5 class="heading-subtitle">En ligne avec notre dessein d’aider et d’accompagner
+                            <p class="heading-subtitle">En ligne avec notre dessein d’aider et d’accompagner
                                 les entreprises à créer et à maintenir la loyauté clientèle, nous intervenons
                                 en matière de stratégies marketing permettant aux entreprises de répondre aux
                                 besoins implicites ou explicites du marché qu’elles exploitent ou veulent exploiter.
-                                L’élaboration d’une stratégie marketing est vitale pour toute entreprise sans celle-ci,
-                                il est probable que tout efforts pour attirer des clients soient désordonnés et inefficaces.
-                            </h5>
+                            </p>
 
                         </div>
-
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>

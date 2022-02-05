@@ -82,7 +82,7 @@
 			<div class="header-content-wrapper">
 				<div class="logo">
 					<a href="{{ route('home') }}" class="full-block-link"></a>
-					<img loading="lazy" src="{{ asset('assets/img/logo.png') }}" width="250" alt="La Souveraine logo">
+					<img loading="lazy" src="{{ asset('assets/img/logo.png') }}" width="180" alt="La Souveraine logo">
 				</div>
 				<nav id="primary-menu" class="primary-menu fixed">
 					<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
@@ -103,7 +103,7 @@
 							<ul class="dropdown">
 								<li class="hover-ver2">
 									<a href="{{ route('marketing_strategy') }}"><i class="seoicon-pin-map"></i>
-										Stratégie Marketing
+										Missions en Stratégie Marketing
 									</a>
 								</li>
 								<li class="hover-ver2">
@@ -123,14 +123,26 @@
 								</li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children">
-							<a href="{{ route('courses')}}">Formations</a>
-						</li>
 						<li class="">
 							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ route('about') }}">A propos</a>
+						</li>
+						<li class="">
+							<a href="#">Connexion</a>
+							<ul class="dropdown">
+								<li class="hover-ver2">
+									<a href="{{ route('courses') }}"><i class="seoicon-pin-map"></i>
+										Formations
+									</a>
+								</li>
+								<li class="hover-ver2">
+									<a href="#"><i class="seoicon-mail-send"></i>
+										Enquêtes
+									</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</nav>

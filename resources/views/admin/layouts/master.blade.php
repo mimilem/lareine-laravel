@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>La Souveraine - Admin Dashboard</title>
     <meta content="Dashboard La souveraine" name="description" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
     <link href="{{ asset('admin/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 
@@ -168,6 +168,14 @@
                                     </li>
                                     <li>
                                         <a href="{{ route('add_course') }}">Ajouter une formation </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"><i class="dripicons-user-group"></i> Utilisateurs</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="{{ route('all_courses') }}">Ajouter un facilitateur</a>
                                     </li>
                                 </ul>
                             </li>

@@ -158,7 +158,7 @@
                                 <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
                             </div>
                             <div class="servises-item__content">
-                                <h4 class="servises-title">Missions en stratégie Marketing</h4>
+                                <h4 class="servises-title">Missions en Stratégie Marketing</h4>
                                 <p class="servises-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                                     sed diam nonummy nibh.
                                 </p>
