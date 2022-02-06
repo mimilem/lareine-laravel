@@ -126,14 +126,20 @@
 						<li class="">
 							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>
+						<li class="">
+							<a href="{{ route('courses') }}">Formations</a>
+						</li>
 						<li class="menu-item-has-children">
 							<a href="{{ route('about') }}">A propos</a>
+						</li>
+						<li class="">
+							<a href="{{ route('contact') }}">Nous contacter</a>
 						</li>
 						<li class="">
 							<a href="#">Connexion</a>
 							<ul class="dropdown">
 								<li class="hover-ver2">
-									<a href="{{ route('courses') }}"><i class="seoicon-pin-map"></i>
+									<a href="{{ route('add_course') }}"><i class="seoicon-pin-map"></i>
 										Formations
 									</a>
 								</li>
@@ -143,9 +149,6 @@
 									</a>
 								</li>
 							</ul>
-						</li>
-						<li class="">
-							<a href="{{ route('contact') }}">Nous contacter</a>
 						</li>
 					</ul>
 				</nav>

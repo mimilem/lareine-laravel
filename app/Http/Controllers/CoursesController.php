@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Course;
 
 class CoursesController extends Controller
 {
     public function index()
     {
-        return view("courses.courses");
+        $data = Course::all();
+        return view("courses.courses", $data = [
+            'courses' => $data
+        ]);
     }
 
     public function course_details($token)
