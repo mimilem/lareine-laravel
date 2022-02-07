@@ -61,6 +61,23 @@ Route::get('offers/marketing-strategy/product-management', function () {
     return view('offers.missions.product-management');
 })->name('product_management');
 
+// Study Missions
+
+Route::get('offers/study/qualitative-studies', function () {
+    return view('offers.missions.qualitatives-studies');
+})->name('qualitative_studies');
+
+Route::get('offers/study/quantitative-studies', function () {
+    return view('offers.missions.quantitatives-studies');
+})->name('quantitative_studies');
+
+Route::get('offers/study/trade-census', function () {
+    return view('offers.missions.trade-census');
+})->name('trade_census');
+
+// 
+
+
 Route::get('offers/marketing-strategy', function () {
     return view('offers.marketing');
 })->name('marketing_strategy');
