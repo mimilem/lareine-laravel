@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row pt120">
-            <div class="col-lg-12">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                 <div class="heading mb30">
                     <h4 class="h1 heading-title">Qui sommes-nous ?</h4>
                     <div class="heading-line">
@@ -10,16 +10,17 @@
                         <span class="long-line"></span>
                     </div>
 
-                    <h5 class="heading-subtitle">
+                    <p class="heading-subtitle">
                         Fondée en 2012 à Johannesburg, La Souveraine est une agence internationale de Marketing
                         Stratégique spécialisée dans les solutions de fidélisation client, de développement de
-                        marque et de communication intégrée dans différents secteurs. Nous proposons également des
-                        séminaires de formation internes et publics en marketing et en vente. Nous réalisons pour
-                        nos clients une large gamme d'enquêtes et travaillons en partenariat avec diverses sociétés
-                        spécialisées dans la publicité, le marketing numérique, la conception Web, la gestion de contenu,
-                        conception graphique, etc. pour offrir à nos clients des solutions complètes adaptées à leurs objectifs
-                        spécifiques.
-                    </h5>
+                        marque et de communication intégrée dans différents secteurs. <br><br>
+                        
+                        Nous proposons également des séminaires de formation internes et publics en marketing 
+                        et en vente. Nous réalisons pour nos clients une large gamme d'enquêtes et travaillons 
+                        en partenariat avec diverses sociétés spécialisées dans la publicité, le marketing numérique, 
+                        la conception Web, la gestion de contenu, conception graphique, etc. pour offrir à nos clients 
+                        des solutions complètes adaptées à leurs objectifs  spécifiques.
+                    </p>
                 </div>
             </div>
 

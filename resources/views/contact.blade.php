@@ -7,7 +7,7 @@
                     <div class="contacts">
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="contacts-item">
-                                <img loading="lazy" src="assets/img/contact7.png" alt="phone">
+                                <img loading="lazy" src="{{ asset('assets/img/contact7.png') }}" alt="phone">
                                 <div class="content">
                                     <a href="#" class="title">Lubumbashi, RDC</a>
                                     <p class="sub-title">No. 269 Av. Kasongo Nyembo, Q/ Baudouin</p>
@@ -17,9 +17,9 @@
 
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="contacts-item">
-                                <img loading="lazy" src="assets/img/contact8.png" alt="phone">
+                                <img loading="lazy" src="{{ asset('assets/img/contact8.png') }}" alt="phone">
                                 <div class="content">
-                                    <a href="mailto:info@lasouveraine.co.za" class="title">info@lasouveraine.co.za</a>
+                                    <a href="mailto:info@lasouveraine.marketing" class="title" >info@lasouveraine.marketing</a>
                                     <p class="sub-title">online support</p>
                                 </div>
                             </div>
@@ -27,7 +27,7 @@
 
                         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                             <div class="contacts-item">
-                                <img loading="lazy" src="assets/img/contact9.png" alt="phone">
+                                <img loading="lazy" src="{{ asset('assets/img/contact9.png') }}" alt="phone">
                                 <div class="content">
                                     <a href="tel:+243906632155" class="title">+243 906 632 155</a>
                                     <p class="sub-title">Mon-Fri 9am-6pm</p>
@@ -50,7 +50,6 @@
                             <span class="short-line"></span>
                             <span class="long-line"></span>
                         </div>
-                        <p class="heading-text">Please contact us using the form and we’ll get back to you as soon as possible.</p>
                     </div>
                 </div>
             </div>
