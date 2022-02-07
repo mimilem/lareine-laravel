@@ -75,8 +75,17 @@ Route::get('offers/study/trade-census', function () {
     return view('offers.missions.trade-census');
 })->name('trade_census');
 
-// 
+// Sales rep Missions
 
+Route::get('offers/sales-representation/administrative-canvass', function () {
+    return view('offers.missions.administrative-canvass');
+})->name('administrative_canvass');
+
+Route::get('offers/sales-representation/prospection', function () {
+    return view('offers.missions.prospection');
+})->name('prospection');
+
+// 
 
 Route::get('offers/marketing-strategy', function () {
     return view('offers.marketing');

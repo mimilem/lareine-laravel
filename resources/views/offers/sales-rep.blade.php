@@ -22,14 +22,14 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Démarchage administrative
-                                </span>
+                                <a href="{{ route('administrative_canvass') }}">Démarchage Administrative
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Prospection
-                                </span>
+                                <a href="{{ route('prospection') }}">Prospection
+                                </a>
                             </li>
                         </ul>
 
