@@ -5,23 +5,19 @@
         <div class="col-lg-7">
             <div class="heading mb60">
                 <div class="heading-line">
-                    <h4 class="h1 heading-title">Marketing Digital</h4>
+                    <h4 class="h1 heading-title">Démarches Administratives</h4>
                     <span class="short-line"></span>
                     <span class="long-line"></span>
-                    <h6 class="h4 heading-title">Faites connaître vos services grâce à la puissance du digital</h6>
+                    <h6 class="h4 heading-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
                 </div>
 
                 <h5 class="heading-subtitle" style="font-size: 18px; text-align: justify; text-justify: inter-word; padding-right: 10%">
-                    Le marketing digital est l'ensemble des stratégies mises en oeuvre pour promouvoir ses services
-                  ou sa société sur le web, en exploitant les réseaux sociaux.
-                    <br><br>
-                  Aujourd'hui la présence digitale est indispensable pour à toute entreprise qui veut générer plus de
-                  revenus et attirer davantage de prospects. 
-
-                  C'est la raison pour laquelle nous mettons à votre disposition des techniques modernes et efficaces pour
-                  exploiter la puissance du digital à l'avantage de votre entreprise
-
-
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae delectus voluptate vitae, 
+                    velit iusto nesciunt harum voluptatum modi tempore iste doloremque reprehenderit, 
+                    quam quasi inventore ipsum excepturi possimus eius hic. <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam dolor 
+                    vitae maiores voluptas in hic corporis quisquam cumque, qui, similique sapiente tempore 
+                    dolores amet illum, impedit iste commodi sint?
                 </h5>
             </div>
         </div>
@@ -31,19 +27,12 @@
                     <h4 class="w-request-content-title">Nos Autres Interventions</h4>
                     <ul class="list list--secondary mb60">
                         <li>
-                            <a href="{{ route('customer_experience') }}">Expérience Client
+                            <a href="{{ route('administrative_canvass') }}">Démarchage Administrative
                             </a>
                         </li>
+
                         <li>
-                            <a href="{{ route('branding') }}">Branding
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('product_management') }}">Gestion des Produits
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('digital_marketing') }}">Marketing Digital
+                            <a href="{{ route('prospection') }}">Prospection
                             </a>
                         </li>
                     </ul>

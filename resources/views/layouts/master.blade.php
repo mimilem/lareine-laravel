@@ -113,24 +113,24 @@
 								</li>
 								<li class="hover-ver2">
 									<a href="{{ route('sales_representation') }}"><i class="seoicon-chat-comment"></i>
-										Représentation commerciale
+										Représentations Commerciales
 									</a>
 								</li>
 								<li class="hover-ver2">
 									<a href="{{ route('performance_tracking') }}"><i class="seoicon-button"></i>
-										Tracking de performance
+										Tracking de Performance
 									</a>
 								</li>
 							</ul>
 						</li>
-						<li class="">
-							<a href="{{ route('portfolio') }}">Portefeuille</a>
+						<li class="menu-item-has-children">
+							<a href="{{ route('about') }}">A propos</a>
 						</li>
 						<li class="">
 							<a href="{{ route('courses') }}">Formations</a>
 						</li>
-						<li class="menu-item-has-children">
-							<a href="{{ route('about') }}">A propos</a>
+						<li class="">
+							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>
 						<li class="">
 							<a href="{{ route('contact') }}">Nous contacter</a>

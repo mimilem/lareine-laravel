@@ -138,7 +138,7 @@
 				<a href="{{ route('sales_representation') }}" class="slides-item bg-secondary-color">
 					<div class="content">
 						<div class="text-wrap">
-							<h4 class="slides-title">Représentation commerciale</h4>
+							<h4 class="slides-title">Représentations Commerciales</h4>
 						</div>
 						<div class="slides-number">03</div>
 					</div>
@@ -147,7 +147,7 @@
 				<a href="{{ route('performance_tracking') }}" class="slides-item bg-orange-color">
 					<div class="content">
 						<div class="text-wrap">
-							<h4 class="slides-title">Tracking de performance</h4>
+							<h4 class="slides-title">Tracking de Performance</h4>
 						</div>
 						<div class="slides-number">04</div>
 					</div>
@@ -178,48 +178,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col--xs-12">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="services-main">
-                            <div class="heading">
-                                <h4 class="h1 heading-title">Nos offres</h4>
-                                <div class="heading-line">
-                                    <span class="short-line"></span>
-                                    <span class="long-line"></span>
-                                </div>
-                                <p class="heading-text">Qolor sit amet, consectetuer adipiscing elit,
-                                    sed diam nonummy nibham liber tempor cum soluta nobis.
-                                </p>
-                            </div>
-        
-                            <a href="{{ route('contact') }}" class="btn btn-medium btn--dark btn-hover-shadow">
-                                <span class="text">Contactez-nous</span>
-                                <span class="semicircle"></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="servises-item bg-violet-color">
-                            <div class="servises-item__thumb">
-                                <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
-                            </div>
-                            <div class="servises-item__content">
-                                <h4 class="servises-title">Missions en Stratégie Marketing</h4>
-                                <p class="servises-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                    sed diam nonummy nibh.
-                                </p>
-                            </div>
-                            <a href="{{ route('marketing_strategy') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12 no-padding">
+					<div class="content theme-module centered-on-mobile medium-padding100">
+						<div class="heading">
+							<h4 class="h1 heading-title">Watch Our Video</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+							<p class="heading-text">Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber
+								tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta.
+								Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+								nisl ut aliquip ex ea commodo consequat eleifend option nihil.
+							</p>
+						</div>
+						<a href="{{ route('contact') }}" class="btn btn-medium btn--secondary">
+							<span class="text">CONTACTEZ-NOUS</span>
+							<span class="semicircle"></span>
+						</a>
+					</div>
+				</div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row pt120 pb30">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    <div class="container-fluid">
+        <div class="row pt120">
+            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                <div class="heading align-center">
+                    <h4 class="h1 heading-title">Nos offres</h4>
+                    <div class="heading-line">
+                        <span class="short-line"></span>
+                        <span class="long-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="servises-item bg-violet-color">
+                    <div class="servises-item__thumb">
+                        <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
+                    </div>
+                    <div class="servises-item__content">
+                        <h4 class="servises-title">Missions en Stratégie Marketing</h4>
+                        <p class="servises-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                            sed diam nonummy nibh.
+                        </p>
+                    </div>
+                    <a href="{{ route('marketing_strategy') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="servises-item bg-primary-color">
                     <div class="servises-item__thumb">
                         <img loading="lazy" src="{{ asset('assets/img/info-box2.png') }}" alt="service">
@@ -233,13 +243,13 @@
                     <a href="{{ route('study') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="servises-item bg-orange-color">
                     <div class="servises-item__thumb">
                         <img loading="lazy" src="{{ asset('assets/img/info-box4.png') }}" alt="service">
                     </div>
                     <div class="servises-item__content">
-                        <h4 class="servises-title">Tracking de performance</h4>
+                        <h4 class="servises-title">Tracking de Performance</h4>
                         <p class="servises-text">Nam liber tempor cum soluta nobis eleifend
                             option congue nihil imperdiet doming id quod mazim placerat assum.
                         </p>
@@ -247,78 +257,18 @@
                     <a href="{{ route('performance_tracking') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="servises-item bg-green-color">
                     <div class="servises-item__thumb">
                         <img loading="lazy" src="{{ asset('assets/img/info-box5.png') }}" alt="service">
                     </div>
                     <div class="servises-item__content">
-                        <h4 class="servises-title">Représentation commerciale</h4>
+                        <h4 class="servises-title">Représentations Commerciales</h4>
                         <p class="servises-text">Eodem modo typi, qui nunc nobis videntur parum clari,
                             fiant sollemnes in futurum.
                         </p>
                     </div>
                     <a href="{{ route('sales_representation') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="pricing-tables medium-padding120 bg-border-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                            <div class="heading align-center">
-                                <h4 class="h2 heading-title">Formations disponibles</h4>
-                                <div class="heading-line">
-                                    <span class="short-line"></span>
-                                    <span class="long-line"></span>
-                                </div>
-                                <p class="heading-text">Découvrez nos formations.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        @foreach ($courses as $course)
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="pricing-tables-item" style="background-color: white;">
-                                    <div class="pricing-tables-icon">
-                                        <img loading="lazy" src="{{ asset('assets/img/pricing1.png') }}" alt="personal">
-                                    </div>
-                                    <a href="#" class="pricing-title">{{ $course['title'] }}</a>
-                                    <ul class="pricing-tables-position">
-                                        <li class="position-item">
-                                            <span class="count">Lieu</span>
-                                            {{ $course['place'] }}
-                                        </li>
-                                        <li class="position-item">
-                                            <span class="count">Date</span>
-                                            {{ date('d-m-Y', strtotime($course['date'])) }}
-                                        </li>
-                                        <li class="position-item">
-                                            <span class="count">Heure</span>
-                                            {{ $course['start_time'] }}
-                                        </li>
-                                        <li class="position-item">
-                                            -
-                                        </li>
-                                        {{-- <li class="position-item">
-                                            <span class="count">15</span>
-                                            Social Accounts
-                                        </li> --}}
-                                    </ul>
-                                    <h4 class="rate">$ {{ $course['amount'] }}</h4>
-                                    <a href="{{ route('course_details', ['token' => $course['token']]) }}" class="btn btn-medium btn--dark">
-                                        <span class="text">Je souscris !</span>
-                                        <span class="semicircle"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
                 </div>
             </div>
         </div>
@@ -335,7 +285,6 @@
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-                            <p class="heading-text">Nos valeureux clients. </p>
                         </div>
                     </div>
                 </div>
