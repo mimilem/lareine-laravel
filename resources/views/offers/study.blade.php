@@ -22,12 +22,12 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="{{ route('quantitative_studies') }}">Etudes Qualitatives
+                                <a href="{{ route('qualitative_studies') }}">Etudes Qualitatives
                                 </a>
                             </li>
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="{{ route('qualitative_studies') }}">Etudes Quantitatives
+                                <a href="{{ route('quantitative_studies') }}">Etudes Quantitatives
                                 </a>
                             </li>
                             <li>
