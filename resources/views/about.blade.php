@@ -13,12 +13,13 @@
                     <p class="heading-subtitle">
                         Fondée en 2012 à Johannesburg, La Souveraine est une agence internationale de Marketing
                         Stratégique spécialisée dans les solutions de fidélisation client, de développement de
-                        marque et de communication intégrée dans différents secteurs. Nous proposons également des
-                        séminaires de formation internes et publics en marketing et en vente. Nous réalisons pour
-                        nos clients une large gamme d'enquêtes et travaillons en partenariat avec diverses sociétés
-                        spécialisées dans la publicité, le marketing numérique, la conception Web, la gestion de contenu,
-                        conception graphique, etc. pour offrir à nos clients des solutions complètes adaptées à leurs objectifs
-                        spécifiques.
+                        marque et de communication intégrée dans différents secteurs. <br><br>
+                        
+                        Nous proposons également des séminaires de formation internes et publics en marketing 
+                        et en vente. Nous réalisons pour nos clients une large gamme d'enquêtes et travaillons 
+                        en partenariat avec diverses sociétés spécialisées dans la publicité, le marketing numérique, 
+                        la conception Web, la gestion de contenu, conception graphique, etc. pour offrir à nos clients 
+                        des solutions complètes adaptées à leurs objectifs  spécifiques.
                     </p>
                 </div>
             </div>

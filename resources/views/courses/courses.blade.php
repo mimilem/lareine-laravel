@@ -46,18 +46,16 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="pricing-tables medium-padding120 bg-border-color">
+            <div class="pricing-tables bg-border-color">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
-                                <h4 class="h2 heading-title">Formations disponibles</h4>
+                                <h4 class="h2 heading-title">Toutes Les Formations Disponibles</h4>
                                 <div class="heading-line">
                                     <span class="short-line"></span>
                                     <span class="long-line"></span>
                                 </div>
-                                <p class="heading-text">Découvrez nos formations.
-                                </p>
                             </div>
                         </div>
                     </div>
