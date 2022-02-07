@@ -57,6 +57,10 @@ Route::get('offers/marketing-strategy/customer', function () {
     return view('offers.missions.customer');
 })->name('customer_experience');
 
+Route::get('offers/marketing-strategy/product-management', function () {
+    return view('offers.missions.product-management');
+})->name('product_management');
+
 Route::get('offers/marketing-strategy', function () {
     return view('offers.marketing');
 })->name('marketing_strategy');

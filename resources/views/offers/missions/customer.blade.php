@@ -43,7 +43,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">Gestion des Produits
+                            <a href="{{ route('product_management') }}">Gestion des Produits
                             </a>
                         </li>
                         <li>

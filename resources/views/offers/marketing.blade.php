@@ -33,7 +33,7 @@
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="#">Gestion des Produits
+                                <a href="{{ route('product_management') }}">Gestion des Produits
                                 </a>
                             </li>
 
