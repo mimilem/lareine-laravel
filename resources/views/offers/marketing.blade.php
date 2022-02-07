@@ -21,7 +21,7 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="{{ route('customer_experience') }}">Expérience client
+                                <a href="{{ route('customer_experience') }}">Expérience Client
                                 </a>
                             </li>
 
@@ -33,21 +33,17 @@
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="#">Gestion de produit
+                                <a href="#">Gestion des Produits
                                 </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <a href="{{ route('digital_marketing') }}">Marketing digital
+                                <a href="{{ route('digital_marketing') }}">Marketing Digital
                                 </a>
                             </li>
                         </ul>
 
-                        <!-- <a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow mb30">
-                            <span class="text">Free SEO Consultation</span>
-                            <span class="semicircle"></span>
-                        </a> -->
                     </div>
 
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
