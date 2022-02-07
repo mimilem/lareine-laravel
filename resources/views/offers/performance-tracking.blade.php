@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos missions en Tracking de Performance</h4>
+                            <h4 class="h1 heading-title">Nos Missions en Tracking de Performance</h4>
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
@@ -22,27 +22,22 @@
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Définition des KPI
-                                </span>
+                                <a href="{{ route('kpi_definition') }}">Définition Des KPI
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Mise en place des systèmes de tracking
-                                </span>
+                                <a href="{{ route('tracking_system') }}">Mise En Place Des Systèmes De Tracking
+                                </a>
                             </li>
 
                             <li>
                                 <i class="seoicon-check"></i>
-                                <span href="#">Analyse et évaluation des données
-                                </span>
+                                <a href="{{ route('data_analysis') }}">Analyse Et Evaluation Des Données
+                                </a>
                             </li>
                         </ul>
-
-                        <!-- <a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow mb30">
-                            <span class="text">Free SEO Consultation</span>
-                            <span class="semicircle"></span>
-                        </a> -->
                     </div>
 
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">

@@ -85,7 +85,21 @@ Route::get('offers/sales-representation/prospection', function () {
     return view('offers.missions.prospection');
 })->name('prospection');
 
-// 
+// Performance Tracking
+
+Route::get('offers/performance-tracking/kpi-definition', function () {
+    return view('offers.missions.kpi-definition');
+})->name('kpi_definition');
+
+Route::get('offers/performance-tracking/tracking-system', function () {
+    return view('offers.missions.tracking-system');
+})->name('tracking_system');
+
+Route::get('offers/performance-tracking/data-analysis', function () {
+    return view('offers.missions.data-analysis');
+})->name('data_analysis');
+
+
 
 Route::get('offers/marketing-strategy', function () {
     return view('offers.marketing');
