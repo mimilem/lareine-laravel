@@ -11,7 +11,6 @@
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-
                             <p class="heading-subtitle">Augmentez l'efficacité de vos ventes et améliorez 
                                 considérablement vos résultats marketing en participant à nos cours et 
                                 séminaires de formation. Nos cours de vente et de marketing sont dispensés 
@@ -19,26 +18,21 @@
                                 et l'expérience du monde réel pour vous aider, ainsi que votre équipe et votre 
                                 entreprise, à exceller dans l'environnement commercial difficile d'aujourd'hui.
                             </p>
-
                         </div>
-
+                    </div>
+                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
                         <ul class="list list--secondary mb60">
                             <li>
                                 <i class="seoicon-check"></i>
                                 <span href="#">Renforcement des capacités
                                 </span>
                             </li>
-
                             <li>
                                 <i class="seoicon-check"></i>
                                 <span href="#">Management des Equipes
                                 </span>
                             </li>
                         </ul>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                        <img loading="lazy" src="{{ asset('assets/img/social-photo.png') }}" alt="social">
                     </div>
                 </div>
             </div>
