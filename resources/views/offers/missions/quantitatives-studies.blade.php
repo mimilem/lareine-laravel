@@ -31,10 +31,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('quantitative_studies') }}">Etudes Quantitatives
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('trade_census') }}">Trade Census
                             </a>
                         </li>

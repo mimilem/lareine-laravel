@@ -30,11 +30,6 @@
                             <a href="{{ route('administrative_canvass') }}">Démarchage Administrative
                             </a>
                         </li>
-
-                        <li>
-                            <a href="{{ route('prospection') }}">Prospection
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

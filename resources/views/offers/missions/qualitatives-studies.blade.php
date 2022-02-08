@@ -27,10 +27,6 @@
                     <h4 class="w-request-content-title">Nos Autres Interventions</h4>
                     <ul class="list list--secondary mb60">
                         <li>
-                            <a href="{{ route('qualitative_studies') }}">Etudes Qualitatives
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('quantitative_studies') }}">Etudes Quantitatives
                             </a>
                         </li>

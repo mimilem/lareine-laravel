@@ -35,10 +35,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('trade_census') }}">Trade Census
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('surveys') }}">Sondage
                             </a>
                         </li>

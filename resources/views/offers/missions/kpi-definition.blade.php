@@ -27,10 +27,6 @@
                     <h4 class="w-request-content-title">Nos Autres Interventions</h4>
                     <ul class="list list--secondary mb60">
                         <li>
-                            <a href="{{ route('kpi_definition') }}">Définition Des KPI
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('tracking_system') }}">Mise En Place Des Systèmes De Tracking
                             </a>
                         </li>

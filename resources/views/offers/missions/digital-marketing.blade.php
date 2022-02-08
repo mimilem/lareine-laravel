@@ -42,10 +42,6 @@
                             <a href="{{ route('product_management') }}">Gestion des Produits
                             </a>
                         </li>
-                        <li>
-                            <a href="{{ route('digital_marketing') }}">Marketing Digital
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
