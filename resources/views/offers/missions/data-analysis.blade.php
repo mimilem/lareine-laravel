@@ -34,10 +34,6 @@
                             <a href="{{ route('tracking_system') }}">Mise En Place Des Systèmes De Tracking
                             </a>
                         </li>
-                        <li>
-                            <a href="{{ route('data_analysis') }}">Analyse Et Evaluation Des Données
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

@@ -27,11 +27,6 @@
                     <h4 class="w-request-content-title">Nos Autres Interventions</h4>
                     <ul class="list list--secondary mb60">
                         <li>
-                            <a href="{{ route('administrative_canvass') }}">Démarchage Administrative
-                            </a>
-                        </li>
-
-                        <li>
                             <a href="{{ route('prospection') }}">Prospection
                             </a>
                         </li>

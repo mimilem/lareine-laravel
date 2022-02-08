@@ -37,10 +37,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('branding') }}">Branding
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('product_management') }}">Gestion des Produits
                             </a>
                         </li>

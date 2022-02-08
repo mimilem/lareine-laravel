@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
 	<title>La Souveraine</title>
+	<meta property="og:title" content="La Souveraine" />
+	<meta name="description" content="Marketing Company">
+	<meta property="og:image" content="{{ asset('assets/img/icon.png') }}">
+
 
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
