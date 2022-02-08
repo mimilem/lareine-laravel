@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <div class="container-fluid">
-        <div class="row medium-padding120 bg-border-color">
+        <div class="row medium-padding100 bg-border-color">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
@@ -21,18 +21,24 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                        <ul class="list list--secondary mb60">
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <span href="#">Renforcement des capacités
-                                </span>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <span href="#">Management des Equipes
-                                </span>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-lg-12 no-padding">
+                                <h5 style="margin-bottom: 25px; color: #F05223;">Renforcement des Capacités</h5>
+                            </div>
+                            <p class="selection--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                                volutpat. Ut wisi enim ad minim veniam
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 no-padding">
+                                <h5 style="margin-bottom: 25px; color: #F05223;">Management des Equipes</h5>
+                            </div>
+                            <p class="selection--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                                volutpat. Ut wisi enim ad minim veniam
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,7 +51,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
-                                <h4 class="h2 heading-title">Toutes Les Formations Disponibles</h4>
+                                <h4 class="h2 heading-title">Formations Disponibles</h4>
                                 <div class="heading-line">
                                     <span class="short-line"></span>
                                     <span class="long-line"></span>
