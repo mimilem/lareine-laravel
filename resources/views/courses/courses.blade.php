@@ -11,7 +11,7 @@
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-                            <p class="heading-subtitle">Augmentez l'efficacité de vos ventes et améliorez 
+                            <p class="heading-subtitle" style="line-height: 25px">Augmentez l'efficacité de vos ventes et améliorez 
                                 considérablement vos résultats marketing en participant à nos cours et 
                                 séminaires de formation. Nos cours de vente et de marketing sont dispensés 
                                 par des experts du secteur. Ils intègrent les meilleures pratiques éprouvées 
@@ -23,18 +23,18 @@
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-12 no-padding">
-                                <h5 style="margin-bottom: 25px; color: #F05223;">Renforcement des Capacités</h5>
+                                <h5 style="margin-bottom: 5px; color: #F05223;">Renforcement des Capacités</h5>
                             </div>
-                            <p class="selection--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                            <p class="selection--dark" style="font-size: 15px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
                                 volutpat. Ut wisi enim ad minim veniam
                             </p>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 no-padding">
-                                <h5 style="margin-bottom: 25px; color: #F05223;">Management des Equipes</h5>
+                                <h5 style="margin-bottom: 5px; color: #F05223;">Management des Equipes</h5>
                             </div>
-                            <p class="selection--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                            <p class="selection--dark" style="font-size: 15px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
                                 volutpat. Ut wisi enim ad minim veniam
                             </p>
