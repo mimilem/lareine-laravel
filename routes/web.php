@@ -5,7 +5,7 @@ use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminCourseController;
-use App\Http\Controllers\admin\AdminAuthController;
+use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 
