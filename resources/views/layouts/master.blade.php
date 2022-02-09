@@ -137,7 +137,7 @@
 							<a href="#">Connexion</a>
 							<ul class="dropdown">
 								<li class="hover-ver2">
-									<a href="{{ route('add_course') }}"><i class="seoicon-pin-map"></i>
+									<a href="{{ route('admin_login') }}"><i class="seoicon-pin-map"></i>
 										Formations
 									</a>
 								</li>
