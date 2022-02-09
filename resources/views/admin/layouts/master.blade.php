@@ -102,7 +102,7 @@
                                         <!-- item-->
                                         <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profil</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Deconnexion</a>
+                                        <a class="dropdown-item text-danger" href="{{ route('logout') }}"><i class="mdi mdi-power text-danger"></i> Deconnexion</a>
                                     </div>
                                 </div>
                             </li>
