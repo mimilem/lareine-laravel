@@ -23,7 +23,7 @@
                             <div class="contacts-item">
                                 <img loading="lazy" src="{{ asset('assets/img/contact8.png') }}" alt="phone">
                                 <div class="content">
-                                    <a href="mailto:info@lasouveraine.marketing" class="title" >info@lasouveraine.marketing</a>
+                                    <a href="mailto:lasouveraine@lasouveraine.marketing" class="title" >lasouveraine@lasouveraine.marketing</a>
                                     <p class="sub-title">online support</p>
                                 </div>
                             </div>
