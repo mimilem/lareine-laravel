@@ -51,7 +51,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
-                                <h4 class="h2 heading-title">Formations Disponibles</h4>
+                                <h4 class="h2 heading-title">Nos Formations</h4>
                                 <div class="heading-line">
                                     <span class="short-line"></span>
                                     <span class="long-line"></span>
