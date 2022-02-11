@@ -1,17 +1,17 @@
 @extends('layouts.master')
 @section('content')
     <div class="container-fluid">
-        <div class="row medium-padding100 bg-border-color">
+        <div class="row medium-padding80 bg-border-color">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos missions de Formation</h4>
+                            <h4 class="h1 heading-title">Nos Formations</h4>
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-                            <p class="heading-subtitle" style="line-height: 25px">Augmentez l'efficacité de vos ventes et améliorez 
+                            <p class="heading-subtitle" style="line-height: 25px; font-size: 15px">Augmentez l'efficacité de vos ventes et améliorez 
                                 considérablement vos résultats marketing en participant à nos cours et 
                                 séminaires de formation. Nos cours de vente et de marketing sont dispensés 
                                 par des experts du secteur. Ils intègrent les meilleures pratiques éprouvées 
@@ -45,13 +45,13 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="pricing-tables bg-border-color">
+        <div class="row no-padding">
+            <div class="bg-border-color">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                             <div class="heading align-center">
-                                <h4 class="h2 heading-title">Nos Formations</h4>
+                                <h4 class="h2 heading-title">Formations disponibles</h4>
                                 <div class="heading-line">
                                     <span class="short-line"></span>
                                     <span class="long-line"></span>
