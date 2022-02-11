@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <div class="container-fluid">
-        <div class="row medium-padding80 bg-border-color">
+        <div class="row medium-padding100 bg-border-color">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
@@ -39,17 +39,23 @@
                                 volutpat. Ut wisi enim ad minim veniam
                             </p>
                         </div>
+                        <div class="row">
+                            <a href="#courses" class="btn btn-medium btn--secondary">
+                                <span class="text">FORMATIONS DISPONIBLES</span>
+                                <span class="semicircle"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row no-padding">
+        <div class="row">
             <div class="bg-border-color">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12" id="courses">
                             <div class="heading align-center">
                                 <h4 class="h2 heading-title">Formations disponibles</h4>
                                 <div class="heading-line">
