@@ -42,12 +42,11 @@
                         <div class="row table-cell">
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-content">
-                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Social Media
-                                        Marketing Services
+                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">STATEGIE
+
                                     </h3>
-                                    <h5 class="slider-content-text" data-swiper-parallax="-200">An effective social strategy
-                                        can help you grow your
-                                        business, maintain your social presence and engage with the audience.
+                                    <h5 class="slider-content-text" data-swiper-parallax="-200">Nous commençons par une études et analyse du marché afin de 
+                                        proposer une stratégie adaptée et reflétant la réalité.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
                                         <a href="{{ route('contact') }}"
@@ -76,14 +75,12 @@
                         <div class="row table-cell">
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-content">
-                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Pay Per Click
-                                        (PPC)
-                                        Management
+                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">METHODES
+
                                     </h3>
-                                    <h5 class="slider-content-text" data-swiper-parallax="-200">Pay Per Click has an instant
-                                        impact and gives
-                                        your brand a much larger reach and exposure as a result of first page exposure on
-                                        major search engines.
+                                    <h5 class="slider-content-text" data-swiper-parallax="-200">Récolte , Analyse des données, 
+                                        Stratégie et veille sont nos moyens pour répondre efficacement à la 
+                                        demande des entreprises.
                                     </h5>
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
                                         <a href="{{ route('contact') }}"

@@ -11,12 +11,12 @@
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-                            <p class="heading-subtitle" style="line-height: 25px; font-size: 15px">Augmentez l'efficacité de vos ventes et améliorez 
-                                considérablement vos résultats marketing en participant à nos cours et 
-                                séminaires de formation. Nos cours de vente et de marketing sont dispensés 
-                                par des experts du secteur. Ils intègrent les meilleures pratiques éprouvées 
-                                et l'expérience du monde réel pour vous aider, ainsi que votre équipe et votre 
-                                entreprise, à exceller dans l'environnement commercial difficile d'aujourd'hui.
+                            <p class="heading-subtitle" style="line-height: 25px; font-size: 15px">Centrés 
+                                principalement sur les entreprises, nos formations consistent à renforcer les 
+                                capacités des salariés afin de les rendre plus optimal et plus efficace .
+                                Nous intervenant également dans le management des équipes en proposant des 
+                                solutions adéquates afin de faciliter l’intégration, la collaboration et le 
+                                rendement des équipes.
                             </p>
                         </div>
                     </div>
