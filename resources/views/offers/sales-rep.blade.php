@@ -12,9 +12,9 @@
                                 <span class="long-line"></span>
                             </div>
 
-                            <h5 class="heading-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Impedit, ipsa? Incidunt dolorum quibusdam temporibus inventore quo deserunt sit, 
-                                excepturi maiores quae qui impedit, aspernatur quis assumenda, deleniti molestiae ea ullam?
+                            <h5 class="heading-subtitle">La représentation commerciale consiste à faire appel à un 
+                                prestataire externe pour la réalisation des tâches commerciales. Nous intervenons 
+                                en mettant en place les ressources nécessaires afin d’atteindre les objectifs ciblés. 
                             </h5>
 
                         </div>
@@ -29,6 +29,18 @@
                             <li>
                                 <i class="seoicon-check"></i>
                                 <a href="{{ route('prospection') }}">Prospection
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="seoicon-check"></i>
+                                <a href="#">Recrutement
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="seoicon-check"></i>
+                                <a href="#">Reporting
                                 </a>
                             </li>
                         </ul>

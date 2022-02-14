@@ -26,7 +26,7 @@ class CoursePostRequest extends FormRequest
         return [
             'title' => 'required|unique:courses|max:255',
             'subtitle' => 'required|max:255',
-            'picture' => '',
+            'picture' => 'required',
             'target_audience' => 'required|max:255',
             'prerequisites' => '',
             'place' => 'required|max:255',

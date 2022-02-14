@@ -12,9 +12,9 @@
                                 <span class="long-line"></span>
                             </div>
 
-                            <h5 class="heading-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Impedit, ipsa? Incidunt dolorum quibusdam temporibus inventore quo deserunt sit, 
-                                excepturi maiores quae qui impedit, aspernatur quis assumenda, deleniti molestiae ea ullam?
+                            <h5 class="heading-subtitle">Le tracking de performance consiste à suivre et évaluer 
+                                les actions stratégiques  mises en place.
+                                Dans notre cadre, nous procédons par les actions suivantes:
                             </h5>
 
                         </div>
