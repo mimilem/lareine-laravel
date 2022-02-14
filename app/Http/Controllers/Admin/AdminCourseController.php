@@ -22,10 +22,12 @@ class AdminCourseController extends Controller
 
     public function register_course(CoursePostRequest $request)
     {
+
         if ($request->method() == 'POST') {
 
             $data = $request->validated();
             $data['token'] = Str::uuid();
+            $data['picture'] = $request->file('picture')->store('courses');
             Course::create($data);
         }
         return redirect()->route('add_course');
