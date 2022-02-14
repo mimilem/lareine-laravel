@@ -12,7 +12,11 @@ class AdminCourseController extends Controller
 {
     public function index()
     {
-        return view('admin.courses.all');
+        $courses = Course::all()->take(5);
+
+        return view('admin.courses.index', [
+            'courses' => $courses
+        ]);
     }
 
     public function add_course()
@@ -30,6 +34,6 @@ class AdminCourseController extends Controller
             $data['picture'] = $request->file('picture')->store('courses');
             Course::create($data);
         }
-        return redirect()->route('add_course');
+        return redirect()->route('all_courses');
     }
 }
