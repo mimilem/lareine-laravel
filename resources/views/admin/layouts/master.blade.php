@@ -69,7 +69,7 @@
             <ul class="sidebar-menu">
                <li><a href="{{ route('dashboard') }}"><i class="ti-dashboard text-custom"></i><span> Dashboard</span></a> </li>
                <li><a href="{{ route('all_courses') }}"><i class="ti-blackboard text-custom"></i><span> Formations</span></a> </li>
-               <li><a href="#"><i class="ti-user text-custom"></i><span> Falicitateurs</span></a> </li>
+               <li><a href="{{ route('facilitators') }}"><i class="ti-user text-custom"></i><span> Falicitateurs</span></a> </li>
                <li><a href="#"><i class="ti-view-list text-custom"></i><span> Réservations</span></a> </li>
             </ul>
          </section>
