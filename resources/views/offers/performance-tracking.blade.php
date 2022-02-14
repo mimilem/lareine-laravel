@@ -1,49 +1,62 @@
 @extends('layouts.master')
 @section('content')
-    <div class="container-fluid">
-        <div class="row medium-padding120 bg-border-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos Missions en Tracking de Performance</h4>
-                            <div class="heading-line">
-                                <span class="short-line"></span>
-                                <span class="long-line"></span>
-                            </div>
+    <div style="position: relative">
+        <div class="stunning-header with-photo stunning-header-bg-photo2">
+            <div class="stunning-header-content">
+                <h1 class="stunning-header-title">Nos Missions en Tracking de Performance</h1>
+                <p class="breadcrumbs-text">
+                    Le tracking de performance consiste à suivre et évaluer 
+                    les actions stratégiques  mises en place.
+                    Dans notre cadre, nous procédons par les actions suivantes:
+                </p>
+            </div>
+            <div class="overlay overlay-primary"></div>
+        </div>
+        <div class="container info-boxes pt100 pb100">
 
-                            <h5 class="heading-subtitle">Le tracking de performance consiste à suivre et évaluer 
-                                les actions stratégiques  mises en place.
-                                Dans notre cadre, nous procédons par les actions suivantes:
-                            </h5>
-
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
                         </div>
-
-                        <ul class="list list--secondary mb60">
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('kpi_definition') }}">Définition Des KPI
-                                </a>
-                            </li>
-
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('tracking_system') }}">Mise En Place Des Systèmes De Tracking
-                                </a>
-                            </li>
-
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('data_analysis') }}">Analyse Et Evaluation Des Données
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                        <img loading="lazy" src="{{ asset('assets/img/social-photo.png') }}" alt="social">
+                        <div class="info-box-content">
+                            <a href="{{ route('kpi_definition') }}" class="info-box-title">Définition Des KPI</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box2.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('tracking_system') }}" class="info-box-title">Mise En Place Des Systèmes De Tracking</a>
+                            <p class="text">Claritas est etiam processus dynamicus,
+                                qui sequitur mutationem consuetudium lectorum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box3.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('data_analysis') }}" class="info-box-title">Analyse Et Evaluation Des Données</a>
+                            <p class="text">Investigationes demonstraverunt lectores
+                                legere me lius quod ii legunt saepius notare.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

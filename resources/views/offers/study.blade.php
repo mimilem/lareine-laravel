@@ -1,82 +1,160 @@
 @extends('layouts.master')
 @section('content')
-    <div class="container-fluid">
-        <div class="row medium-padding120 bg-border-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos missions Etudes</h4>
-                            <div class="heading-line">
-                                <span class="short-line"></span>
-                                <span class="long-line"></span>
-                            </div>
-                            <p class="heading-subtitle">
-                                Notre mission consiste à organiser la collecte, le traitement et 
-                                l’interprétation des informations relatives aux marchés, et plus 
-                                généralement aux publics dont dépend l'entreprise. La finalité étant 
-                                de servir aux décisions marketing en réduisant l'incertitude du décideur 
-                                et en minimisant les risques encourus,  afin d'assurer l'objectivité de 
-                                ces informations, leur précision, leur pertinence et leur fiabilité.
+    <div style="position: relative">
+        <div class="stunning-header with-photo stunning-header-bg-photo4">
+            <div class="stunning-header-content">
+                <h1 class="stunning-header-title">Nos Missions Etudes</h1>
+                <p class="breadcrumbs-text">
+                    Notre mission consiste à organiser la collecte, le traitement et 
+                    l’interprétation des informations relatives aux marchés, et plus 
+                    généralement aux publics dont dépend l'entreprise. La finalité étant 
+                    de servir aux décisions marketing en réduisant l'incertitude du décideur 
+                    et en minimisant les risques encourus,  afin d'assurer l'objectivité de 
+                    ces informations, leur précision, leur pertinence et leur fiabilité.
+                </p>
+            </div>
+            <div class="overlay overlay-primary"></div>
+        </div>
+        <div class="container info-boxes pt100 pb100">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('qualitative_studies') }}" class="info-box-title">Etudes Qualitatives</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
                             </p>
                         </div>
-                        <ul class="list list--secondary mb60">
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('qualitative_studies') }}">Etudes Qualitatives
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('quantitative_studies') }}">Etudes Quantitatives
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('trade_census') }}">Trade Census
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="{{ route('surveys') }}">Sondage
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Etude tarifaire,
-
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Etude de la distribution
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Etude du produit 
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Etude de la communication
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Mystery Shopping
-
-                                </a>
-                            </li>
-                            <li>
-                                <i class="seoicon-check"></i>
-                                <a href="#">Recensement
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
-                        <img loading="lazy" src="{{ asset('assets/img/social-photo.png') }}" alt="social">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box2.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('quantitative_studies') }}" class="info-box-title">Etudes Quantitatives</a>
+                            <p class="text">Claritas est etiam processus dynamicus,
+                                qui sequitur mutationem consuetudium lectorum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box3.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('trade_census') }}" class="info-box-title">Trade Census</a>
+                            <p class="text">Investigationes demonstraverunt lectores
+                                legere me lius quod ii legunt saepius notare.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box4.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="{{ route('surveys') }}" class="info-box-title">Sondage</a>
+                            <p class="text">Claritas est etiam processus dynamicus,
+                                qui sequitur mutationem consuetudium lectorum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box5.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Etude tarifaire</a>
+                            <p class="text">Investigationes demonstraverunt lectores legere
+                                me lius quod ii legunt saepius notare.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box6.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Etude de la distribution</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box10.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Etude du produit</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box8.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Etude de la communication</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box9.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Mystery Shopping</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="info-box--standard" data-mh="info-boxes">
+                        <div class="info-box-image">
+                            <img loading="lazy" src="{{ asset('assets/img/info-box7.png') }}" alt="image">
+                        </div>
+                        <div class="info-box-content">
+                            <a href="#" class="info-box-title">Recensement</a>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
