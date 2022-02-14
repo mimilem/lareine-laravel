@@ -1,30 +1,45 @@
 @extends('admin.layouts.auth')
 @section('content')
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-5">
-                <div class="card card-pages shadow-none mt-4">
-                    <div class="card-body">
-                        <div class="text-center mt-0 mb-3">
-                            <a href="{{ route('home') }}" class="logo logo-admin">
-                                <img src="{{ asset('assets/img/logo-white.png') }}" class="mt-3" alt="" height="26"></a>
-                            <p class="text-muted w-75 mx-auto mb-4 mt-4">Entrez votre mot de passe pour accéder au dashboard.</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="login-card card-block">
+                <form class="md-float-material" action="{{ route('admin_login') }}" method="POST">
+                    @csrf
+                    <div class="text-center">
+                        <img src="{{ asset('assets/img/logo.png') }}">
+                    </div>
+                    <h3 class="text-center txt-primary">
+                        Connexion | Admin
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-input-wrapper">
+                                <input type="email" name="email" class="md-form-control" required="required"/>
+                                <label>Email</label>
+                            </div>
                         </div>
-                        <form class="form-horizontal mt-4" action="{{ route('admin_login') }}" method="POST">
-                            @csrf
-                            <div class="form-group">
-                                <div class="col-12">
-                                    <label for="username">Adresse mail</label>
-                                    <input class="form-control" name="email" type="email" required id="username" placeholder="user@example.com">
-                                </div>
+                        <div class="col-md-12">
+                            <div class="md-input-wrapper">
+                                <input type="password" name="password" class="md-form-control" required="required"/>
+                                <label>Mot de passe</label>
                             </div>
-                            <div class="form-group">
-                                <div class="col-12">
-                                    <label for="password">Mot de passe</label>
-                                    <input class="form-control" name="password" type="password" required id="password" placeholder="Mot de passe">
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                        <div class="rkmd-checkbox checkbox-rotate checkbox-ripple m-b-25">
+                            <label class="input-checkbox checkbox-primary">
+                                <input type="checkbox" id="checkbox">
+                                <span class="checkbox"></span>
+                            </label>
+                            <div class="captions">Remember Me</div>
+
+                        </div>
                             </div>
-                            @if ($errors->any())
+                        <div class="col-sm-6 col-xs-12 forgot-phone text-right">
+                            <a href="forgot-password.html" class="text-right f-w-600"> Forget Password?</a>
+                            </div>
+                    </div>
+                    @if ($errors->any())
                                     <div class="col-12">
                                         <div class="alert alert-danger">
                                             @foreach ($errors->all() as $error)
@@ -33,15 +48,14 @@
                                         </div>
                                     </div>
                                 @endif
-                            <div class="form-group text-center mt-3">
-                                <div class="col-12">
-                                    <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Me connecter</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="row">
+                        <div class="col-xs-10 offset-xs-1">
+                            <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 @endsection

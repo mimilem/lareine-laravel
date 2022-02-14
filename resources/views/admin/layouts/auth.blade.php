@@ -8,33 +8,30 @@
 	<title>La Souveraine</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}">
 
-    <link href="{{ asset('admin/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('admin/assets/css/metismenu.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('admin/assets/css/icons.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+
+	<link href="{{ asset('admin/assets/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/icon/icofont/css/icofont.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/plugins/Waves/dist/waves.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/responsive.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin/assets/css/color/color-1.min.css') }}" id="color"/>
 
 </head>
 
 <body>
-    <div class="accountbg"></div>
-
-    <div class="wrapper-page">
+    <section class="login p-fixed d-flex text-center bg-primary common-img-bg">
         @yield('content')
-    </div>
+    </section>
 
-    <!-- jQuery  -->
-    <script src="{{ asset('admin/assets/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/jquery.slimscroll.js') }}"></script>
-    <script src="{{ asset('admin/assets/js/waves.min.js') }}"></script>
-
-    <script src="{{ asset('admin/plugins/apexchart/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('admin/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
-
-    <!-- App js -->
-    <script src="{{ asset('admin/assets/js/app.js') }}"></script>
+    <script src="{{ asset('admin/plugins/Jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/tether/dist/js/tether.min.js') }}"></script>
+    <script src="{{ asset('admin/plugins/Waves/dist/waves.min.js') }}"></script>
+    <script src="{{ asset('admin/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin/assets/pages/elements.js') }}"></script>
 
 </body>
 
