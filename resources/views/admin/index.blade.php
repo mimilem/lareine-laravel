@@ -21,7 +21,7 @@
             <div class="col-lg-4 col-md-4">
                <div class="card dashboard-product">
                   <span>Total</span>
-                  <h2 class="dashboard-total-products">5</h2>
+                  <h2 class="dashboard-total-products">{{ $total_facilitators }}</h2>
                   <span class="label label-primary">Facilitateurs</span>actifs
                   <div class="side-box ">
                      <i class="ti-gift text-primary-color"></i>

@@ -147,6 +147,7 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
   Route::post('dashboard/add-course', [AdminCourseController::class, 'register_course'])->name('add_course');
   Route::get('dashboard/courses', [AdminCourseController::class, 'index'])->name('all_courses');
   Route::get('dashboard/facilitators', [AdminFacilitatorsController::class, 'index'])->name('facilitators');
+  Route::post('dashboard/facilitators/new', [AdminFacilitatorsController::class, 'add_facilitator'])->name('add_facilitator');
   Route::get('dashboard/auth/login', [AdminAuthController::class, 'login'])->name('admin_login');
   Route::post('dashboard/auth/login', [AdminAuthController::class, 'sign_in'])->name('admin_login');
   Route::get('dashboard/auth/logout', [AdminAuthController::class, 'logout'])->name('logout');
