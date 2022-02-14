@@ -1333,7 +1333,9 @@ body.author .blog-details-author {
     z-index: 5;
     padding: 0 15px; }
     .stunning-header .stunning-header-content .stunning-header-title {
-      color: #fff; }
+      color: #fff;
+      text-transform: capitalize;
+     }
       @media (max-width: 800px) {
         .stunning-header .stunning-header-content .stunning-header-title {
           font-size: 40px; } }

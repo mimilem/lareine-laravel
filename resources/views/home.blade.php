@@ -42,7 +42,7 @@
                         <div class="row table-cell">
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-content">
-                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">STATEGIE
+                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">APPROCHE
 
                                     </h3>
                                     <h5 class="slider-content-text" data-swiper-parallax="-200">Nous commençons par une études et analyse du marché afin de 
