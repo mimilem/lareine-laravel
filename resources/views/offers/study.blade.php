@@ -18,33 +18,6 @@
         <div class="container info-boxes pt100 pb100">
 
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="info-box--standard" data-mh="info-boxes">
-                        <div class="info-box-image">
-                            <img loading="lazy" src="{{ asset('assets/img/info-box1.png') }}" alt="image">
-                        </div>
-                        <div class="info-box-content">
-                            <a href="{{ route('qualitative_studies') }}" class="info-box-title">Etudes Qualitatives</a>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="info-box--standard" data-mh="info-boxes">
-                        <div class="info-box-image">
-                            <img loading="lazy" src="{{ asset('assets/img/info-box2.png') }}" alt="image">
-                        </div>
-                        <div class="info-box-content">
-                            <a href="{{ route('quantitative_studies') }}" class="info-box-title">Etudes Quantitatives</a>
-                            <p class="text">Claritas est etiam processus dynamicus,
-                                qui sequitur mutationem consuetudium lectorum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="info-box--standard" data-mh="info-boxes">
