@@ -6,7 +6,7 @@
                 <h3>Ajouter Une formation</h3>
             </div>
             <div class="card-body">
-                <form action="{{ route('add_course') }}" method="POST">
+                <form action="{{ route('add_course') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -82,7 +82,7 @@
                                 </p>
                                 <div class="">
                                     <div class="fallback">
-                                        <input name="picture" type="file" multiple="multiple">
+                                        <input name="picture" required type="file" multiple="multiple">
                                     </div>
                                 </div>
                             </div>
