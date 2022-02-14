@@ -56,7 +56,7 @@
 
                      </a>
                      <ul class="dropdown-menu settings-menu">
-                        <li><a href="#"><i class="icon-logout"></i> Deconnexion</a></li>
+                        <li><a href="{{ route('logout') }}"><i class="icon-logout"></i> Deconnexion</a></li>
                      </ul>
                   </li>
                </ul>

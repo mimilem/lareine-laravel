@@ -40,14 +40,14 @@
                             </div>
                     </div>
                     @if ($errors->any())
-                                    <div class="col-12">
-                                        <div class="alert alert-danger">
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                @endif
+                        <div class="col-12">
+                            <div class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
                     <div class="row">
                         <div class="col-xs-10 offset-xs-1">
                             <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">LOGIN</button>
