@@ -11,8 +11,12 @@ class MailController extends Controller
     /**
      * @return $this
      */
-    public function index(string $recipient)
+    public function index($recipient)
     {
-        Mail::to($recipient)->send(new NotifyMail());
+        Mail::to($recipient)->send(new NotifyMail([
+            'name' => 'Emmanuel Makabu',
+            'course_name' => 'Marketing Digital',
+            'code' => '5fdfdgg'
+        ]));
     }
 }

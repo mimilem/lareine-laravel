@@ -33,6 +33,10 @@ Route::get('portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
 
+Route::get('message', function () {
+    return view('messages');
+})->name('messages');
+
 Route::get('contact', [MessageController::class, 'index'])->name('contact');
 
 // Offers routes
@@ -129,6 +133,7 @@ Route::get('offers', function () {
  */
 
 Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
+Route::post('courses/subscribe', [CoursesController::class, 'subscribe'])->name('course_subscribe');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
 Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscription');
 
@@ -136,7 +141,7 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
  * Mail Routes
  */
 
- Route::get('send-email', [MailController::class, 'index']);
+ Route::get('send-email/{recipient}', [MailController::class, 'index']);
 
  /**
   * Admin Routes

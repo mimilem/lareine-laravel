@@ -4,8 +4,9 @@
     <div class="container">
         <h5 class="title">Veuillez vérifier vos données et confirmer votre souscription.
         Vous recevrez automatiquement à votre adresse e-mail la confirmation et numéro de votre réservation.</h5>
-        <form action="verify" method="POST">
+        <form action="{{ route('course_subscribe') }}" method="POST">
             @csrf
+            <input type="hidden" name="token" value="{{ $token }}">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <input class="input-standard-grey" name="first_name" value="{{ $first_name }}" placeholder="Prénom" type="text">

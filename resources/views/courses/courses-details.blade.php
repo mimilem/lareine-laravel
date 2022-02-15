@@ -10,6 +10,7 @@
             <h5 class="title">Je m'inscris</h5>
             <form action="{{ route('verify_subscription') }}" method="POST">
                 @csrf
+                <input type="hidden" name="token" value="{{ $course->token }}">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <input class="input-standard-grey" name="first_name" placeholder="Prénom" type="text">
