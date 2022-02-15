@@ -9,4 +9,20 @@ class Subscribe extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'course_id',
+        'first_name',
+        'last_name',
+        'post_name',
+        'email',
+        'phone',
+        'city',
+        'province',
+        'country',
+        'gender',
+        'work',
+        'status',
+        'code',
+    ];
+
 }

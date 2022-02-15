@@ -10,15 +10,15 @@ use Illuminate\Queue\SerializesModels;
 class NotifyMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    private $data;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -28,8 +28,10 @@ class NotifyMail extends Mailable
      */
     public function build()
     {
-        return $this->from('test@lasouveraine.marketing', 'La Souveraine')
-                    ->subject('Confirmation de votre souscription') 
-                    ->view('emails.subscribe-confirmation');
+        return $this->markdown('emails.subscribe-confirmation', [
+            'course_name' => $this->data['course_name'],
+            'name' => $this->data['name'],
+            'code' => $this->data['code'],
+        ])->from('test@lasouveraine.marketing', 'La Souveraine')->subject('Confirmation de votre souscription');
     }
 }
