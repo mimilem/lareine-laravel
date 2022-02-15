@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
+use App\Http\Controllers\Admin\AdminSubscribesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 
@@ -155,6 +156,9 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
 
   // Courses
 
+
+  Route::get('dashboard/subscribes/ticket-verifier', [AdminSubscribesController::class, 'ticket_verifier'])->name('ticket_verifier');
+  Route::post('dashboard/subscribes/ticket-verifier', [AdminSubscribesController::class, 'verify'])->name('verify_ticket');
   Route::post('dashboard/add-course', [AdminCourseController::class, 'register_course'])->name('add_course');
   Route::get('dashboard/courses', [AdminCourseController::class, 'index'])->name('all_courses');
   Route::get('dashboard/facilitators', [AdminFacilitatorsController::class, 'index'])->name('facilitators');
