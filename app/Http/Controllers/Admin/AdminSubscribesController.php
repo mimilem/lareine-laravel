@@ -10,6 +10,15 @@ use App\Models\Subscribe;
 
 class AdminSubscribesController extends Controller
 {
+    public function index()
+    {
+        $data = Subscribe::all();
+
+        return view('admin.subscribes.index', [
+            'subscribes' => $data
+        ]);
+    }
+    
     public function ticket_verifier()
     {
         return view('admin.subscribes.ticket-verifier');
