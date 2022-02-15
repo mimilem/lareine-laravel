@@ -21,7 +21,8 @@
                         <tbody>
                             @foreach ($subscribes as $subscribe)
                             <tr>
-                                <form action="#" method="post">
+                                <form action="{{ route('update_state') }}" method="post">
+                                    @csrf
                                     <input type="hidden" name="code" value="{{ $subscribe['code'] }}">
                                     <td>{{ $subscribe['code'] }}</th>
                                     <td>{{ $subscribe['first_name'].' '.$subscribe['last_name'] }}</th>
@@ -29,7 +30,7 @@
                                     <td>{{ $subscribe->course->title }}</th>
                                     <td>{{ date('d-m-Y', strtotime($subscribe['created_at'])) }}</th>
                                     <td>
-                                        @if ($subscribe['code'] == 'paid')
+                                        @if ($subscribe['status'] == 'paid')
                                             <span class="label label-success">Confirmé</span>
                                         @else
                                             <span class="label label-warning">Non Payé</span>

@@ -18,7 +18,23 @@ class AdminSubscribesController extends Controller
             'subscribes' => $data
         ]);
     }
-    
+
+    public function update_state(Request $request)
+    {
+        $subscribe = Subscribe::where('code', $request->input('code'))->first();
+
+        if ($subscribe->status == 'unpaid') {
+            $subscribe->status = 'paid';
+        }
+        else{
+            $subscribe->status = 'unpaid';
+        }
+        $subscribe->save();
+        
+        return redirect()->route('subscribes');
+
+    }
+
     public function ticket_verifier()
     {
         return view('admin.subscribes.ticket-verifier');
