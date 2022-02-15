@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Models\Facilitator;
+use App\Models\Subscribe;
 
 class AdminController extends Controller
 {
@@ -14,11 +15,13 @@ class AdminController extends Controller
         $courses = Course::all()->take(5);
         $total_courses = Course::all()->count();
         $total_facilitators = Facilitator::all()->count();
+        $total_subscribes = Subscribe::all()->count();
 
         return view("admin.index", [
             'courses' => $courses,
             'total_courses' => $total_courses,
-            'total_facilitators' => $total_facilitators
+            'total_facilitators' => $total_facilitators,
+            'total_subscribes' => $total_subscribes
         ]);
     }
 }
