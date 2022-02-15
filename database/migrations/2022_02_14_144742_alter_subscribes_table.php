@@ -26,6 +26,8 @@ class AlterSubscribesTable extends Migration
             $table->string('country');
             $table->string('gender');
             $table->string('work');
+            $table->string('status')->default('unpaid');
+            $table->string('code')->unique();
             $table->timestamps();
         });
     }

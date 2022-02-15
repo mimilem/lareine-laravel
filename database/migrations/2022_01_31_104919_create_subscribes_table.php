@@ -26,6 +26,7 @@ class CreateSubscribesTable extends Migration
             $table->string('country');
             $table->string('gender');
             $table->string('work');
+            $table->string('status');
             $table->timestamps();
         });
     }
