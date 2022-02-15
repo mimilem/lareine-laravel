@@ -46,7 +46,7 @@
     </div>
 
     <div class="container">
-        <div class="contact-form medium-padding120">
+        <div class="medium-padding120">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="heading">
@@ -59,17 +59,18 @@
                 </div>
             </div>
 
-            <form class="contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="https://html.crumina.net/html-seosight/modules/forms/submit.php">
+            <form method="post"  action="{{ route('contact') }}">
+                @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <input name="name" class="input-standard-grey" placeholder="Votre nom" type="text" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="email" class="input-standard-grey" placeholder="Votre mail" type="email" required>
+                        <input name="mail" class="input-standard-grey" placeholder="Votre mail" type="email" required>
                     </div>
                 </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <input name="object" class="input-standard-grey" placeholder="L'objet du message" type="email" required>
+                        <input name="subject" class="input-standard-grey" placeholder="L'objet du message" type="email" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <input name="phone" class="input-standard-grey" placeholder="Votre numero de contact" type="tel" required>
@@ -77,22 +78,16 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <textarea name="message" class="input-standard-grey" placeholder="Votre message"></textarea>
+                        <textarea name="message" required class="input-standard-grey" placeholder="Votre message"></textarea>
                     </div>
                 </div>
-
+                @include('includes.message')
                 <div class="row">
                     <div class="submit-block table">
                         <div class="col-lg-3 table-cell">
-                            <button class="btn btn-small btn--primary">
+                            <button type="submit" class="btn btn-small btn--primary">
                                 <span class="text">Envoyer</span>
                             </button>
-                        </div>
-                        <div class="col-lg-5 table-cell">
-                            <div class="submit-block-text">
-                                Please, let us know any particular things to check and the best time
-                                to contact you by phone (if provided).
-                            </div>
                         </div>
                     </div>
                 </div>
