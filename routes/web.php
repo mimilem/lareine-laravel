@@ -37,7 +37,13 @@ Route::get('message', function () {
     return view('messages');
 })->name('messages');
 
+/**
+ * Contact 
+ */
+
 Route::get('contact', [MessageController::class, 'index'])->name('contact');
+Route::post('contact', [MessageController::class, 'send'])->name('contact');
+
 
 // Offers routes
 
