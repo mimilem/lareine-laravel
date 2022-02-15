@@ -10,6 +10,31 @@ use App\Models\Subscribe;
 
 class AdminSubscribesController extends Controller
 {
+    public function index()
+    {
+        $data = Subscribe::all();
+
+        return view('admin.subscribes.index', [
+            'subscribes' => $data
+        ]);
+    }
+
+    public function update_state(Request $request)
+    {
+        $subscribe = Subscribe::where('code', $request->input('code'))->first();
+
+        if ($subscribe->status == 'unpaid') {
+            $subscribe->status = 'paid';
+        }
+        else{
+            $subscribe->status = 'unpaid';
+        }
+        $subscribe->save();
+        
+        return redirect()->route('subscribes');
+
+    }
+
     public function ticket_verifier()
     {
         return view('admin.subscribes.ticket-verifier');

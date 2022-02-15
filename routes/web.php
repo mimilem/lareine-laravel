@@ -159,6 +159,8 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
 
   Route::get('dashboard/subscribes/ticket-verifier', [AdminSubscribesController::class, 'ticket_verifier'])->name('ticket_verifier');
   Route::post('dashboard/subscribes/ticket-verifier', [AdminSubscribesController::class, 'verify'])->name('verify_ticket');
+  Route::post('dashboard/subscribes/update-state', [AdminSubscribesController::class, 'update_state'])->name('update_state');
+  Route::get('dashboard/subscribes', [AdminSubscribesController::class, 'index'])->name('subscribes');
   Route::post('dashboard/add-course', [AdminCourseController::class, 'register_course'])->name('add_course');
   Route::get('dashboard/courses', [AdminCourseController::class, 'index'])->name('all_courses');
   Route::get('dashboard/facilitators', [AdminFacilitatorsController::class, 'index'])->name('facilitators');
