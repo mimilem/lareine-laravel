@@ -11,4 +11,9 @@ class EventsController extends Controller
     {
         return view('events.index');
     }
+
+    public function event_details($id)
+    {
+        return view('events.event-details');
+    }
 }

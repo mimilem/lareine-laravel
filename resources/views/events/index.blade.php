@@ -12,12 +12,12 @@
 
 
             <div class="row">
-                <a href="#" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="{{ route('event_details', ['id' => 1])}}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="case-item align-center mb60">
                         <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                             <img loading="lazy" src="{{ asset('assets/img/case1.jpg') }}" alt="our case">
                         </div>
-                        <h6 class="case-item__title">Investigationes legere</h6>
+                        <h6 class="case-item__title">Lancement CRDB</h6>
                         <div class="case-item__cat">
                             
                         </div>
