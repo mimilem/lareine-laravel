@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
 use App\Http\Controllers\Admin\AdminSubscribesController;
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 
@@ -133,7 +134,11 @@ Route::get('offers', function () {
     return view('offers.offers');
 })->name('offers');
 
+/**
+ * Events Routes
+ */
 
+ Route::get('events', [EventsController::class, 'index'])->name('events');
 
 /**
  * Courses routes
