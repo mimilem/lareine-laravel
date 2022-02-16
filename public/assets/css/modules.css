@@ -4181,7 +4181,10 @@ Main Components
 .product-description-ver3 {
   position: relative; }
   .product-description-ver3 .product-description-ver3-thumb {
-    position: absolute;
+    /* position: absolute; */
+    width: 80%;
+    height: auto;
+    margin: auto;
     top: 60px; }
 
 .product-description-challenge {

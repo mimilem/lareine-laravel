@@ -128,10 +128,10 @@
 							<a href="{{ route('courses') }}">Formations</a>
 						</li>
 						<li class="">
-							<a href="{{ route('portfolio') }}">Portefeuille</a>
+							<a href="{{ route('events') }}">Evenements</a>
 						</li>
 						<li class="">
-							<a href="{{ route('contact') }}">Nous contacter</a>
+							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>
 						<li class="">
 							<a href="#">Connexion</a>
