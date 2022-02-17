@@ -29,9 +29,10 @@ class NotifyMail extends Mailable
     public function build()
     {
         return $this->markdown('emails.subscribe-confirmation', [
-            'course_name' => $this->data['course_name'],
+            'activity_name' => $this->data['activity_name'],
             'name' => $this->data['name'],
             'code' => $this->data['code'],
+            'activity_type' => $this->data['activity_type'],
         ])->from('test@lasouveraine.marketing', 'La Souveraine')->subject('Confirmation de votre souscription');
     }
 }

@@ -29,39 +29,4 @@ class CoursesController extends Controller
         ]);
     }
 
-    public function verify(Request $request)
-    {
-        $data = [
-            "first_name" => $request->input("first_name"),
-            "last_name" => $request->input("last_name"),
-            "post_name" => $request->input("post_name"),
-            "gender" => $request->input("gender"),
-            "phone" => $request->input("phone"),
-            "email" => $request->input("email"),
-            "work" => $request->input("work"),
-            "city" => $request->input("city"),
-            "province" => $request->input("province"),
-            "country" => $request->input("country"),
-            "token" => $request->input("token"),
-        ];
-        return view("courses.info-verification", $data);
-    }
-
-    public function subscribe(Request $request)
-    {
-        $course = DB::table('activities')->where('token', '=', $request->input('token'))->get();
-        $data = $request->input();
-        $data['activity_id'] = $course[0]->id;
-        $data['code'] = Str::random(8);
-
-        Subscribe::create($data);
-
-        Mail::to($data['email'])->send(new NotifyMail([
-            'name' => $data['first_name'].' '.$data['last_name'],
-            'course_name' => $course[0]->title,
-            'code' => $data['code']
-        ]));
-        
-        return redirect()->route('messages')->with('success', 'Votre souscription a réussie. Un mail de confirmation vous a été envoyé');
-    }
 }

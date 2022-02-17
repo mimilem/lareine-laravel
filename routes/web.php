@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\MailController;
@@ -143,13 +144,19 @@ Route::get('events/details/{token}', [EventsController::class, 'event_details'])
 Route::get('events', [EventsController::class, 'index'])->name('events');
 
 /**
+ * ACTIVITY
+ */
+
+Route::post('activity/subscribe', [ActivityController::class, 'subscribe'])->name('activity_subscribe');
+Route::post('verify', [ActivityController::class, 'verify'])->name('verify_subscription');
+
+/**
  * Courses routes
  */
 
 Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
-Route::post('courses/subscribe', [CoursesController::class, 'subscribe'])->name('course_subscribe');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
-Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscription');
+
 
 /**
  * Mail Routes

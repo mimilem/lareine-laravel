@@ -1,4 +1,58 @@
 @extends('layouts.master')
+@section('extra')
+    <div class="window-popup">
+        <a href="#" class="popup-close js-popup-close cd-nav-trigger">
+            <i class="seosight-icon seoicon-delete"></i>
+        </a>
+        <div class="sign-in-popup">
+            <img loading="lazy" src="{{ asset('assets/img/logo.png') }}" width="250" alt="La Souveraine logo">
+            <h5 class="title">Je souscris</h5>
+            <form action="{{ route('verify_subscription') }}" method="POST">
+                @csrf
+                <input type="hidden" name="token" value="{{ $event->token }}">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="first_name" placeholder="Prénom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="last_name" placeholder="Nom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="post_name" placeholder="Post-nom" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <select name="gender">
+                            <option value="H">Homme</option>
+                            <option value="F">Femme</option>
+                        </select>
+                    </div> 
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input class="input-standard-grey" name="phone" placeholder="Téléphone" type="text">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input class="input-standard-grey" name="email" placeholder="Adresse mail" type="email">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="work" placeholder="Profession" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="city" placeholder="Ville" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="province" placeholder="Province" type="text">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <input class="input-standard-grey" name="country" placeholder="Pays" type="text">
+                    </div>
+                    <button type="submit" class="btn btn-small btn--primary" style="margin-bottom: 20px; margin-left: 0;">
+                        <span class="text">Vérifier</span>
+                        <i class="seoicon-right-arrow"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+@endsection
 @section('content')
 
     <div class="container-fluid">
@@ -84,7 +138,7 @@
 							</h5>
 						</div>
 						<div class="likes-block">
-							<a href="#" class="btn btn-medium btn--dark btn-hover-shadow">
+							<a href="#" class="btn btn-medium btn--dark btn-hover-shadow js-window-popup">
 								<span class="text">Souscrire</span>
 								<span class="semicircle"></span>
                             </a>
