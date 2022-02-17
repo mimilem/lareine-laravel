@@ -6,38 +6,29 @@ use App\Http\Controllers\Controller;
 use App\Models\Facilitator;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AdminFacilitatorsController extends Controller
 {
     public function index()
     {
-        $facilitators = Facilitator::all();
-        $data = [];
-        foreach ($facilitators as $f) {
-             $data [] = [
-                 'email' => $f->user->email,
-                 'name' => $f->user->name,
-                 'date' => $f->created_at,
-             ];
-        }
+        $facilitators = User::all()->where('user_role', 'ROLE_FACILITATOR')->take(10);
+
         return view('admin.facilitators.index', [
-            'facilitators' => $data
+            'facilitators' => $facilitators
         ]);
     }
 
     public function add_facilitator(Request $request)
     {
         if ($request->method() == 'POST') {
-            $user = User::create([
-                'email' => $request->input('email'),
-                'name' => $request->input('name'),
-                'password' => '123456',
+            User::create([
+                'first_name' => $request->input('first_name'),
+                'last_name' => $request->input('first_name'),
+                'bio' => $request->input('bio'),
+                'user_role' => 'ROLE_FACILITATOR',
+                'picture' => $request->file('picture')->store('users')
             ]);
-
-            Facilitator::create([
-                'user_id' => $user->id
-            ]);
-            
         }
         return redirect()->route('facilitators');
     }
