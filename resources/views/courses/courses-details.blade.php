@@ -64,16 +64,9 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img loading="lazy" src="{{ asset('assets/img/product-details.png') }}" alt="product">
+                                    <img loading="lazy" src="{{ asset('storage/'.$course->picture) }}" alt="product">
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
