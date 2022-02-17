@@ -14,7 +14,7 @@ class CoursesController extends Controller
 {
     public function index()
     {
-        $data = Activity::all();
+        $data = Activity::all()->where('activity_type', 'COURSE');
         return view("courses.courses", $data = [
             'courses' => $data
         ]);
