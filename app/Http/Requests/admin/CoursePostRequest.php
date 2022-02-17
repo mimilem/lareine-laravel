@@ -24,7 +24,7 @@ class CoursePostRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:courses|max:255',
+            'title' => 'required|unique:activities|max:255',
             'subtitle' => 'required|max:255',
             'picture' => 'required',
             'target_audience' => 'required|max:255',

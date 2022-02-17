@@ -6,7 +6,7 @@ use App\Mail\NotifyMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\Course;
+use App\Models\Activity;
 use App\Models\Subscribe;
 use Illuminate\Support\Str;
 
@@ -14,7 +14,7 @@ class CoursesController extends Controller
 {
     public function index()
     {
-        $data = Course::all();
+        $data = Activity::all();
         return view("courses.courses", $data = [
             'courses' => $data
         ]);
@@ -22,7 +22,7 @@ class CoursesController extends Controller
 
     public function course_details($token)
     {
-        $data = DB::table('courses')->where('token', '=', $token)->get()->toArray();
+        $data = DB::table('activities')->where('token', '=', $token)->get()->toArray();
 
         return view("courses.courses-details", [
             'course' => $data[0]
@@ -49,9 +49,9 @@ class CoursesController extends Controller
 
     public function subscribe(Request $request)
     {
-        $course = DB::table('courses')->where('token', '=', $request->input('token'))->get();
-        $data = $data = $request->input();
-        $data['course_id'] = $course[0]->id;
+        $course = DB::table('activities')->where('token', '=', $request->input('token'))->get();
+        $data = $request->input();
+        $data['activity_id'] = $course[0]->id;
         $data['code'] = Str::random(8);
 
         Subscribe::create($data);

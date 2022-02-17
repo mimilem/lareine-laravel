@@ -70,7 +70,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <div class="pricing-tables-item" style="background-color: white;">
                                     <div class="pricing-tables-icon">
-                                        <img loading="lazy" src="{{ asset('assets/img/pricing1.png') }}" alt="personal">
+                                        <img loading="lazy" src="{{ asset('storage/'.$course['picture']) }}" alt="personal">
                                     </div>
                                     <a href="#" class="pricing-title">{{ $course['title'] }}</a>
                                     <ul class="pricing-tables-position">
