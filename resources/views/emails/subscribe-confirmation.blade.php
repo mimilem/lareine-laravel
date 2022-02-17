@@ -43,7 +43,13 @@
         <div class="header">
             <h2>Salut {{ $name }}</h2>
             <p>
-                Votre réservation pour "{{ $course_name }}"  a réussi.
+                Votre réservation pour
+                    @if ($activity_type == 'COURSE')
+                        la formation
+                    @else
+                        l'événement
+                    @endif
+                "{{ $activity_name }}"  a réussi.
             </p>
         </div>
         <div class="code-container">
@@ -58,7 +64,13 @@
         </div>
         <div class="text">
             <p>
-                Si cet événement est payant, nous vous contacterons en 24 heures pour vous aider à effectuer votre payment. Si non, votre numéro de réservation suffira pour participer à l'événement.
+                Si 
+                    @if ($activity_type == 'COURSE')
+                    cette formation est payante
+                    @else
+                    cet événement est payant
+                    @endif 
+                , nous vous contacterons en 24 heures pour vous aider à effectuer votre payment. Si non, votre numéro de réservation suffira pour participer à l'événement.
                 Nous vous remercions pour votre soutien.
             </p>
         </div>

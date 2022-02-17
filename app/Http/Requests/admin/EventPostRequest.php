@@ -4,7 +4,7 @@ namespace App\Http\Requests\admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CoursePostRequest extends FormRequest
+class EventPostRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,6 +29,7 @@ class CoursePostRequest extends FormRequest
             'picture' => 'required',
             'target_audience' => 'required|max:255',
             'prerequisites' => '',
+            'activity_type' => '',
             'place' => 'required|max:255',
             'country' => 'required|max:255',
             'province' => 'required|max:255',
@@ -41,7 +42,7 @@ class CoursePostRequest extends FormRequest
         ];
     }
 
-    /**
+     /**
      * @return Array
      */
     public function messages()

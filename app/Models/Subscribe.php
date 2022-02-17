@@ -10,7 +10,7 @@ class Subscribe extends Model
     use HasFactory;
 
     protected $fillable = [
-        'course_id',
+        'activity_id',
         'first_name',
         'last_name',
         'post_name',
@@ -27,7 +27,7 @@ class Subscribe extends Model
 
     public function course()
     {
-        return $this->belongsTo(Course::class, 'course_id');
+        return $this->belongsTo(Activity::class, 'activity_id');
     }
 
 }

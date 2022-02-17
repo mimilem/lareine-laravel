@@ -15,7 +15,7 @@ class CreateSubscribesTable extends Migration
     {
         Schema::create('subscribes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('course_id');
+            $table->foreignId('activity_id');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('post_name');
@@ -26,7 +26,8 @@ class CreateSubscribesTable extends Migration
             $table->string('country');
             $table->string('gender');
             $table->string('work');
-            $table->string('status');
+            $table->string('status')->default('unpaid');
+            $table->string('code')->unique();
             $table->timestamps();
         });
     }

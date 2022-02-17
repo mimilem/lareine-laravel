@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
+use App\Http\Controllers\Admin\AdminEventsController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
 use App\Http\Controllers\Admin\AdminSubscribesController;
 use App\Http\Controllers\EventsController;
@@ -138,17 +140,23 @@ Route::get('offers', function () {
  * Events Routes
  */
 
- Route::get('events', [EventsController::class, 'index'])->name('events');
- Route::get('events/details/{id}', [EventsController::class, 'event_details'])->name('event_details');
+Route::get('events/details/{token}', [EventsController::class, 'event_details'])->name('event_details');
+Route::get('events', [EventsController::class, 'index'])->name('events');
+
+/**
+ * ACTIVITY
+ */
+
+Route::post('activity/subscribe', [ActivityController::class, 'subscribe'])->name('activity_subscribe');
+Route::post('verify', [ActivityController::class, 'verify'])->name('verify_subscription');
 
 /**
  * Courses routes
  */
 
 Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
-Route::post('courses/subscribe', [CoursesController::class, 'subscribe'])->name('course_subscribe');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
-Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscription');
+
 
 /**
  * Mail Routes
@@ -167,10 +175,16 @@ Route::post('verify', [CoursesController::class, 'verify'])->name('verify_subscr
   Route::post('dashboard/subscribes/ticket-verifier', [AdminSubscribesController::class, 'verify'])->name('verify_ticket');
   Route::post('dashboard/subscribes/update-state', [AdminSubscribesController::class, 'update_state'])->name('update_state');
   Route::get('dashboard/subscribes', [AdminSubscribesController::class, 'index'])->name('subscribes');
+  
   Route::post('dashboard/add-course', [AdminCourseController::class, 'register_course'])->name('add_course');
   Route::get('dashboard/courses', [AdminCourseController::class, 'index'])->name('all_courses');
+  
   Route::get('dashboard/facilitators', [AdminFacilitatorsController::class, 'index'])->name('facilitators');
   Route::post('dashboard/facilitators/new', [AdminFacilitatorsController::class, 'add_facilitator'])->name('add_facilitator');
+  
+  Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
+  Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
+  
   Route::get('dashboard/auth/login', [AdminAuthController::class, 'login'])->name('admin_login');
   Route::post('dashboard/auth/login', [AdminAuthController::class, 'sign_in'])->name('admin_login');
   Route::get('dashboard/auth/logout', [AdminAuthController::class, 'logout'])->name('logout');

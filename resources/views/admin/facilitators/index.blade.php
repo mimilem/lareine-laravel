@@ -23,18 +23,31 @@
                   <div class="modal-body">
                      <div class="form-group row">
                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                             <label>Nom complet</label>
-                             <input type="text" name="name" placeholder="Nom du facilitateur" class="form-control">
+                             <label>Prenom</label>
+                             <input type="text" name="first_name" placeholder="Prenom du facilitateur" class="form-control">
                          </div>
                      </div>
                      <div class="form-group row">
-                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                             <label>Adresse mail</label>
-                             <input type="email" name="email" required placeholder="example@example.com" class="form-control">
-                         </div>
-                     </div>
-                    
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label>Nom</label>
+                            <input type="text" name="last_name" placeholder="Nom du facilitateur" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label>Bio</label>
+                            <input type="text" name="bio" placeholder="Bio" class="form-control">
+                        </div>
+                    </div>
                   </div>
+                  <div class="form-group row">
+                    <div class="col-12">
+                       <div class="custom-file">
+                           <input type="file" name="picture" class="custom-file-input" id="validatedCustomFile" required>
+                           <label class="custom-file-label" for="validatedCustomFile">Photo</label>
+                       </div>
+                    </div>
+                </div>
                   <div class="modal-footer">
                      <button type="button" class="btn btn-default waves-effect " data-dismiss="modal">Annuler</button>
                      <button type="submit" class="btn btn-primary waves-effect waves-light ">Enregistrer</button>
@@ -52,6 +65,7 @@
                      <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th>Photo</th>
                                 <th>Nom</th>
                                 <th>Adresse Mail</th>
                                 <th>Date d'enregistrement</th>
@@ -61,9 +75,10 @@
                         <tbody>
                             @foreach ($facilitators as $facilitator)
                             <tr>
-                                <td>{{ $facilitator['name'] }}</th>
+                                <td><img src="{{ asset('storage/'.$facilitator['picture']) }}" width="40px" alt=""></th>
+                                    <td>{{ $facilitator['first_name'].' '.$facilitator['last_name'] }}</th>
                                 <td>{{ $facilitator['email'] }}</th>
-                                <td>{{ date('d-m-Y', strtotime($facilitator['date'])) }}</th>
+                                <td>{{ date('d-m-Y', strtotime($facilitator['created_at'])) }}</th>
                                 <td>
                                     <button type="button" class="btn btn-primary waves-effect waves-light">
                                         <i class="icofont icofont-edit"></i>
