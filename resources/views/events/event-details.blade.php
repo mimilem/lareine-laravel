@@ -14,7 +14,7 @@
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="product-description-ver3-thumb">
-											<img loading="lazy" src="{{ asset('assets/img/description-mac.png') }}" alt="description" class="">
+											<img loading="lazy" src="{{ asset('storage/'.$event->picture) }}" alt="description" class="">
 										</div>
 									</div>
 
@@ -28,7 +28,7 @@
 						<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12">
 							<div class="product-description-ver2-content">
 								<div class="heading">
-									<h4 class="h1 heading-title">CRDB Launch</h4>
+									<h4 class="h1 heading-title">{{ $event->title }}</h4>
 								</div>
                                 <div class="row">
                                     <div class="product-details">
@@ -36,28 +36,26 @@
                                             <div class="product-details-info">
                                                 <div class="product-details-add-info">
                                                     <div class="author">Audience Ciblée :
-                                                        <span href="#" class="author-name">Lushois</span>
+                                                        <span href="#" class="author-name">{{ $event->target_audience }}</span>
                                                     </div>
-                                                    <div class="author">Facilitateur :
-                                                        <span href="#" class="author-name">...</span>
-                                                    </div>
+
                                                     <div class="author">Date :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->date }}</span>
                                                     </div>
                                                     <div class="author">Heure de début :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->start_time }}</span>
                                                     </div>
                                                     <div class="author">Heure de fin :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->end_time }}</span>
                                                     </div>
                                                     <div class="author">Lieu :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->place }}</span>
                                                     </div>
                                                     <div class="author">Ville :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->city }}</span>
                                                     </div>
                                                     <div class="author">Province :
-                                                        <span href="#" class="author-name">...</span>
+                                                        <span href="#" class="author-name">{{ $event->province }}</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -82,8 +80,7 @@
                 <div class="row align-center">
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="heading">
-							<h5 class="mb30">Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta
-								nobis eleifend option.
+							<h5 class="mb30">{{ $event->description }}
 							</h5>
 						</div>
 						<div class="likes-block">
@@ -106,42 +103,25 @@
                     <h4 class="h4 heading-title">Nos Prochains Evenements</h4>
                 </div>
                 <div class="row">
-                    <a href="{{ route('event_details', ['id' => 1])}}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="case-item align-center mb60">
-                            <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-                                <img loading="lazy" src="{{ asset('assets/img/case1.jpg') }}" alt="our case">
+                    @foreach ($other_events as $item)
+                        <a href="{{ route('event_details', ['token' => $item->token]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="case-item align-center mb60">
+                                <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
+                                    <img loading="lazy" src="{{ asset('storage/'.$item->picture) }}" alt="our case">
+                                </div>
+                                <h6 class="case-item__title"><strong>{{ $item->title }}</strong></h6>
+                                <div class="case-item__cat">
+                                    <div class="event-info">
+                                        <p>{{ $item->place }}</p>
+                                        <p>{{ $item->date }}</p>
+                                    </div>
+                                    <div class="price">
+                                        $ {{ $item->amount }}
+                                    </div>
+                                </div>
                             </div>
-                            <h6 class="case-item__title">Lancement CRDB</h6>
-                            <div class="case-item__cat">
-                                
-                            </div>
-                        </div>
-                    </a>
-    
-                    <a href="#" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="case-item align-center mb60">
-                            <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-                                <img loading="lazy" src="{{ asset('assets/img/case3.jpg') }}" alt="our case">
-                            </div>
-                            <h6 class="case-item__title">Investigationes legere</h6>
-                            <div class="case-item__cat">
-                                
-                            </div>
-                        </div>
-                    </a>
-    
-                    <a href="#" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="case-item align-center mb60">
-                            <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-                                <img loading="lazy" src="{{ asset('assets/img/case5.jpg') }}" alt="our case">
-                            </div>
-                            <h6 class="case-item__title">Investigationes legere</h6>
-                            <div class="case-item__cat">
-                                
-                            </div>
-                        </div>
-                    </a>
-    
+                        </a>
+                    @endforeach
                 </div>
             </div>
     

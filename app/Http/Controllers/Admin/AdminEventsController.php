@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Activity;
 use App\Http\Requests\admin\EventPostRequest;
+use Illuminate\Support\Str;
 
 class AdminEventsController extends Controller
 {
@@ -24,6 +25,7 @@ class AdminEventsController extends Controller
         if ($request->method() == 'POST') {
 
             $data = $request->validated();
+            $data['token'] = Str::uuid();
             $data['picture'] = $request->file('picture')->store('events');
             Activity::create($data);
         }

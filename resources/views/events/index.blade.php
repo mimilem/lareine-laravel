@@ -11,7 +11,7 @@
 
             <div class="row">
                 @foreach ($events as $event)
-                    <a href="{{ route('event_details', ['id' => 1])}}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <a href="{{ route('event_details', ['token' => $event['token']]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <div class="case-item align-center mb60">
                             <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                                 <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">

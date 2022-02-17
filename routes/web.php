@@ -139,8 +139,8 @@ Route::get('offers', function () {
  * Events Routes
  */
 
- Route::get('events', [EventsController::class, 'index'])->name('events');
- Route::get('events/details/{id}', [EventsController::class, 'event_details'])->name('event_details');
+Route::get('events/details/{token}', [EventsController::class, 'event_details'])->name('event_details');
+Route::get('events', [EventsController::class, 'index'])->name('events');
 
 /**
  * Courses routes
