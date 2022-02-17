@@ -145,14 +145,14 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @foreach ($courses as $course)
+                                        @foreach ($events as $event)
                                             <tr>
-                                                <td>{{ $course['title'] }}</td>
-                                                <td>{{ date('d-m-Y', strtotime($course['date'])) }}</td>
-                                                <td>{{ $course['place'] }}</td>
-                                                <td>{{ $course['start_time'] }}</td>
-                                                <td>{{ $course['end_time'] }}</td>
-                                                <td>$ {{ $course['amount'] }}</td>
+                                                <td>{{ $event['title'] }}</td>
+                                                <td>{{ date('d-m-Y', strtotime($event['date'])) }}</td>
+                                                <td>{{ $event['place'] }}</td>
+                                                <td>{{ $event['start_time'] }}</td>
+                                                <td>{{ $event['end_time'] }}</td>
+                                                <td>$ {{ $event['amount'] }}</td>
                                                 <td>
                                                     <button type="button" class="btn btn-primary waves-effect waves-light">
                                                         <i class="icofont icofont-edit"></i>
@@ -162,7 +162,7 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                  </table>
                               </div>

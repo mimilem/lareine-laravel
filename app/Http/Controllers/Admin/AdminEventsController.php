@@ -11,7 +11,12 @@ class AdminEventsController extends Controller
 {
     public function index()
     {
-        return view('admin.events.index');
+        $events = Activity::all()->where('activity_type', '!=', 'COURSE')->take(5);
+
+        return view('admin.events.index', [
+            'events' => $events
+        ]);
+        
     }
 
     public function add_event(EventPostRequest $request)
