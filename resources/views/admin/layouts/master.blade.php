@@ -67,10 +67,14 @@
          <section class="sidebar" id="sidebar-scroll">
             <!-- Sidebar Menu-->
             <ul class="sidebar-menu">
+               <li class="nav-level">---- <span>Formations</span></li>
                <li><a href="{{ route('dashboard') }}"><i class="ti-dashboard text-custom"></i><span> Dashboard</span></a> </li>
                <li><a href="{{ route('all_courses') }}"><i class="ti-blackboard text-custom"></i><span> Formations</span></a> </li>
                <li><a href="{{ route('facilitators') }}"><i class="ti-user text-custom"></i><span> Falicitateurs</span></a> </li>
                <li><a href="{{ route('subscribes') }}"><i class="ti-view-list text-custom"></i><span> Réservations</span></a> </li>
+               <li class="nav-level">---- <span>Evenements</span></li>
+               <li><a href="{{ route('all_events') }}"><i class="ti-view-list text-custom"></i><span> Tous les événements</span></a> </li>
+               <li class="nav-level">---- <span>AUTRES ACTIONS</span></li>
                <li><a href="{{ route('ticket_verifier') }}"><i class="ti-id-badge text-custom"></i><span> Vérifier Ticket</span></a> </li>
             </ul>
          </section>
