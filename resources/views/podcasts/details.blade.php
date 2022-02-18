@@ -29,6 +29,7 @@
 							<div class="product-description-ver2-content">
 								<div class="heading">
 									<h4 class="h1 heading-title">{{ $podcast->title }}</h4>
+									<small><p><i>{{ date('d-m-Y', strtotime($podcast['created_at'])) }}</i></p></small>
 								</div>
                                 <p>{{ $podcast->description }}</p>
 							</div>
