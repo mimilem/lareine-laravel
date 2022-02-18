@@ -9,10 +9,12 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminEventsController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
+use App\Http\Controllers\Admin\AdminPodcastsController;
 use App\Http\Controllers\Admin\AdminSubscribesController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PodcastsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -157,6 +159,12 @@ Route::post('verify', [ActivityController::class, 'verify'])->name('verify_subsc
 Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
 
+/**
+ * Podcasts
+ */
+
+Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
+Route::get('podcasts/{token}', [PodcastsController::class, 'podcast_details'])->name('podcast_details');
 
 /**
  * Mail Routes
@@ -184,6 +192,9 @@ Route::get('courses', [CoursesController::class, 'index'])->name('courses');
   
   Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
   Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
+
+  Route::get('dashboard/podcasts', [AdminPodcastsController::class, 'index'])->name('all_podcasts');
+  Route::post('dashboard/podcasts/new', [AdminPodcastsController::class, 'add'])->name('add_podcast');
   
   Route::get('dashboard/auth/login', [AdminAuthController::class, 'login'])->name('admin_login');
   Route::post('dashboard/auth/login', [AdminAuthController::class, 'sign_in'])->name('admin_login');
