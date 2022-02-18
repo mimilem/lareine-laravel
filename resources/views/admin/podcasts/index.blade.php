@@ -49,7 +49,7 @@
                                  <div class="form-group row" style="border: 0.1px solid #cfcfcf">
                                     <div class="col-12" >
                                        <div class="custom-file" >
-                                           {{-- <input type="file" name="file"  accept=".mp3,audio/*" required> --}}
+                                           <input type="file" name="file" required>
                                            <label class="custom-file-label" for="validatedCustomFile">Fichier du podcast</label>
                                        </div>
                                     </div>
