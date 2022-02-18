@@ -130,6 +130,9 @@
 						<li class="">
 							<a href="{{ route('events') }}">Evénements</a>
 						</li>
+						<li>
+							<a href="{{ route('podcasts') }}">Podcasts</a>
+						</li>
 						<li class="">
 							<a href="{{ route('portfolio') }}">Portefeuille</a>
 						</li>

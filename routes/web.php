@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\AdminSubscribesController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PodcastsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -158,6 +159,11 @@ Route::post('verify', [ActivityController::class, 'verify'])->name('verify_subsc
 Route::get('courses/details/{token}', [CoursesController::class, 'course_details'])->name('course_details');
 Route::get('courses', [CoursesController::class, 'index'])->name('courses');
 
+/**
+ * Podcasts
+ */
+
+Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
 
 /**
  * Mail Routes
