@@ -16,4 +16,13 @@ class PodcastsController extends Controller
             'podcasts' => $podcasts
         ]);
     }
+
+    public function podcast_details($token)
+    {
+        $podcast = Podcast::all()->where('token', $token)->first();
+
+        return view('podcasts.details', [
+            'podcast' => $podcast
+        ]);
+    }
 }

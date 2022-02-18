@@ -15,7 +15,7 @@
             <div class="container">
                 <div class="row">
                     @foreach ($podcasts as $podcast)
-                        <a href="{{ route('event_details', ['token' => 1]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="{{ route('podcast_details', ['token' => $podcast['token']]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="case-item align-center mb60">
                                 <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                                     <img loading="lazy" src="{{ asset('storage/'.$podcast['picture']) }}" alt="our case">

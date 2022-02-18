@@ -164,6 +164,7 @@ Route::get('courses', [CoursesController::class, 'index'])->name('courses');
  */
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
+Route::get('podcasts/{token}', [PodcastsController::class, 'podcast_details'])->name('podcast_details');
 
 /**
  * Mail Routes

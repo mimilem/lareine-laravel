@@ -20,6 +20,7 @@ class CreatePodcastsTable extends Migration
             $table->text('picture');
             $table->text('file');
             $table->string('status')->default('active');
+            $table->string('token');
             $table->timestamps();
         });
     }

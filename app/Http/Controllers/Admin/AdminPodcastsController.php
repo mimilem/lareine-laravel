@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Podcast;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class AdminPodcastsController extends Controller
 {
@@ -24,7 +25,8 @@ class AdminPodcastsController extends Controller
                 'title' => $request->input('title'),
                 'description' => $request->input('description'),
                 'picture' => $request->file('picture')->store('podcasts'),
-                'file' => $request->file('file')->store('podcasts')
+                'file' => $request->file('file')->store('podcasts'),
+                'token' => Str::uuid(),
             ]);
         }
 

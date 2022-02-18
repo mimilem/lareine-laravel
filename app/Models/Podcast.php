@@ -15,5 +15,6 @@ class Podcast extends Model
         'picture',
         'file',
         'status',
+        'token',
     ];
 }
