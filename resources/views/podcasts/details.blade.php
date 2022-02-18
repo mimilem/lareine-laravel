@@ -30,11 +30,12 @@
 								<div class="heading">
 									<h4 class="h1 heading-title">{{ $podcast->title }}</h4>
 								</div>
+                                <p>{{ $podcast->description }}</p>
 							</div>
 						</div>
                         <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12">
                             <div class="player">
-
+                                <audio controls src="{{ asset('storage/'.$podcast->file) }}"></audio>
                             </div>
                         </div>
 					</div>
@@ -53,7 +54,7 @@
                 <div class="row align-center">
 					<div class="col-lg-8 col-lg-offset-2">
 						<div class="heading">
-							<h5 class="mb30">{{ $podcast->description }}
+							<h5 class="mb30">
 							</h5>
 						</div>
 					</div>
