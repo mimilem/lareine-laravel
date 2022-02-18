@@ -16,6 +16,7 @@ use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\PodcastsController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,13 +37,17 @@ Route::get('about', function () {
     return view('about');
 })->name('about');
 
-Route::get('portfolio', function () {
-    return view('portfolio');
-})->name('portfolio');
+
 
 Route::get('message', function () {
     return view('messages');
 })->name('messages');
+
+/**
+ * Portfolio
+ */
+
+Route::get('portfolio', [ProjectController::class, 'index'])->name('portfolio');
 
 /**
  * Contact 
