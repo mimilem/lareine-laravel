@@ -28,7 +28,7 @@ class AdminProjectController extends Controller
             Project::create($data);
         }
 
-        return redirect()->route('all_podcasts');
+        return redirect()->route('all_projects');
         
     }
 

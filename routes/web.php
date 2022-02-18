@@ -171,7 +171,7 @@ Route::get('courses', [CoursesController::class, 'index'])->name('courses');
  */
 
 Route::get('podcasts', [PodcastsController::class, 'index'])->name('podcasts');
-Route::get('podcasts/{token}', [PodcastsController::class, 'podcast_details'])->name('podcast_details');
+Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_details'])->name('podcast_details');
 
 /**
  * Mail Routes
@@ -201,7 +201,7 @@ Route::get('podcasts/{token}', [PodcastsController::class, 'podcast_details'])->
   Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
 
   Route::get('dashboard/podcasts', [AdminPodcastsController::class, 'index'])->name('all_podcasts');
-  Route::post('dashboard/podcasts/new', [AdminPodcastsController::class, 'add'])->name('add_podcast');
+  Route::post('dashboard/podcasts', [AdminPodcastsController::class, 'add'])->name('add_podcast');
   
   Route::get('projects', [AdminProjectController::class, 'index'])->name('all_projects');
   Route::post('projects/new', [AdminProjectController::class, 'add'])->name('add_project');
