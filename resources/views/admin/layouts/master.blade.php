@@ -76,6 +76,7 @@
                <li><a href="{{ route('all_events') }}"><i class="ti-star text-custom"></i><span> Tous les événements</span></a> </li>
                <li class="nav-level">---- <span>AUTRES ACTIONS</span></li>
                <li><a href="{{ route('all_podcasts') }}"><i class="ti-headphone text-custom"></i><span> Podcasts</span></a> </li>
+               <li><a href="{{ route('all_projects') }}"><i class="ti-briefcase text-custom"></i><span> Projets</span></a> </li>
                <li><a href="{{ route('ticket_verifier') }}"><i class="ti-id-badge text-custom"></i><span> Vérifier Ticket</span></a> </li>
             </ul>
          </section>
