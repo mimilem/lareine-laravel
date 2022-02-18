@@ -25,8 +25,7 @@ class AdminPodcastsController extends Controller
                 'title' => $request->input('title'),
                 'description' => $request->input('description'),
                 'picture' => $request->file('picture')->store('podcasts'),
-                'file' => "$request->file('file')->store('podcasts')",
-                // 'file' => $request->file('file')->store('podcasts'),
+                'file' => $request->file('file')->store('podcasts'),
                 'token' => Str::uuid(),
             ]);
         }
