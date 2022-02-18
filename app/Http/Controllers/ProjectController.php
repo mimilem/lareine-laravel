@@ -16,4 +16,13 @@ class ProjectController extends Controller
             'projects' => $projects
         ]);
     }
+
+    public function project_details($token)
+    {
+        $project = Project::all()->where('token', $token)->first();
+
+        return view('portfolio.details', [
+            'project' => $project
+        ]);
+    }
 }

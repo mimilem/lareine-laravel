@@ -47,6 +47,7 @@ Route::get('message', function () {
  * Portfolio
  */
 
+Route::get('portfolio/{token}', [ProjectController::class, 'project_details'])->name('project_details');
 Route::get('portfolio', [ProjectController::class, 'index'])->name('portfolio');
 
 /**
