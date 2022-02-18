@@ -10,7 +10,10 @@ class AdminPodcastsController extends Controller
 {
     public function index()
     {
-        return view('admin.podcasts.index');
+        $podcasts = Podcast::all()->where('status', 'active');
+        return view('admin.podcasts.index', [
+            'podcasts' => $podcasts
+        ]);
     }
 
     public function add(Request $request)

@@ -76,23 +76,17 @@
                                     <thead>
                                         <tr>
                                             <th>Titre</th>
-                                            <th>Date</th>
-                                            <th>Lieu</th>
-                                            <th>Heure de debut</th>
-                                            <th>Heure de fin</th>
-                                            <th>Prix</th>
+                                            <th>Date D'ajout</th>
+                                            <th>Description</th>
                                             <th>Editer/Effacer</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @foreach ($courses as $course)
+                                        @foreach ($podcasts as $podcast)
                                             <tr>
-                                                <td>{{ $course['title'] }}</td>
-                                                <td>{{ date('d-m-Y', strtotime($course['date'])) }}</td>
-                                                <td>{{ $course['place'] }}</td>
-                                                <td>{{ $course['start_time'] }}</td>
-                                                <td>{{ $course['end_time'] }}</td>
-                                                <td>$ {{ $course['amount'] }}</td>
+                                                <td>{{ $podcast['title'] }}</td>
+                                                <td>{{ date('d-m-Y', strtotime($podcast['created_at'])) }}</td>
+                                                <td>{{ $podcast['description'] }}</td>
                                                 <td>
                                                     <button type="button" class="btn btn-primary waves-effect waves-light">
                                                         <i class="icofont icofont-edit"></i>
@@ -102,7 +96,7 @@
                                                     </button>
                                                 </td>
                                             </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                  </table>
                               </div>
