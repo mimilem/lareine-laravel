@@ -23,7 +23,13 @@
                                 <h6 class="case-item__title"><strong>{{ $podcast['title'] }}</strong></h6>
                                 <div class="case-item__cat">
                                     <div class="event-info">
-                                        <p>{{ $podcast['description'] }}</p>
+                                        <small><i>{{ date('d-m-Y', strtotime($podcast['created_at'])) }}</i></small>
+                                        <p>
+                                            {{ Str::substr($podcast['description'], 0, 50) }} 
+                                            @if (Str::length($podcast['description']) > 50)
+                                                ...
+                                            @endif    
+                                        </p>
                                     </div>
                                 </div>
                             </div>
