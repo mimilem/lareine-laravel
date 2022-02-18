@@ -25,7 +25,7 @@
                                          </button>
                                  <h4 class="modal-title">Ajouter un Podcast</h4>
                               </div>
-                              <form action="{{ route('add_course') }}" method="POST" enctype="multipart/form-data">
+                              <form action="{{ route('add_podcast') }}" method="POST" enctype="multipart/form-data">
                                  @csrf                                     
                               <div class="modal-body container-fluid">
                                  <div class="form-group row">
@@ -49,7 +49,7 @@
                                  <div class="form-group row" style="border: 0.1px solid #cfcfcf">
                                     <div class="col-12" >
                                        <div class="custom-file" >
-                                           <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" required>
+                                           <input type="file" name="file"  accept=".mp3,audio/*" required>
                                            <label class="custom-file-label" for="validatedCustomFile">Fichier du podcast</label>
                                        </div>
                                     </div>
