@@ -20,7 +20,6 @@ class AdminPodcastsController extends Controller
 
     public function add(Request $request)
     {
-        // return $request->input();
         if ($request->method() == 'POST') {
             Podcast::create([
                 'title' => $request->input('title'),
