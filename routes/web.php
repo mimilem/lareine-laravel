@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminEventsController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
+use App\Http\Controllers\Admin\AdminPodcastsController;
 use App\Http\Controllers\Admin\AdminSubscribesController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
@@ -184,6 +185,8 @@ Route::get('courses', [CoursesController::class, 'index'])->name('courses');
   
   Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
   Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
+
+  Route::get('dashboard/podcasts', [AdminPodcastsController::class, 'index'])->name('all_podcasts');
   
   Route::get('dashboard/auth/login', [AdminAuthController::class, 'login'])->name('admin_login');
   Route::post('dashboard/auth/login', [AdminAuthController::class, 'sign_in'])->name('admin_login');
