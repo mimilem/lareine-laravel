@@ -17,7 +17,6 @@ class Forum extends Model
         'country',
         'province',
         'place',
-        'description',
         'token',
         'start_date',
         'end_date',

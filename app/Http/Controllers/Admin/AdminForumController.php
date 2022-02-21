@@ -11,4 +11,19 @@ class AdminForumController extends Controller
     {
         return view('admin.forums.index');
     }
+
+    public function schedule_forum_step_one()
+    {
+        return view('admin.forums.step-one');
+    }
+
+    public function schedule_forum_step_two()
+    {
+        return view('admin.forums.step-two');
+    }
+
+    public function schedule_forum_step_three()
+    {
+        return view('admin.forums.step-three');
+    }
 }
