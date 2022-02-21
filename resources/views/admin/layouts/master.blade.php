@@ -74,6 +74,7 @@
                <li><a href="{{ route('subscribes') }}"><i class="ti-view-list text-custom"></i><span> Réservations</span></a> </li>
                <li class="nav-level">---- <span>Evenements</span></li>
                <li><a href="{{ route('all_events') }}"><i class="ti-star text-custom"></i><span> Tous les événements</span></a> </li>
+               <li><a href="{{ route('all_forums') }}"><i class="ti-microphone text-custom"></i><span> Forums</span></a> </li>
                <li class="nav-level">---- <span>AUTRES ACTIONS</span></li>
                <li><a href="{{ route('all_podcasts') }}"><i class="ti-headphone text-custom"></i><span> Podcasts</span></a> </li>
                <li><a href="{{ route('all_projects') }}"><i class="ti-briefcase text-custom"></i><span> Projets</span></a> </li>

@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\AdminEventsController;
 use App\Http\Controllers\Admin\AdminFacilitatorsController;
+use App\Http\Controllers\Admin\AdminForumController;
 use App\Http\Controllers\Admin\AdminPodcastsController;
 use App\Http\Controllers\Admin\AdminProjectController;
 use App\Http\Controllers\Admin\AdminSubscribesController;
@@ -197,6 +198,11 @@ Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_deta
   Route::get('dashboard/facilitators', [AdminFacilitatorsController::class, 'index'])->name('facilitators');
   Route::post('dashboard/facilitators/new', [AdminFacilitatorsController::class, 'add_facilitator'])->name('add_facilitator');
   
+  Route::get('dashboard/forums', [AdminForumController::class, 'index'])->name('all_forums');
+  Route::get('dashboard/forums/new/step-one', [AdminForumController::class, 'schedule_forum_step_one'])->name('add_forum');
+  Route::post('dashboard/forums/new/step-two', [AdminForumController::class, 'schedule_forum_step_two'])->name('add_forum_step_two');
+  Route::post('dashboard/forums/new/step-three', [AdminForumController::class, 'schedule_forum_step_three'])->name('add_forum_step_three');
+
   Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
   Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
 
