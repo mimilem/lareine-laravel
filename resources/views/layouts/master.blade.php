@@ -125,10 +125,10 @@
 							<a href="{{ route('about') }}">A propos</a>
 						</li>
 						<li class="">
-							<a href="{{ route('courses') }}">Formations</a>
+							<a href="{{ route('courses') }}">Seminaires</a>
 						</li>
 						<li class="">
-							<a href="{{ route('events') }}">Evénements</a>
+							<a href="{{ route('events') }}">Forums</a>
 						</li>
 						<li>
 							<a href="{{ route('podcasts') }}">Podcasts</a>
