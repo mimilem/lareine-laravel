@@ -95,7 +95,7 @@
                 </div>
                 <div class="row">
                     @foreach ($events as $event)
-                        <a href="{{ route('event_details', ['token' => $event['token']]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="http://127.0.0.1:9200/{{ $event['token'] }}" target="_blank" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="case-item align-center mb60">
                                 <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                                     <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">
@@ -105,9 +105,6 @@
                                     <div class="event-info">
                                         <p>{{ $event['place'] }}</p>
                                         <p>{{ $event['date'] }}</p>
-                                    </div>
-                                    <div class="price">
-                                        $ {{ $event['amount'] }}
                                     </div>
                                 </div>
                             </div>

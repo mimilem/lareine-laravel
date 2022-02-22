@@ -22,7 +22,7 @@ class CreateForumsTable extends Migration
             $table->text('country');
             $table->text('province');
             $table->text('place');
-            $table->text('description');
+            $table->text('picture');
             $table->text('token')->unique();
             $table->date('start_date');
             $table->date('end_date');

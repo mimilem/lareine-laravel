@@ -18,17 +18,22 @@
                              Configurez les differents billets pour le forum
                           </p>
  
-                          <form>
-                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                 <label for="exampleInputEmail" class="form-control-label">Nom Du Billet</label>
-                                 <input type="text" name="name" class="form-control" placeholder="Nom Du Billet">
-                             </div>
-                             <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                 <label for="exampleInputPassword" class="form-control-label">Prix ($)</label>
-                                 <input type="number" name="topic" class="form-control" placeholder="Prix">
+                          <form action="{{ route('post_forum_step_three') }}" method="POST">
+                             @csrf
+                             <div class="ticket-container">
+                                 <input type="hidden" name="token" value="{{ $token }}">
+                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="exampleInputEmail" class="form-control-label">Nom Du Billet</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Nom Du Billet">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <label for="exampleInputPassword" class="form-control-label">Prix ($)</label>
+                                    <input type="number" name="amount" class="form-control" placeholder="Prix">
+                                </div>
                              </div>
                              <div>
-                                 <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Enregistrer</button>
+                                <button type="submit" formaction="{{ route('add_ticket') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter un billet</button>
+                                <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Enregistrer</button>
                              </div>
                           </form>
                        </div>
@@ -38,4 +43,7 @@
         </div>
     </div>
 </div>
+@endsection
+@section('scripts')
+    
 @endsection

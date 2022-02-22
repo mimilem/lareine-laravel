@@ -24,7 +24,7 @@ class AdminFacilitatorsController extends Controller
         if ($request->method() == 'POST') {
             User::create([
                 'first_name' => $request->input('first_name'),
-                'last_name' => $request->input('first_name'),
+                'last_name' => $request->input('last_name'),
                 'bio' => $request->input('bio'),
                 'user_role' => 'ROLE_FACILITATOR',
                 'picture' => $request->file('picture')->store('users')
