@@ -13,6 +13,7 @@ class Forum extends Model
         'title',
         'topic',
         'description',
+        'picture',
         'city',
         'country',
         'province',

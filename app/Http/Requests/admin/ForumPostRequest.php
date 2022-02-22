@@ -13,7 +13,7 @@ class ForumPostRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,16 @@ class ForumPostRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'required|max:255',
+            'topic' => 'required|max:255',
+            'description' => 'required',
+            'picture' => 'required',
+            'place' => 'required|max:255',
+            'country' => 'required|max:255',
+            'province' => 'required|max:255',
+            'city' => 'required|max:255',
+            'start_date' => 'required|after:today',
+            'end_date' => 'required|after:start_date',
         ];
     }
 }

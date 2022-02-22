@@ -13,7 +13,6 @@ class Ticket extends Model
         'forum',
         'name',
         'amount',
-        'token',
         'code',
     ];
 }

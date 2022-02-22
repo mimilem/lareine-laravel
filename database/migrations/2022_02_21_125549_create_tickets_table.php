@@ -18,7 +18,6 @@ class CreateTicketsTable extends Migration
             $table->foreignId('forum');
             $table->text('name');
             $table->double('amount');
-            $table->text('token')->unique();
             $table->string('code')->unique();
             $table->timestamps();
         });

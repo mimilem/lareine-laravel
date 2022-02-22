@@ -18,29 +18,42 @@
                             <p class="m-b-20">
                                 Rajoutez les differentes sessions du forum
                             </p>
-                            <form method="POST" action="{{ route('add_forum_step_three') }}">
+                            @if ($errors->any())
+                                <div class="col-12">
+                                    <div class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
+                            <form method="POST" action="{{ route('post_forum_step_two') }}">
                                 @csrf
-                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputEmail" class="form-control-label">Theme de la session</label>
-                                    <input type="topic" name="title" class="form-control" placeholder="Theme de la session">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputPassword" class="form-control-label">Orateur</label>
-                                    <select class="form-control" name="speaker" id="">
-                                        <option value="">Denis Donner</option>
-                                        <option value="">Math Donner</option>
-                                        <option value="">Denis Willy</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputPassword" class="form-control-label">Heure de Debut</label>
-                                    <input type="time" name="start_time" class="form-control" placeholder="Heure de Debut">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputPassword" class="form-control-label">Heure de Debut</label>
-                                    <input type="time" name="end_time" class="form-control" placeholder="Heure de Fin">
+                                <input type="hidden" name="token" value="{{ $token }}">
+                                <div class="session-form-container">
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="exampleInputEmail" class="form-control-label">Theme de la session</label>
+                                        <input type="topic" name="topic" class="form-control" placeholder="Theme de la session">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="exampleInputPassword" class="form-control-label">Orateur</label>
+                                        <select class="form-control" name="speaker" id="">
+                                            @foreach ($speakers as $speaker)
+                                                <option value="{{ $speaker['id'] }}">{{ $speaker['first_name'].' '.$speaker['last_name'] }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="exampleInputPassword" class="form-control-label">Heure de Debut</label>
+                                        <input type="time" name="start_time" class="form-control" placeholder="Heure de Debut">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="exampleInputPassword" class="form-control-label">Heure de Debut</label>
+                                        <input type="time" name="end_time" class="form-control" placeholder="Heure de Fin">
+                                    </div>
                                 </div>
                                 <div>
+                                    <button type="submit" formaction="{{ route('add_forum_session') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter une session</button>
                                     <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Suivant</button>
                                 </div>
                             </form>

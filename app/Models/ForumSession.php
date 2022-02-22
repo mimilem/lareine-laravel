@@ -12,7 +12,7 @@ class ForumSession extends Model
     protected $fillable = [
         'speaker',
         'topic',
-        'token',
+        'forum',
         'start_time',
         'end_time',
     ];

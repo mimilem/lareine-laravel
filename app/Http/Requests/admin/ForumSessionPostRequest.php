@@ -13,7 +13,7 @@ class ForumSessionPostRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class ForumSessionPostRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'topic' => 'required|max:255',
+            'speaker' => '',
+            'token' => 'required',
+            'start_time' => 'required',
+            'end_time' => 'required|after:start_time',
         ];
     }
 }
