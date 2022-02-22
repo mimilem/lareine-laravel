@@ -106,9 +106,6 @@
                                         <p>{{ $event['place'] }}</p>
                                         <p>{{ $event['date'] }}</p>
                                     </div>
-                                    <div class="price">
-                                        $ {{ $event['amount'] }}
-                                    </div>
                                 </div>
                             </div>
                         </a>

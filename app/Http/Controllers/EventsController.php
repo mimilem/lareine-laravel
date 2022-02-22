@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Activity;
+use App\Models\Forum;
 use Illuminate\Support\Facades\DB;
 
 class EventsController extends Controller
 {
     public function index()
     {
-        $data = Activity::all()->where('activity_type', '!=','COURSE');
+        $data = Forum::all();
 
         return view('events.index', [
             'events' => $data
