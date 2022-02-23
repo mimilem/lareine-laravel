@@ -10,9 +10,9 @@ class ForumSession extends Model
     use HasFactory;
 
     protected $fillable = [
-        'speaker',
+        'speaker_id',
         'topic',
-        'forum',
+        'forum_id',
         'start_time',
         'end_time',
     ];

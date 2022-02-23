@@ -15,8 +15,8 @@ class CreateForumSessionsTable extends Migration
     {
         Schema::create('forum_sessions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('forum');
-            $table->foreignId('speaker');
+            $table->foreignId('forum_id');
+            $table->foreignId('speaker_id');
             $table->text('topic');
             $table->time('start_time');
             $table->time('end_time')->nullable();
