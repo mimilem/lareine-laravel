@@ -18,6 +18,7 @@ class CreateForumSessionsTable extends Migration
             $table->foreignId('forum_id');
             $table->foreignId('speaker_id');
             $table->text('topic');
+            $table->integer('day');
             $table->time('start_time');
             $table->time('end_time')->nullable();
             $table->timestamps();

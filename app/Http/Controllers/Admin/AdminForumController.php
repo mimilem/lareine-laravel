@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Requests\admin\ForumPostRequest;
@@ -45,9 +46,18 @@ class AdminForumController extends Controller
     {
         $facilitators = User::all()->where('user_role', 'ROLE_FACILITATOR');
 
+        $forum = Forum::all()->where('token', $token)->first();
+
+        $date1 = new DateTime($forum->end_date);
+        $date2 = new DateTime($forum->start_date);
+        $days = ($date1->diff($date2)->format('%a')) + 1;
+
+        
+
         return view('admin.forums.step-two', [
             'token' => $token,
-            'speakers' => $facilitators
+            'speakers' => $facilitators,
+            'days' => $days
         ]);
     }
 
@@ -56,7 +66,7 @@ class AdminForumController extends Controller
         if ($request->method() == 'POST') {
             $data = $request->validated();
             $forum = Forum::all()->where('token', $data['token'])->first();
-            $data['forum'] = $forum['id'];
+            $data['forum_id'] = $forum['id'];
 
             ForumSession::create($data);
 
@@ -71,7 +81,9 @@ class AdminForumController extends Controller
         if ($request->method() == 'POST') {
             $data = $request->validated();
             $forum = Forum::all()->where('token', $data['token'])->first();
-            $data['forum'] = $forum['id'];
+            $data['forum_id'] = $forum['id'];
+
+
             ForumSession::create($data);
             
         }

@@ -11,8 +11,9 @@ class ForumSession extends Model
 
     protected $fillable = [
         'speaker_id',
-        'topic',
         'forum_id',
+        'topic',
+        'day',
         'start_time',
         'end_time',
     ];

@@ -36,8 +36,16 @@
                                         <input type="topic" name="topic" class="form-control" placeholder="Theme de la session">
                                     </div>
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <label for="exampleInputEmail" class="form-control-label">Jour</label>
+                                        <select class="form-control" name="day" id="">
+                                            @for ($i = 1; $i < $days+1; $i++)
+                                                <option value="{{ $i }}"> Jour{{ $i }}</option>
+                                            @endfor
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                         <label for="exampleInputPassword" class="form-control-label">Orateur</label>
-                                        <select class="form-control" name="speaker" id="">
+                                        <select class="form-control" name="speaker_id" id="">
                                             @foreach ($speakers as $speaker)
                                                 <option value="{{ $speaker['id'] }}">{{ $speaker['first_name'].' '.$speaker['last_name'] }}</option>
                                             @endforeach
@@ -48,7 +56,7 @@
                                         <input type="time" name="start_time" class="form-control" placeholder="Heure de Debut">
                                     </div>
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <label for="exampleInputPassword" class="form-control-label">Heure de Debut</label>
+                                        <label for="exampleInputPassword" class="form-control-label">Heure de Fin</label>
                                         <input type="time" name="end_time" class="form-control" placeholder="Heure de Fin">
                                     </div>
                                 </div>
