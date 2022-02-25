@@ -13,6 +13,7 @@ use App\Models\Forum;
 use App\Models\ForumSession;
 use App\Models\Ticket;
 use App\Models\User;
+use App\Models\ForumSessionSpeaker;
 
 class AdminForumController extends Controller
 {
@@ -68,7 +69,15 @@ class AdminForumController extends Controller
             $forum = Forum::all()->where('token', $data['token'])->first();
             $data['forum_id'] = $forum['id'];
 
-            ForumSession::create($data);
+            $forum_session = ForumSession::create($data);
+
+            $speakers = array_unique($request->input('speakers'));
+            foreach ($speakers as $key => $speaker) {
+                ForumSessionSpeaker::create([
+                    'forum_session_id' => $forum_session['id'],
+                    'speaker_id' => $speaker
+                ]);
+            }
 
             return redirect()->route('add_forum_step_three', [
                 'token' => $data['token']
@@ -78,14 +87,22 @@ class AdminForumController extends Controller
 
     public function post_forum_session(ForumSessionPostRequest $request)
     {
+        
         if ($request->method() == 'POST') {
             $data = $request->validated();
             $forum = Forum::all()->where('token', $data['token'])->first();
             $data['forum_id'] = $forum['id'];
-
-
-            ForumSession::create($data);
             
+            $forum_session = ForumSession::create($data);
+
+            $speakers = array_unique($request->input('speakers'));
+            foreach ($speakers as $key => $speaker) {
+                ForumSessionSpeaker::create([
+                    'forum_session_id' => $forum_session['id'],
+                    'speaker_id' => $speaker
+                ]);
+            }
+
         }
 
         return redirect()->route('add_forum_step_two', [
