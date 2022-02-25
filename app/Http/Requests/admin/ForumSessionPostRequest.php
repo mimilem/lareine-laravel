@@ -25,7 +25,8 @@ class ForumSessionPostRequest extends FormRequest
     {
         return [
             'topic' => 'required|max:255',
-            'speaker' => '',
+            'speaker_id' => '',
+            'day' => '',
             'token' => 'required',
             'start_time' => 'required',
             'end_time' => 'required|after:start_time',

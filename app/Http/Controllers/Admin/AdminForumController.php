@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Requests\admin\ForumPostRequest;
@@ -12,6 +13,7 @@ use App\Models\Forum;
 use App\Models\ForumSession;
 use App\Models\Ticket;
 use App\Models\User;
+use App\Models\ForumSessionSpeaker;
 
 class AdminForumController extends Controller
 {
@@ -45,9 +47,18 @@ class AdminForumController extends Controller
     {
         $facilitators = User::all()->where('user_role', 'ROLE_FACILITATOR');
 
+        $forum = Forum::all()->where('token', $token)->first();
+
+        $date1 = new DateTime($forum->end_date);
+        $date2 = new DateTime($forum->start_date);
+        $days = ($date1->diff($date2)->format('%a')) + 1;
+
+        
+
         return view('admin.forums.step-two', [
             'token' => $token,
-            'speakers' => $facilitators
+            'speakers' => $facilitators,
+            'days' => $days
         ]);
     }
 
@@ -56,9 +67,17 @@ class AdminForumController extends Controller
         if ($request->method() == 'POST') {
             $data = $request->validated();
             $forum = Forum::all()->where('token', $data['token'])->first();
-            $data['forum'] = $forum['id'];
+            $data['forum_id'] = $forum['id'];
 
-            ForumSession::create($data);
+            $forum_session = ForumSession::create($data);
+
+            $speakers = array_unique($request->input('speakers'));
+            foreach ($speakers as $key => $speaker) {
+                ForumSessionSpeaker::create([
+                    'forum_session_id' => $forum_session['id'],
+                    'speaker_id' => $speaker
+                ]);
+            }
 
             return redirect()->route('add_forum_step_three', [
                 'token' => $data['token']
@@ -68,12 +87,22 @@ class AdminForumController extends Controller
 
     public function post_forum_session(ForumSessionPostRequest $request)
     {
+        
         if ($request->method() == 'POST') {
             $data = $request->validated();
             $forum = Forum::all()->where('token', $data['token'])->first();
-            $data['forum'] = $forum['id'];
-            ForumSession::create($data);
+            $data['forum_id'] = $forum['id'];
             
+            $forum_session = ForumSession::create($data);
+
+            $speakers = array_unique($request->input('speakers'));
+            foreach ($speakers as $key => $speaker) {
+                ForumSessionSpeaker::create([
+                    'forum_session_id' => $forum_session['id'],
+                    'speaker_id' => $speaker
+                ]);
+            }
+
         }
 
         return redirect()->route('add_forum_step_two', [
