@@ -95,7 +95,7 @@
                 </div>
                 <div class="row">
                     @foreach ($events as $event)
-                        <a href="https://forum.lasouveraine.marketing/{{ $event['token'] }}" target="_blank" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://forum.lasouveraine.marketing/public/{{ $event['token'] }}" target="_blank" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="case-item align-center mb60">
                                 <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                                     <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">
