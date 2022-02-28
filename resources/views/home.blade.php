@@ -240,10 +240,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
                     <div class="video theme-module">
                         <div class="video-thumb">
-                            <div class="overlay"></div>
-                            <a href="https://www.youtube.com/watch?v=0O2aH4XLbto" class="video-control js-popup-iframe">
-                                <img loading="lazy" src="{{ asset('assets/svg/video-control.svg') }}" alt="go">
-                            </a>
+                            {{-- <div class="overlay"></div> --}}
                         </div>
                     </div>
                 </div>
@@ -262,7 +259,7 @@
 							</p>
 						</div>
 						<a href="https://dmf.lasouveraine.marketing/" target="_blank" class="btn btn-medium btn--secondary">
-							<span class="text">DECOUVREZ LA DMF</span>
+							<span class="text">DECOUVREZ LE DMF</span>
 							<span class="semicircle"></span>
 						</a>
 					</div>
