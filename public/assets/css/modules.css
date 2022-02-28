@@ -1534,7 +1534,7 @@
   .our-video .video {
     min-height: 500px;
     background: url("../img/video2.png") no-repeat 50% 50%, #2E5DAB;
-    background-size: cover; }
+    background-size: contain; }
     .our-video .video .video-control {
       position: absolute;
       top: 50%;
