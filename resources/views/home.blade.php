@@ -234,7 +234,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container pt120">
         <div class="row">
             <div class="our-video js-equal-child">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 no-padding">
@@ -247,15 +247,13 @@
                 <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12 no-padding">
 					<div class="content theme-module centered-on-mobile medium-padding100">
 						<div class="heading">
-							<h4 class="h1 heading-title">DRC Marketing Forum</h4>
+							<h4 class="h5 heading-title" style="font-weight: bold">DRC Marketing Forum</h4>
 							<div class="heading-line">
 								<span class="short-line"></span>
 								<span class="long-line"></span>
 							</div>
-							<p class="heading-text">Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber
-								tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta.
-								Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-								nisl ut aliquip ex ea commodo consequat eleifend option nihil.
+							<p class="heading-text" >Un rendez-vous privilégié des rencontres et d’échanges 
+                                avec des leaders d'opinion et des experts en marketing.
 							</p>
 						</div>
 						<a href="https://dmf.lasouveraine.marketing/" target="_blank" class="btn btn-medium btn--secondary">
