@@ -261,8 +261,8 @@
 								nisl ut aliquip ex ea commodo consequat eleifend option nihil.
 							</p>
 						</div>
-						<a href="{{ route('contact') }}" class="btn btn-medium btn--secondary">
-							<span class="text">CONTACTEZ-NOUS</span>
+						<a href="https://dmf.lasouveraine.marketing/" target="_blank" class="btn btn-medium btn--secondary">
+							<span class="text">DECOUVREZ LA DMF</span>
 							<span class="semicircle"></span>
 						</a>
 					</div>
