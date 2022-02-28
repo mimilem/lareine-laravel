@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div style="position: relative">
+    {{-- <div style="position: relative">
         <div class="stunning-header with-photo stunning-header-bg-photo6">
             <div class="stunning-header-content">
                 <h1 class="stunning-header-title">DRC Marketing Forum</h1>
@@ -16,9 +16,9 @@
             </div>
             <div class="overlay overlay-primary"></div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background: url('{{ asset('assets/img/photo-elements4.jpg') }}'); background-size: cover; padding:100px 15px; position: relative;">
                 <div style="max-width: 790px; text-align: center; margin: 0 auto; position: relative; z-index: 5;">
@@ -85,17 +85,20 @@
 				</div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="container">
         <div class="row medium-padding120">
+    
             <div class="col-lg-12">
-                <div class="heading align-center" id="forums">
-                    <h4 class="h1 heading-title">Nos Forums</h4>
+    
+                <div class="heading align-center">
+                    <h4 class="h1 heading-title">Nos Evenements</h4>
                 </div>
+    
                 <div class="row">
                     @foreach ($events as $event)
-                        <a href="https://forum.lasouveraine.marketing/public/{{ $event['token'] }}" target="_blank" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <a href="{{ route('event_details', ['token' => $event['token']]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="case-item align-center mb60">
                                 <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
                                     <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">
@@ -106,13 +109,16 @@
                                         <p>{{ $event['place'] }}</p>
                                         <p>{{ $event['date'] }}</p>
                                     </div>
+                                    <div class="price">
+                                        $ {{ $event['amount'] }}
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     @endforeach
                 </div>
             </div>
-
+    
         </div>
     </div>
 @endsection
