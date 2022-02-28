@@ -12,7 +12,7 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $data = Forum::all();
+        $data = Activity::all()->where('activity_type', '!=','COURSE');
 
         return view('events.index', [
             'events' => $data
