@@ -8,18 +8,43 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Requests\admin\ForumPostRequest;
 use App\Http\Requests\admin\ForumSessionPostRequest;
+use App\Http\Requests\admin\ForumSponsorPostRequest;
 use App\Http\Requests\admin\TicketPostRequest;
 use App\Models\Forum;
 use App\Models\ForumSession;
 use App\Models\Ticket;
 use App\Models\User;
 use App\Models\ForumSessionSpeaker;
+use App\Models\ForumSponsor;
 
 class AdminForumController extends Controller
 {
     public function index()
     {
-        return view('admin.forums.index');
+        $forums = Forum::all();
+
+        return view('admin.forums.index', [
+            'forums' => $forums
+        ]);
+    }
+
+    public function details($token)
+    {
+        $forum = Forum::all()->where('token', $token)->first();
+
+        $sessions = ForumSession::all()->where('forum_id', $forum->id);
+
+        $tickets = Ticket::all()->where('forum', $forum->id);
+
+        $sponsors = ForumSponsor::all()->where('forum_id', $forum->id);
+
+        return view('admin.forums.details', [
+            'forum' => $forum,
+            'sessions' => $sessions,
+            'tickets' => $tickets,
+            'sponsors' => $sponsors
+        ]);
+
     }
 
     public function schedule_forum_step_one()
@@ -144,6 +169,45 @@ class AdminForumController extends Controller
             Ticket::create($data);
         }
 
+        return redirect()->route('add_forum_step_four', [
+            'token' => $request->input('token')
+        ]);
+
+    }
+
+    public function schedule_forum_step_four($token)
+    {
+        return view('admin.forums.step-four', [
+            'token' => $token,
+        ]);
+    }
+
+    public function post_forum_sponsor(ForumSponsorPostRequest $request)
+    {
+        if ($request->method() == 'POST') {
+            $data = $request->input();
+            $forum = Forum::all()->where('token', $data['token'])->first();
+            $data['forum_id'] = $forum['id'];
+            $data['logo'] = $request->file('logo')->store('sponsors');
+            ForumSponsor::create($data);
+        }
+
+        return redirect()->route('add_forum_step_four', [
+            'token' => $request->input('token')
+        ]);
+    }
+
+    public function post_forum_step_four(ForumSponsorPostRequest $request)
+    {
+        if ($request->method() == 'POST') {
+            $data = $request->input();
+            $forum = Forum::all()->where('token', $data['token'])->first();
+            $data['forum_id'] = $forum['id'];
+            $data['logo'] = $request->file('logo')->store('sponsors');
+            ForumSponsor::create($data);
+        }
+
         return redirect()->route('add_forum');
     }
+
 }

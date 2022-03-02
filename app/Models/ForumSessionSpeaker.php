@@ -13,4 +13,9 @@ class ForumSessionSpeaker extends Model
         'forum_session_id',
         'speaker_id'
     ];
+
+    public function speaker()
+    {
+        return $this->hasOne(User::class, 'id', 'speaker_id');
+    }
 }

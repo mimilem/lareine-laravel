@@ -10,30 +10,30 @@
                 <div class="col-lg-12">
                     <div class="card">
                        <div class="card-header">
-                          <h5 class="card-header-text">Billeterie</h5>
+                          <h5 class="card-header-text">Sponsors</h5>
                        </div>
  
                        <div class="card-block">
                           <p class="m-b-20">
-                             Configurez les differents billets pour le forum
+                             Ajoutez les sponsors du forum
                           </p>
  
-                          <form action="{{ route('post_forum_step_three') }}" method="POST">
+                          <form action="{{ route('post_forum_step_four') }}" method="POST" enctype="multipart/form-data">
                              @csrf
                              <div class="ticket-container">
                                  <input type="hidden" name="token" value="{{ $token }}">
                                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputEmail" class="form-control-label">Nom Du Billet</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Nom Du Billet">
+                                    <label for="exampleInputEmail" class="form-control-label">Nom Du Sponsor</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Nom Du Sponsor">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <label for="exampleInputPassword" class="form-control-label">Prix ($)</label>
-                                    <input type="number" name="amount" class="form-control" placeholder="Prix">
+                                    <label for="exampleInputPassword" class="form-control-label">Logo</label>
+                                    <input type="file" name="logo" class="form-control" placeholder="Logo">
                                 </div>
                              </div>
                              <div>
-                                <button type="submit" formaction="{{ route('add_ticket') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter un billet</button>
-                                <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Suivant</button>
+                                <button type="submit" formaction="{{ route('add_forum_sponsor') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter un sponsor</button>
+                                <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Enregistrer</button>
                              </div>
                           </form>
                        </div>
