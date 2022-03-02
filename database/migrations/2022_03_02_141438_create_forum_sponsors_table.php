@@ -15,6 +15,8 @@ class CreateForumSponsorsTable extends Migration
     {
         Schema::create('forum_sponsors', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('forum_id');
+            $table->text('logo');
             $table->timestamps();
         });
     }
