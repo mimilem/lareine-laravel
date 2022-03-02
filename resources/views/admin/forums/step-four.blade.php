@@ -18,7 +18,7 @@
                              Ajoutez les sponsors du forum
                           </p>
  
-                          <form action="{{ route('post_forum_step_three') }}" method="POST">
+                          <form action="{{ route('post_forum_step_four') }}" method="POST" enctype="multipart/form-data">
                              @csrf
                              <div class="ticket-container">
                                  <input type="hidden" name="token" value="{{ $token }}">
@@ -28,11 +28,11 @@
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                     <label for="exampleInputPassword" class="form-control-label">Logo</label>
-                                    <input type="number" name="logo" class="form-control" placeholder="Logo">
+                                    <input type="file" name="logo" class="form-control" placeholder="Logo">
                                 </div>
                              </div>
                              <div>
-                                <button type="submit" formaction="{{ route('add_ticket') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter un sponsor</button>
+                                <button type="submit" formaction="{{ route('add_forum_sponsor') }}" class="btn btn-primary waves-effect waves-light m-r-30">Ajouter un sponsor</button>
                                 <button type="submit" class="btn btn-success waves-effect waves-light m-r-30">Enregistrer</button>
                              </div>
                           </form>

@@ -15,6 +15,7 @@ use App\Models\ForumSession;
 use App\Models\Ticket;
 use App\Models\User;
 use App\Models\ForumSessionSpeaker;
+use App\Models\ForumSponsor;
 
 class AdminForumController extends Controller
 {
@@ -156,6 +157,34 @@ class AdminForumController extends Controller
         return view('admin.forums.step-four', [
             'token' => $token,
         ]);
+    }
+
+    public function post_forum_sponsor(ForumSponsorPostRequest $request)
+    {
+        if ($request->method() == 'POST') {
+            $data = $request->input();
+            $forum = Forum::all()->where('token', $data['token'])->first();
+            $data['forum_id'] = $forum['id'];
+            $data['logo'] = $request->file('logo')->store('sponsors');
+            ForumSponsor::create($data);
+        }
+
+        return redirect()->route('add_forum_step_four', [
+            'token' => $request->input('token')
+        ]);
+    }
+
+    public function post_forum_step_four(ForumSponsorPostRequest $request)
+    {
+        if ($request->method() == 'POST') {
+            $data = $request->input();
+            $forum = Forum::all()->where('token', $data['token'])->first();
+            $data['forum_id'] = $forum['id'];
+            $data['logo'] = $request->file('logo')->store('sponsors');
+            ForumSponsor::create($data);
+        }
+
+        return redirect()->route('add_forum');
     }
 
 }

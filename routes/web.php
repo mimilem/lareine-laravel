@@ -198,6 +198,7 @@ Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_deta
   Route::get('dashboard/forums', [AdminForumController::class, 'index'])->name('all_forums');
   Route::post('dashboard/forums/new/add-session', [AdminForumController::class, 'post_forum_session'])->name('add_forum_session');
   Route::post('dashboard/forums/new/add-ticket', [AdminForumController::class, 'post_forum_ticket'])->name('add_ticket');
+  Route::post('dashboard/forums/new/add-sponsor', [AdminForumController::class, 'post_forum_sponsor'])->name('add_forum_sponsor'); 
   Route::get('dashboard/forums/new/step-one', [AdminForumController::class, 'schedule_forum_step_one'])->name('add_forum');
   Route::post('dashboard/forums/new/step-one', [AdminForumController::class, 'post_forum_step_one'])->name('add_forum');
   Route::get('dashboard/forums/new/step-two/{token}', [AdminForumController::class, 'schedule_forum_step_two'])->name('add_forum_step_two');
@@ -205,6 +206,7 @@ Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_deta
   Route::get('dashboard/forums/new/step-three/{token}', [AdminForumController::class, 'schedule_forum_step_three'])->name('add_forum_step_three');
   Route::post('dashboard/forums/new/step-three/add', [AdminForumController::class, 'post_forum_step_three'])->name('post_forum_step_three');
   Route::get('dashboard/forums/new/step-four/{token}', [AdminForumController::class, 'schedule_forum_step_four'])->name('add_forum_step_four');
+  Route::post('dashboard/forums/new/step-four/add', [AdminForumController::class, 'post_forum_step_four'])->name('post_forum_step_four');
   
 
   Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
