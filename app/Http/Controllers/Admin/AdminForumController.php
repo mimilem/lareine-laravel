@@ -21,7 +21,11 @@ class AdminForumController extends Controller
 {
     public function index()
     {
-        return view('admin.forums.index');
+        $forums = Forum::all();
+
+        return view('admin.forums.index', [
+            'forums' => $forums
+        ]);
     }
 
     public function schedule_forum_step_one()

@@ -24,28 +24,27 @@
                                             <th>Lieu</th>
                                             <th>Date de debut</th>
                                             <th>Date de fin</th>
-                                            <th>Editer/Effacer</th>
+                                            <th>Voir/Supprimer</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @foreach ($courses as $course)
+                                        @foreach ($forums as $forum)
                                             <tr>
-                                                <td>{{ $course['title'] }}</td>
-                                                <td>{{ date('d-m-Y', strtotime($course['date'])) }}</td>
-                                                <td>{{ $course['place'] }}</td>
-                                                <td>{{ $course['start_time'] }}</td>
-                                                <td>{{ $course['end_time'] }}</td>
-                                                <td>$ {{ $course['amount'] }}</td>
+                                                <td>{{ $forum['title'] }}</td>
+                                                <td>{{ date('d-m-Y', strtotime($forum['date'])) }}</td>
+                                                <td>{{ $forum['place'] }}</td>
+                                                <td>{{ $forum['start_date'] }}</td>
+                                                <td>{{ $forum['end_date'] }}</td>
                                                 <td>
                                                     <button type="button" class="btn btn-primary waves-effect waves-light">
-                                                        <i class="icofont icofont-edit"></i>
+                                                        <i class="icofont icofont-eye"></i>
                                                     </button>
                                                     <button type="button" class="btn btn-danger waves-effect waves-light">
                                                         <i class="icofont icofont-trash"></i>
                                                     </button>
                                                 </td>
                                             </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                  </table>
                               </div>
