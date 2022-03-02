@@ -48,6 +48,7 @@ return array(
     'App\\Models\\Forum' => $baseDir . '/app/Models/Forum.php',
     'App\\Models\\ForumSession' => $baseDir . '/app/Models/ForumSession.php',
     'App\\Models\\ForumSessionSpeaker' => $baseDir . '/app/Models/ForumSessionSpeaker.php',
+    'App\\Models\\ForumSponsor' => $baseDir . '/app/Models/ForumSponsor.php',
     'App\\Models\\Message' => $baseDir . '/app/Models/Message.php',
     'App\\Models\\Podcast' => $baseDir . '/app/Models/Podcast.php',
     'App\\Models\\Project' => $baseDir . '/app/Models/Project.php',

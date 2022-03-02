@@ -558,6 +558,7 @@ class ComposerStaticInitaeb11d7625ce61c46c295c5b6a165c14
         'App\\Models\\Forum' => __DIR__ . '/../..' . '/app/Models/Forum.php',
         'App\\Models\\ForumSession' => __DIR__ . '/../..' . '/app/Models/ForumSession.php',
         'App\\Models\\ForumSessionSpeaker' => __DIR__ . '/../..' . '/app/Models/ForumSessionSpeaker.php',
+        'App\\Models\\ForumSponsor' => __DIR__ . '/../..' . '/app/Models/ForumSponsor.php',
         'App\\Models\\Message' => __DIR__ . '/../..' . '/app/Models/Message.php',
         'App\\Models\\Podcast' => __DIR__ . '/../..' . '/app/Models/Podcast.php',
         'App\\Models\\Project' => __DIR__ . '/../..' . '/app/Models/Project.php',
