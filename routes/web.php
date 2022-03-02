@@ -204,7 +204,9 @@ Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_deta
   Route::post('dashboard/forums/new/step-two/add', [AdminForumController::class, 'post_forum_step_two'])->name('post_forum_step_two');
   Route::get('dashboard/forums/new/step-three/{token}', [AdminForumController::class, 'schedule_forum_step_three'])->name('add_forum_step_three');
   Route::post('dashboard/forums/new/step-three/add', [AdminForumController::class, 'post_forum_step_three'])->name('post_forum_step_three');
+  Route::get('dashboard/forums/new/step-four/{token}', [AdminForumController::class, 'schedule_forum_step_four'])->name('add_forum_step_four');
   
+
   Route::get('dashboard/events', [AdminEventsController::class, 'index'])->name('all_events');
   Route::post('dashboard/events', [AdminEventsController::class, 'add_event'])->name('add_event');
 

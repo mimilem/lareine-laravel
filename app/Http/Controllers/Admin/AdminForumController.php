@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Http\Requests\admin\ForumPostRequest;
 use App\Http\Requests\admin\ForumSessionPostRequest;
+use App\Http\Requests\admin\ForumSponsorPostRequest;
 use App\Http\Requests\admin\TicketPostRequest;
 use App\Models\Forum;
 use App\Models\ForumSession;
@@ -144,6 +145,17 @@ class AdminForumController extends Controller
             Ticket::create($data);
         }
 
-        return redirect()->route('add_forum');
+        return redirect()->route('add_forum_step_four', [
+            'token' => $request->input('token')
+        ]);
+
     }
+
+    public function schedule_forum_step_four($token)
+    {
+        return view('admin.forums.step-four', [
+            'token' => $token,
+        ]);
+    }
+
 }
