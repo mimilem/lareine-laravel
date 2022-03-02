@@ -16,4 +16,9 @@ class ForumSession extends Model
         'start_time',
         'end_time',
     ];
+
+    public function session_speakers()
+    {
+        return $this->hasMany(ForumSessionSpeaker::class, 'forum_session_id');
+    }
 }

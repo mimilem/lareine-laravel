@@ -196,6 +196,7 @@ Route::get('podcasts/details/{token}', [PodcastsController::class, 'podcast_deta
   Route::post('dashboard/facilitators/new', [AdminFacilitatorsController::class, 'add_facilitator'])->name('add_facilitator');
   
   Route::get('dashboard/forums', [AdminForumController::class, 'index'])->name('all_forums');
+  Route::get('dashboard/forums/details/{token}', [AdminForumController::class, 'details'])->name('forum_details');
   Route::post('dashboard/forums/new/add-session', [AdminForumController::class, 'post_forum_session'])->name('add_forum_session');
   Route::post('dashboard/forums/new/add-ticket', [AdminForumController::class, 'post_forum_ticket'])->name('add_ticket');
   Route::post('dashboard/forums/new/add-sponsor', [AdminForumController::class, 'post_forum_sponsor'])->name('add_forum_sponsor'); 

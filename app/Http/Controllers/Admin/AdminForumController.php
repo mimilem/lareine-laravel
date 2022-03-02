@@ -28,6 +28,25 @@ class AdminForumController extends Controller
         ]);
     }
 
+    public function details($token)
+    {
+        $forum = Forum::all()->where('token', $token)->first();
+
+        $sessions = ForumSession::all()->where('forum_id', $forum->id);
+
+        $tickets = Ticket::all()->where('forum', $forum->id);
+
+        $sponsors = ForumSponsor::all()->where('forum_id', $forum->id);
+
+        return view('admin.forums.details', [
+            'forum' => $forum,
+            'sessions' => $sessions,
+            'tickets' => $tickets,
+            'sponsors' => $sponsors
+        ]);
+
+    }
+
     public function schedule_forum_step_one()
     {
         return view('admin.forums.step-one');

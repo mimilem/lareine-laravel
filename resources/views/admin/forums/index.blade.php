@@ -31,14 +31,14 @@
                                         @foreach ($forums as $forum)
                                             <tr>
                                                 <td>{{ $forum['title'] }}</td>
-                                                <td>{{ date('d-m-Y', strtotime($forum['date'])) }}</td>
+                                                <td>{{ date('d-m-Y', strtotime($forum['created_at'])) }}</td>
                                                 <td>{{ $forum['place'] }}</td>
                                                 <td>{{ $forum['start_date'] }}</td>
                                                 <td>{{ $forum['end_date'] }}</td>
                                                 <td>
-                                                    <button type="button" class="btn btn-primary waves-effect waves-light">
+                                                    <a href="{{ route('forum_details', ['token' => $forum['token']]) }}" class="btn btn-primary waves-effect waves-light">
                                                         <i class="icofont icofont-eye"></i>
-                                                    </button>
+                                                    </a>
                                                     <button type="button" class="btn btn-danger waves-effect waves-light">
                                                         <i class="icofont icofont-trash"></i>
                                                     </button>
