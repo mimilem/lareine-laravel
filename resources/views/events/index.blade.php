@@ -97,25 +97,36 @@
                 </div>
     
                 <div class="row">
-                    @foreach ($events as $event)
-                        <a href="{{ route('event_details', ['token' => $event['token']]) }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div class="case-item align-center mb60">
-                                <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-                                    <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">
-                                </div>
-                                <h6 class="case-item__title"><strong>{{ $event['title'] }}</strong></h6>
-                                <div class="case-item__cat">
-                                    <div class="event-info">
-                                        <p>{{ $event['place'] }}</p>
-                                        <p>{{ $event['date'] }}</p>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="row">
+                            @foreach ($events as $event)
+                                <a href="{{ route('event_details', ['token' => $event['token']]) }}" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="case-item align-center mb60">
+                                        <div class="case-item__thumb mouseover lightbox shadow animation-disabled">
+                                            <img loading="lazy" src="{{ asset('storage/'.$event['picture']) }}" alt="our case">
+                                        </div>
+                                        <h6 class="case-item__title"><strong>{{ $event['title'] }}</strong></h6>
+                                        <div class="case-item__cat">
+                                            <div class="event-info">
+                                                <p>{{ $event['city'] }}</p>
+                                                <p>{{ $event['place'] }}</p>
+                                                <p>{{ $event['date'] }}</p>
+                                            </div>
+                                            <div class="price">
+                                                $ {{ $event['amount'] }}
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="price">
-                                        $ {{ $event['amount'] }}
-                                    </div>
-                                </div>
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                    <a href="https://dmf.lasouveraine.marketing/" target="_blank" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding our-video js-equal-child">
+                        <div class="video theme-module">
+                            <div class="video-thumb">
                             </div>
-                        </a>
-                    @endforeach
+                        </div>
+                    </a>
                 </div>
             </div>
     
