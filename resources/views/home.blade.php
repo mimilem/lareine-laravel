@@ -136,8 +136,7 @@
                     </div>
                     <div class="servises-item__content">
                         <h4 class="servises-title">Missions en Stratégie Marketing</h4>
-                        <p class="servises-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh.
+                        <p class="servises-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         </p>
                     </div>
                     <a href="{{ route('marketing_strategy') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
@@ -165,7 +164,7 @@
                     <div class="servises-item__content">
                         <h4 class="servises-title">Tracking de Performance</h4>
                         <p class="servises-text">Nam liber tempor cum soluta nobis eleifend
-                            option congue nihil imperdiet doming id quod mazim placerat assum.
+                            option congue nihil imperdiet doming id quod.
                         </p>
                     </div>
                     <a href="{{ route('performance_tracking') }}" class="read-more"><i class="seoicon-right-arrow"></i></a>
