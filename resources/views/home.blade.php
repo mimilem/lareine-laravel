@@ -3,7 +3,39 @@
     <div class="container-full-width">
         <div class="swiper-container main-slider" data-effect="fade" data-autoplay="4000">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bg-primary-color main-slider-bg-dark thumb-left">
+                <div class="swiper-slide bg-secondary-color main-slider-bg-dark thumb-left">
+                    <div class="container table">
+                        <div class="row table-cell">
+                            <div class="col-lg-6 table-cell">
+                                <div class="slider-content">
+                                    <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Notre Raison d’Etre
+
+                                    </h3>
+                                    <h5 class="slider-content-text" data-swiper-parallax="-200">Aider les entreprises à maximiser la satisfaction clientèle.
+                                    </h5>
+                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+                                        <a href="{{ route('contact') }}"
+                                        class="btn btn-medium btn--dark btn-hover-shadow">
+                                            <span class="text">CONTACTEZ-NOUS</span>
+                                            <span class="semicircle"></span>
+                                        </a>
+                                        <a href="{{ route('offers') }}" class="btn btn-small btn--primary"
+                                        data-swiper-parallax="-300">
+                                            <span class="text">NOS OFFRES</span>
+                                            <i class="seoicon-right-arrow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 table-cell">
+                                <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                    <img loading="lazy" src="{{ asset('assets/img/slider3.png') }}" alt="slider">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-primary-color main-slider-bg-dark">
                     <div class="container table">
                         <div class="row table-cell">
                             <div class="col-lg-5 table-cell">
