@@ -6,37 +6,45 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <div class="heading mb30">
-                            <h4 class="h1 heading-title">Nos Formations</h4>
+                            <h4 class="h1 heading-title">Nos Séminaires</h4>
                             <div class="heading-line">
                                 <span class="short-line"></span>
                                 <span class="long-line"></span>
                             </div>
-                            <p class="heading-subtitle" style="line-height: 25px; font-size: 15px">Centrés 
-                                principalement sur les entreprises, nos formations consistent à renforcer les 
-                                capacités des salariés afin de les rendre plus optimal et plus efficace .
-                                Nous intervenant également dans le management des équipes en proposant des 
-                                solutions adéquates afin de faciliter l’intégration, la collaboration et le 
-                                rendement des équipes.
+                            <p class="heading-subtitle" style="line-height: 25px; font-size: 15px">Les ventes et le marketing ont toujours été les piliers de toute entreprise. 
+                            Sans marketing, il n'y a pas de ventes, et sans ventes, il n'y a pas d'entreprise. 
+                            Augmentez l'efficacité de vos ventes et améliorez considérablement vos résultats marketing en participant à nos cours et séminaires de formation. 
+                            Nos cours de vente et de marketing sont dispensés par des experts du secteur. 
+                            Ils intègrent les meilleures pratiques éprouvées et l'expérience du monde réel pour vous aider, 
+                            ainsi que votre équipe et votre entreprise, 
+                            à exceller dans l'environnement commercial difficile d'aujourd'hui.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-12 no-padding">
-                                <h5 style="margin-bottom: 5px; color: #F05223;">Renforcement des Capacités</h5>
+                                <h5 style="margin-bottom: 5px; color: #F05223;">Nos Modules</h5>
                             </div>
-                            <p class="selection--dark" style="font-size: 15px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
-                                volutpat. Ut wisi enim ad minim veniam
-                            </p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 no-padding">
-                                <h5 style="margin-bottom: 5px; color: #F05223;">Management des Equipes</h5>
-                            </div>
-                            <p class="selection--dark" style="font-size: 15px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
-                                volutpat. Ut wisi enim ad minim veniam
+                            <p class="selection--dark" style="font-size: 15px">- Stratégies de communication <br />
+                            -	Stratégie marketing<br />
+                            -	Marketing digital<br />
+                            -	Développement commercial Web marketing<br />
+                            -	E-business<br />
+                            -	E-réputation<br />
+                            -	Marketing opérationnel<br />
+                            -	Communication digitale<br />
+                            -	Marketing numérique<br />
+                            -	Gestion des projets <br />
+                            -	Stratégie des médias <br />
+                            -	Analyse et fidélisation de la clientèle <br />
+                            -	Merchandising <br />
+                            -	Étude de marché <br />
+                            -	Gestion de la relation client <br />
+                            -	Gestion des ressources humaines <br />
+                            -	Team Building selon les thèmes suggérés par les entreprises <br />
+                            -	Workshop <br />
+
                             </p>
                         </div>
                         <div class="row">
