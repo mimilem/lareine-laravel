@@ -29,7 +29,7 @@
                             </div>
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="{{ asset('assets/img/slider3.png') }}" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/img6.jpg') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="col-lg-7 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="{{ asset('assets/img/slider2.png') }}" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/img7.jpg') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="{{ asset('assets/img/slider3.png') }}" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/img2.jpg') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                             </div>
                             <div class="col-lg-6 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                    <img loading="lazy" src="{{ asset('assets/img/slider5.png') }}" alt="slider">
+                                    <img loading="lazy" src="{{ asset('assets/img/img4.jpg') }}" alt="slider">
                                 </div>
                             </div>
                         </div>
